@@ -9,8 +9,8 @@ causal inference and development economics. Currently based in Prishtina.
 
 ## Post 1 — Kosovo's Remittance Dependence in Regional Context
 
-**File:** `remittances_western_balkans/analysis.R`  
-**Chart:** `remittances_western_balkans/remittances_western_balkans.png`
+**File:** `remittances-regional-context/analysis.R`  
+**Chart:** `remittances-regional-context/remittances_western_balkans.png`
 
 ### Question
 How dependent is Kosovo on remittances relative to its Western Balkans neighbours 
