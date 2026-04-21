@@ -22,7 +22,7 @@ The map reveals the region's spatial economic structure:
 
 - **Major urban nodes** (Belgrade, Tirana, Sarajevo, Skopje, Prishtina) anchor bright clusters
 - **Transport corridors** along the Danube (Serbia), Vardar valley (North Macedonia), and Adriatic coast (Albania, Montenegro) show concentrated light
-- **Mountainous regions** (Dinaric Alps, Šar Mountains, Prokletije) remain largely dark, reflecting low population density and limited electrification
+- **Mountainous regions** (Dinaric Alps, Sharr Mountains, Prokletije) remain largely dark, reflecting low population density and limited electrification
 - **Kosovo's settlement pattern** concentrates in Prishtina, Prizren, and Peja, with sparse rural coverage — consistent with remittance-driven, urban-concentrated growth documented in prior analyses
 
 ---
