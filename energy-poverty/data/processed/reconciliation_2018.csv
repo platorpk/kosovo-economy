@@ -1,0 +1,4 @@
+source,year,value_pct,note
+ASK silc10.px ('No' share),2018,40.2,primary series
+"Eurostat ilc_mdes01 (TOTAL, hhcomp=TOTAL, unit=PC)",2018,40.2,MATCH: ASK silc10 2018 equals Eurostat XK 2018 TOTAL exactly. No footnote required; ASK silc10 is confirmed as the same EU-SILC indicator transmitted to Eurostat.
+"Eurostat ilc_mdes01 (below at-risk-of-poverty threshold, B_60)",2018,53.1,pinned for quotation
