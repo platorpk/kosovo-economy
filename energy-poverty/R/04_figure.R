@@ -120,10 +120,12 @@ pB <- ggplot(strip, aes(value, 0)) +
     plot.margin = margin(4, 12, 0, 6))
 
 # ============================ COMPOSE ==========================================
-title_txt    <- "Shtëpi të ftohta"
-subtitle_txt <- wrap(sprintf(
-  "Share of households unable to keep their home adequately warm. In 2018 — the last EU-comparable measurement — %.1f%% of households in Kosova could not, versus %.1f%% in the EU-27. The regional spread today runs from about %.0f%% (Serbia, %d) to %.0f%% (Shqipëria, %d); ASK's national series puts Kosova at %.1f%% in 2024.",
-  xk18, eu18, rs$value, rs$year, al$value, al$year, xk24), 84)
+# The 2024 value is the headline; 2018 is the EU-validated anchor (retitled at
+# publication). The "one in five" claim is bound to the pulled data: this guard
+# trips if a future re-pull moves the 2024 share off ~20%.
+stopifnot(round(100 / xk24) == 5)
+title_txt    <- wrap("One in five households in Kosova cannot keep their homes adequately warm", 48)
+subtitle_txt <- wrap("Share unable to keep home adequately warm, ASK SILC 2018–2024; regional comparison at latest available year", 84)
 caption_txt <- paste(
   wrap("* The 2019 value (62.6%) is inconsistent with adjacent survey years on both ASK language endpoints; early waves of Kosova's SILC are volatile. Shown as published — see README, Limitations.", 122),
   wrap("Dispersion panel: filled points = Eurostat EU-SILC (ilc_mdes01, latest year per country; Bosnia & Herzegovina publishes no series). Hollow = ASK national series, not Eurostat-validated.", 122),
@@ -135,7 +137,7 @@ fig <- (pA / pB) + plot_layout(heights = c(1, 0.52)) +
     title = title_txt, subtitle = subtitle_txt, caption = caption_txt,
     theme = theme(
       plot.title    = element_text(family = "ss3", face = "bold", size = 22, colour = ink,
-                                   margin = margin(b = 4)),
+                                   lineheight = 1.02, margin = margin(b = 4)),
       plot.subtitle = element_text(family = "ss3", size = 11, colour = sub, lineheight = 1.15,
                                    margin = margin(b = 8)),
       plot.caption  = element_text(family = "ss3", size = 8.5, colour = sub, hjust = 0,

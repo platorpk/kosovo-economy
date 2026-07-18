@@ -4,13 +4,14 @@ Reproducible R pipeline on the EU's headline energy-poverty indicator —
 **households unable to keep their home adequately warm** — for Kosova and the
 Western Balkans, from public data only.
 
-**The finding:** at the last EU-comparable measurement (2018), **40.2%** of
-households in Kosova could not keep their home adequately warm, against **7.6%**
-in the EU-27 that year (and **53.1%** among Kosovars below the at-risk-of-poverty
-threshold). The regional spread at the latest available years runs from about
-**9%** (Serbia, 2025) to **34%** (Shqipëria, 2023); ASK's national series puts
-Kosova at **21.6%** in 2024, on a volatile path — see Limitations before reading
-it as a trend.
+**The finding:** **one in five households in Kosova — 21.6% in 2024, by ASK's
+own SILC series — cannot keep their home adequately warm.** The EU-validated
+anchor point is 2018, the one year Kosova's data was transmitted to Eurostat:
+**40.2%**, against **7.6%** in the EU-27 that year, and **53.1%** among Kosovars
+below the at-risk-of-poverty threshold. The regional spread at the latest
+available years runs from about **9%** (Serbia, 2025) to **34%** (Shqipëria,
+2023). The ASK path from 40.2 to 21.6 is volatile — see Limitations before
+reading it as a trend.
 
 ## Data sources (all open)
 
