@@ -10,8 +10,8 @@ lost residents), yet the stock of conventional dwellings grew **78%** — and
 **vacant dwellings nearly doubled, from 99,808 (2011) to 182,849 (2024)**.
 Nationally, about **one in three dwellings (33%) stood vacant in 2024**.
 
-The lead figure maps the 2024 vacant-dwelling share by municipality, with an inset
-relating each municipality's 2011–2024 population change to its 2024 vacancy.
+The lead figure maps the 2024 vacant-dwelling share by municipality, with a panel
+below relating each municipality's 2011–2024 population change to its 2024 vacancy.
 
 ![Vacant dwellings by municipality, 2024](output/census_vacancy_2024_linkedin_1200.png)
 
@@ -100,8 +100,8 @@ and the boundary file are cached under `data/raw/` on first run.
   dwelling as vacant when it is not in use as a usual residence on census night —
   which includes homes owned by the diaspora and lived in only seasonally. This
   **supports rather than undermines** the reading of the piece: a large, growing
-  stock of dwellings that are built but not permanently occupied is exactly what
-  high emigration and diaspora home-building produce. It is noted here as context,
+  stock of dwellings that are built but not permanently occupied is consistent
+  with high emigration and diaspora home-building. It is noted here as context,
   not as a flaw in the data.
 - **Self-reported enumeration, not observed occupancy.** Vacancy is a point-in-time
   census classification recorded by enumerators, not a metered or continuously
