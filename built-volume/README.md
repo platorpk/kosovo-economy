@@ -75,6 +75,22 @@ a two-period comparison of *area*, and nothing here should be read as reporting 
   lowers every municipality's figure but barely moves the ordering —
   **Spearman ρ = 0.985**, maximum rank shift **5 places** across 38
   municipalities. The ranking is not an artefact of including small structures.
+- **The top of the ranking is a structure-count effect, not a structure-size
+  effect.** Ranillug carries **2.115 buildings per resident** against a national
+  **0.481**, and its structures are *below* average in size — mean footprint
+  **110 m² against 126.9 m² nationally** — giving the smallest volume per
+  building of the top five. Across the 34 municipalities with an enumerated
+  population, volume per resident tracks buildings per resident closely
+  (Spearman **0.625**) but barely tracks building size at all: **0.296** against
+  mean footprint and **0.253** against mean height. What distinguishes the
+  municipalities at the top is many small structures per person rather than more
+  living space per person — consistent with rural outbuildings, and with the
+  39.5% of structures standing below 2.5 m noted above.
+- **Mamushë is the exception.** It ranks second on volume per resident but only
+  **19th of 34 on buildings per resident**, while ranking **first on both mean
+  footprint (298 m², more than double the national figure) and mean height
+  (3.99 m)**. At **1,311 m³ per building against a national 523 m³**, its
+  buildings are genuinely larger, and its position is not an outbuilding artefact.
 
 ## Handling the northern four
 
@@ -140,8 +156,10 @@ every published number can be checked without re-downloading.
   **systematically understates** built volume per resident — and does so
   **unevenly**, biting hardest in the fastest-building municipalities. Fushë
   Kosova, second-lowest here at 176 m³, is also the fastest-growing municipality
-  in the country; some part of its low figure is this artefact rather than
-  density.
+  in the country, and it carries **0.237 buildings per resident — the lowest of
+  the 34** — on near-average footprints. Few recorded structures shared among
+  many counted residents is exactly the signature of this vintage gap, so some
+  part of its low figure is the artefact rather than density.
 - **A real numerator over an estimated denominator** for the northern four, as
   above. The national figure uses **1,602,515**, the census total *including*
   those ASK estimates; the separately published *registered* enumeration was
