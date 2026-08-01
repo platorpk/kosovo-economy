@@ -5,11 +5,13 @@ of Kosova's 38 municipalities**, combining satellite-derived 3D building models
 with 2024 census population.
 
 **The finding: Kosova holds about 252 m³ of built structure per resident, and the
-figure is lowest where most people actually live.** Among municipalities with an
-enumerated population it runs from **846 m³ in Ranillug** down to **173 m³ in
-Hani i Elezit** — a 4.9× spread — with the capital, **Prishtina, near the bottom
-at 199 m³**. The pattern is a gradient from small peripheral municipalities to
-the populous urban core, where the same stock is shared among more people.
+figure is lowest where most people actually live.** It falls along a gradient
+from small peripheral municipalities down to the populous urban core —
+**Prishtina 199 m³, Ferizaj 202 m³, Prizren 228 m³** — where the same stock is
+shared among more people. The full range across municipalities with an
+enumerated population is given under Key results; its top end rests on very
+small denominators, which is why the finding is framed around the gradient
+rather than around which municipality ranks highest (see Limitations).
 
 ![Built volume per resident by municipality](output/built_volume_per_resident_linkedin_1200.png)
 
@@ -55,8 +57,11 @@ a two-period comparison of *area*, and nothing here should be read as reporting 
 
 - **National: 403.3 million m³ of built volume, 97.8 km² of footprint, across
   770,436 structures — about 252 m³ per resident.**
-- **Highest, enumerated population:** Ranillug 846 m³, Mamushë 725 m³,
-  Kllokot 515 m³, Graçanica 425 m³, Partesh 419 m³ — all small municipalities.
+- **The full range, enumerated population only: 846 m³ (Ranillug) to 173 m³
+  (Hani i Elezit) — a 4.9× spread.**
+- **Highest:** Ranillug 846 m³, Mamushë 725 m³, Kllokot 515 m³,
+  Graçanica 425 m³, Partesh 419 m³ — all small municipalities, and all resting
+  on denominators small enough to warrant the caution in Limitations.
 - **Lowest:** Hani i Elezit 173 m³, Fushë Kosova 176 m³, Shtime 194 m³,
   Skenderaj 197 m³, Kaçanik 198 m³.
 - **The large urban municipalities cluster near the bottom:** Prishtina 199 m³,
@@ -152,6 +157,15 @@ every published number can be checked without re-downloading.
   from OpenStreetMap, whose completeness varies with mapper activity, and the
   rest from an automated Microsoft extraction. Neither is a cadastre, and
   detection of small or closely-spaced structures differs between them.
+- **Small denominators are volatile.** Municipalities of roughly 10,000 residents
+  or fewer produce ratios far more sensitive to population error and to seasonal
+  absence than large ones — a few hundred people either way moves the figure by
+  much more than the same error would in Prishtina. **Ranillug (2,481 residents),
+  Kllokot (3,041), Partesh (3,240) and Mamushë (5,607)** all sit at or near the
+  top of the ranking on denominators of that size, which compounds the
+  residence-versus-presence problem described below. This is why the piece frames
+  its finding around the gradient from periphery to urban core rather than around
+  which municipality ranks highest.
 - **Population is residence, not presence.** The census counts usual residents.
   Municipalities with large diaspora or seasonal populations will show high
   volume per resident partly because their buildings stand empty much of the
