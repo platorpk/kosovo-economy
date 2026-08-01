@@ -101,10 +101,16 @@ pH <- ggplot(b |> filter(height <= 15), aes(height)) +
     plot.margin = margin(6, 10, 4, 6))
 
 # ============================ COMPOSE ==========================================
+# Lead on the gradient, not on the top-ranked municipality: that figure rests on
+# a very small denominator and reflects structure counts rather than living space
+# (see README, Key results). The full range is stated in the README instead.
+core <- m |> filter(muni %in% c("Prishtina", "Ferizaj", "Prizren")) |>
+  arrange(vol_per_resident)
+stopifnot(nrow(core) == 3)
 subtitle_txt <- wrap(sprintf(
-  "Building footprints times modelled height, divided by 2024 census population. Kosova holds about %.0f m³ of built structure per resident. Among municipalities with an enumerated population it runs from %.0f m³ in %s to %.0f m³ in %s — the capital, %s, sits near the bottom at %.0f m³, its stock shared among more people.",
-  natl_vpr, hi$vol_per_resident, hi$muni, lo$vol_per_resident, lo$muni,
-  pri$muni, pri$vol_per_resident), 84)
+  "Building footprints times modelled height, divided by 2024 census population. Kosova holds about %.0f m³ of built structure per resident, and the figure is lowest where most people live — %s %.0f m³, %s %.0f m³, %s %.0f m³. It runs higher across small peripheral municipalities, where the total reflects many small structures per person rather than more living space.",
+  natl_vpr, core$muni[1], core$vol_per_resident[1], core$muni[2], core$vol_per_resident[2],
+  core$muni[3], core$vol_per_resident[3]), 84)
 
 caption_txt <- paste(
   wrap("Grey: the four northern municipalities (Mitrovica e Veriut, Leposaviq, Zveçan, Zubin Potok). Their buildings are satellite-derived and unaffected by the census boycott, but their 2024 population is an ASK estimate — a real numerator over an estimated denominator — so the ratio is not comparable and is not shown.", 122),

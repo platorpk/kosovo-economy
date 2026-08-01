@@ -176,7 +176,7 @@ every published number can be checked without re-downloading.
   rest from an automated Microsoft extraction. Neither is a cadastre, and
   detection of small or closely-spaced structures differs between them.
 - **Small denominators are volatile.** Municipalities of roughly 10,000 residents
-  or fewer produce ratios far more sensitive to population error and to seasonal
+  or fewer give ratios far more sensitive to population error and to seasonal
   absence than large ones — a few hundred people either way moves the figure by
   much more than the same error would in Prishtina. **Ranillug (2,481 residents),
   Kllokot (3,041), Partesh (3,240) and Mamushë (5,607)** all sit at or near the
@@ -186,8 +186,7 @@ every published number can be checked without re-downloading.
   which municipality ranks highest.
 - **Population is residence, not presence.** The census counts usual residents.
   Municipalities with large diaspora or seasonal populations will show high
-  volume per resident partly because their buildings stand empty much of the
-  year — the same effect documented in the `census-vacancy` piece.
+  volume per resident.
 - **Descriptive only.** This is a ratio of two measured quantities at one point
   in time. Nothing here identifies why any municipality sits where it does.
 
