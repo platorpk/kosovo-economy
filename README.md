@@ -32,6 +32,7 @@ The same standards apply to every piece here:
 |---|---|---|
 | [`built-volume/`](built-volume) | Kosova holds about 252 m³ of built structure per resident, and the figure is lowest where most people actually live | GlobalBuildingAtlas LoD1 (Zhu et al. 2025, TUM, ODbL); ASK Census 2024; geoBoundaries ADM2 |
 | [`census-vacancy/`](census-vacancy) | The population shrank while the housing stock ballooned, leaving a fast-growing stock of empty homes | ASK Census 2011 & 2024 (PxWeb); geoBoundaries ADM2 |
+| [`diaspora-account/`](diaspora-account) | The number Kosova's public conversation runs on is a fraction of what the IMF's allocation attributes to the diaspora: 38.6% of GDP in 2019, against the 12.1% the workers' remittance line shows on its own | CBK balance of payments (time series); ASK GDP by expenditure (PxWeb); IMF Country Report No. 21/41 |
 | [`energy-poverty/`](energy-poverty) | One in five households in Kosova — 21.6% in 2024, by ASK's own SILC series — cannot keep their home adequately warm | ASK SILC (PxWeb); Eurostat EU-SILC |
 | [`ookla-digital-divide/`](ookla-digital-divide) | A 4.5× municipal gap: fastest Prishtina (~125 Mbps) to slowest Leposaviq (~28 Mbps) | Ookla Speedtest open data; geoBoundaries ADM2; VIIRS nighttime lights |
 | [`remittances-regional-context/`](remittances-regional-context) | Kosova's remittances have equalled 15–22% of GDP throughout the period, consistently the highest in the Western Balkans | World Bank WDI |

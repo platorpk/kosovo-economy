@@ -1,0 +1,149 @@
+component,year,month,freq,value,source_file,sheet,series_code,column,entry,variant,vintage,provisional,provisional_reason
+remittances,2004,NA,annual,357,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2005,NA,annual,418.02,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2006,NA,annual,467.15,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2007,NA,annual,588.5331733023289,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2008,NA,annual,608.7208974220822,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2009,NA,annual,585.6950810833681,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2010,NA,annual,584.3270289766,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2011,NA,annual,492.5233890762786,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2012,NA,annual,516.3555060867394,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2013,NA,annual,573.3924234432263,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2014,NA,annual,622.2788801821025,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2015,NA,annual,665.4869067088507,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2016,NA,annual,690.9570559588526,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2017,NA,annual,759.1885427504003,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2018,NA,annual,800.4554206980118,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2019,NA,annual,851.7475720463405,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2020,NA,annual,980.1120144323588,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,FALSE,NA
+remittances,2021,NA,annual,1153.4420032218243,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+remittances,2022,NA,annual,1222.959738787726,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+remittances,2023,NA,annual,1335.7617347693517,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+remittances,2024,NA,annual,1355.0109741965643,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+remittances,2025,NA,annual,1413.6938427110174,29 Secondary Income.xls,BiP - Të ardhurat dytësore,967.1DF00Z.c.O.A.6,9,credit,baseline,2026-08,TRUE,"CBK annual figure preliminary; p marker carried in cell formatting, not machine-readable"
+travel_credits,2004,NA,annual,73.42,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2005,NA,annual,88.17999999999999,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2006,NA,annual,109.26,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2007,NA,annual,146.35795199999995,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2008,NA,annual,177.61752838211083,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2009,NA,annual,277.62524217161973,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2010,NA,annual,327.7180919181751,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2011,NA,annual,531.6368213665871,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2012,NA,annual,636.8204191063201,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2013,NA,annual,647.5213183697434,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2014,NA,annual,665.5860254169886,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2015,NA,annual,719.7448967612011,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2016,NA,annual,901.4341820639057,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2017,NA,annual,1112.1043488352595,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2018,NA,annual,1228.1892508695314,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2019,NA,annual,1321.3653083752272,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2020,NA,annual,628.0178460344106,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,FALSE,NA
+travel_credits,2021,NA,annual,1490.0945145853302,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+travel_credits,2022,NA,annual,1875.273837481384,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+travel_credits,2023,NA,annual,2206.984851875772,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+travel_credits,2024,NA,annual,2425.2492331586272,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+travel_credits,2025,NA,annual,3224.335671895354,27 Services.xls,BiP - Services,967.1BD000.C.X.N.6,19,credit,baseline,2026-08,TRUE,"CBK annual figure preliminary; p marker carried in cell formatting, not machine-readable"
+compensation_employees,2004,NA,annual,142.26000000000002,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2005,NA,annual,145.2,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2006,NA,annual,146.53,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2007,NA,annual,154.86,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2008,NA,annual,175.42,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2009,NA,annual,168.71,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2010,NA,annual,171.60921223638377,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2011,NA,annual,208.2116163074622,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2012,NA,annual,214.2580147615626,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2013,NA,annual,218.894936844641,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2014,NA,annual,200.3987285460607,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2015,NA,annual,205.6733654979705,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2016,NA,annual,194.20487941361841,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2017,NA,annual,217.26193125984517,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2018,NA,annual,237.043697827977,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2019,NA,annual,257.13471039723805,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2020,NA,annual,262.3801628708485,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,FALSE,NA
+compensation_employees,2021,NA,annual,263.4306859563957,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,TRUE,CBK services revision announced for September 2026
+compensation_employees,2022,NA,annual,286.51549208333034,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,TRUE,CBK services revision announced for September 2026
+compensation_employees,2023,NA,annual,338.09324161875935,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,TRUE,CBK services revision announced for September 2026
+compensation_employees,2024,NA,annual,416.1313129609344,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,TRUE,CBK services revision announced for September 2026
+compensation_employees,2025,NA,annual,470.4200594591064,28 Primary Income.xls,BiP - Të ardhurat parësore,967.1CA000.B.X.A.6,3,net (credit - debit),baseline,2026-08,TRUE,"CBK annual figure preliminary; p marker carried in cell formatting, not machine-readable"
+fdi_equity_excl_re,2007,NA,annual,286.109974801235,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2008,NA,annual,222.308819178005,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2009,NA,annual,207.0794806779998,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2010,NA,annual,257.8101859305262,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2011,NA,annual,287.2496674949248,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2012,NA,annual,157.064503,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2013,NA,annual,96.04745199999999,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2014,NA,annual,46.551917,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2015,NA,annual,139.11729949265393,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2016,NA,annual,87.64682604427743,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2017,NA,annual,173.57732444099554,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2018,NA,annual,168.65070916180503,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2019,NA,annual,276.8836513570454,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2020,NA,annual,256.0644645439253,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,FALSE,NA
+fdi_equity_excl_re,2021,NA,annual,423.7371424251287,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_excl_re,2022,NA,annual,573.0277383886378,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_excl_re,2023,NA,annual,546.3965414210189,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_excl_re,2024,NA,annual,665.1772520602613,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_excl_re,2025,NA,annual,868.7757201840241,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,3,"equity excl. reinvested earnings, net",baseline,2026-08,TRUE,"CBK annual figure preliminary; p marker carried in cell formatting, not machine-readable"
+fdi_equity_incl_re,2004,NA,annual,39.410000000000004,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2005,NA,annual,82.42,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2006,NA,annual,216.01000000000002,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2007,NA,annual,327.746177001235,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2008,NA,annual,278.476300827005,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2009,NA,annual,264.2594806779998,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2010,NA,annual,331.0877032977214,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2011,NA,annual,345.20069495378414,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2012,NA,annual,202.68680231214148,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2013,NA,annual,176.04024115536475,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2014,NA,annual,116.58822077773587,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2015,NA,annual,228.0247324221759,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2016,NA,annual,182.5128013631094,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2017,NA,annual,232.69523666433417,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2018,NA,annual,263.28173377489463,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2019,NA,annual,238.1847958142371,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2020,NA,annual,322.00479477954434,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,FALSE,NA
+fdi_equity_incl_re,2021,NA,annual,389.88869725792904,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_incl_re,2022,NA,annual,619.3660463921013,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_incl_re,2023,NA,annual,695.4180640626049,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_incl_re,2024,NA,annual,768.420356958585,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_incl_re,2025,NA,annual,1017.4556090531444,30 Financial account.xls,BiP_Llogaria_financiare,NA,35,"equity incl. reinvested earnings, liabilities",variant,2026-08,TRUE,"CBK annual figure preliminary; p marker carried in cell formatting, not machine-readable"
+errors_omissions,2004,NA,annual,128.78999999999982,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2005,NA,annual,174.71000000000032,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2006,NA,annual,240.9499999999999,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2007,NA,annual,203.18566804658198,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2008,NA,annual,162.3902968075414,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2009,NA,annual,164.40142230328064,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2010,NA,annual,197.5827986995324,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2011,NA,annual,191.81584107566343,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2012,NA,annual,47.776968880836016,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2013,NA,annual,12.09966652328751,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2014,NA,annual,218.3997313841221,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2015,NA,annual,159.0638115931142,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2016,NA,annual,268.1301672551051,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2017,NA,annual,89.45215679145912,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2018,NA,annual,193.02147205467804,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2019,NA,annual,247.2461413839868,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2020,NA,annual,-107.33325032910327,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,FALSE,NA
+errors_omissions,2021,NA,annual,267.5456457149431,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+errors_omissions,2022,NA,annual,120.30510193886293,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+errors_omissions,2023,NA,annual,220.59798296501262,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+errors_omissions,2024,NA,annual,244.3160034998276,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,TRUE,CBK services revision announced for September 2026
+errors_omissions,2025,NA,annual,223.6554712626417,26 Balance of payments - main components.xls,BOP,NA,14,net,baseline,2026-08,TRUE,"CBK annual figure preliminary; p marker carried in cell formatting, not machine-readable"
+fdi_equity_directional,2007,NA,annual,NA,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2008,NA,annual,NA,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2009,NA,annual,NA,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2010,NA,annual,NA,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2011,NA,annual,NA,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2012,NA,annual,195.29924599999998,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2013,NA,annual,181.05420299999997,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2014,NA,annual,165.336347,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2015,NA,annual,199.43490519036047,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2016,NA,annual,177.77926730864723,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2017,NA,annual,211.26956928863638,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2018,NA,annual,314.30446237838254,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2019,NA,annual,278.12945453325534,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2020,NA,annual,278.7821935996189,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,FALSE,NA
+fdi_equity_directional,2021,NA,annual,448.29816526740296,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_directional,2022,NA,annual,646.4628973774121,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_directional,2023,NA,annual,580.3064260811185,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_directional,2024,NA,annual,699.1733596853164,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,TRUE,CBK services revision announced for September 2026
+fdi_equity_directional,2025,NA,annual,921.770151890025,33.1 Direct_investment_flows_In_&_Out.xls,In Kosova,NA,7,inward (directional),variant,2026-08,TRUE,"CBK annual figure preliminary; p marker carried in cell formatting, not machine-readable"

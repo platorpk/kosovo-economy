@@ -1,0 +1,84 @@
+====================================================================================================
+05_parse_subannual.R — vintage 2026-09
+====================================================================================================
+
+[1] DATING VERIFICATION
+  component                freq       rows  stamped anchor                     coverage
+  ------------------------------------------------------------------------------------------------
+  remittances              quarterly  70    18      r33 '2009 T4'              2009-01 .. 2026-02  verified
+  remittances              monthly    150   15      r111 '2014 Dhjetor'        2014-01 .. 2026-06  verified
+  travel_credits           quarterly  70    18      r32 '2009 T4'              2009-01 .. 2026-02  verified
+  travel_credits           monthly    150   15      r110 '2014 Dhjetor'        2014-01 .. 2026-06  verified
+  compensation_employees   quarterly  70    18      r34 '2009 T4'              2009-01 .. 2026-02  verified
+  compensation_employees   monthly    150   14      r112 '2014Dhjetor'         2014-01 .. 2026-06  verified
+  fdi_equity_excl_re       quarterly  58    15      r25 '2012 T1'              2012-01 .. 2026-02  verified
+  fdi_equity_excl_re       monthly    131   11      r83 '2014 Janar'           2014-01 .. 2024-11  verified
+  fdi_equity_incl_re       quarterly  70    18      r32 '2009 T4'              2009-01 .. 2026-02  verified
+  fdi_equity_incl_re       monthly    150   13      r110 '2014 Dhjetor'        2014-01 .. 2026-06  verified
+  errors_omissions         quarterly  70    18      r34 '2009 Q4'              2009-01 .. 2026-02  verified
+  errors_omissions         monthly    150   15      r112 '2014 December'       2014-01 .. 2026-06  verified
+  fdi_equity_directional   quarterly  58    15      r25 '2012 T1'              2012-01 .. 2026-02  verified
+  fdi_equity_directional   monthly    131   11      r83 '2014 Janar'           2014-01 .. 2024-11  verified
+
+[2] RECONCILIATION TO ANNUAL (04), per component per year
+    hard assertion — same file, so the identity must hold
+  quarterly  complete years: 113  max|diff| = 5.1669  tol = 0.50  deviations: 1 (registered 1, UNREGISTERED 0)
+      [registered] compensation_employees   2021: sum 258.2637 vs annual 263.4307  diff -5.1669
+  monthly    complete years: 80   max|diff| = 0.0000  tol = 0.50  deviations: 0 (registered 0, UNREGISTERED 0)
+
+  registry status (current deviation of each registered entry):
+      compensation_employees   quarterly  2021  diff -5.166936  active, breaches tolerance
+      errors_omissions         quarterly  2009  diff +0.392114  active, below reconciliation tolerance
+      errors_omissions         quarterly  2010  diff -0.423285  active, below reconciliation tolerance
+
+  per-component reconciliation coverage:
+    compensation_employees   monthly    12 years 2014-2025  max|diff| 0.0000
+    compensation_employees   quarterly  17 years 2009-2025  max|diff| 5.1669
+    errors_omissions         monthly    12 years 2014-2025  max|diff| 0.0000
+    errors_omissions         quarterly  17 years 2009-2025  max|diff| 0.4233
+    fdi_equity_directional   monthly    10 years 2014-2023  max|diff| 0.0000
+    fdi_equity_directional   quarterly  14 years 2012-2025  max|diff| 0.0000
+    fdi_equity_excl_re       monthly    10 years 2014-2023  max|diff| 0.0000
+    fdi_equity_excl_re       quarterly  14 years 2012-2025  max|diff| 0.0000
+    fdi_equity_incl_re       monthly    12 years 2014-2025  max|diff| 0.0000
+    fdi_equity_incl_re       quarterly  17 years 2009-2025  max|diff| 0.0000
+    remittances              monthly    12 years 2014-2025  max|diff| 0.0000
+    remittances              quarterly  17 years 2009-2025  max|diff| 0.0000
+    travel_credits           monthly    12 years 2014-2025  max|diff| 0.0000
+    travel_credits           quarterly  17 years 2009-2025  max|diff| 0.0000
+
+[3] PROVISIONAL FLAGS
+  monthly    provisional=FALSE rows=964   -
+  monthly    provisional=TRUE  rows=48    CBK services revision announced for September 2026 (travel only)
+  quarterly  provisional=FALSE rows=450   -
+  quarterly  provisional=TRUE  rows=16    CBK services revision announced for September 2026 (travel only)
+  Remittances is outside the September revision window and is not flagged for it.
+
+[3b] SUB-ANNUAL DISCREPANCY FLAGS
+  registry entries: 3 | rows flagged: 10
+    compensation_employees   quarterly  2021  rows=2
+    errors_omissions         quarterly  2009  rows=4
+    errors_omissions         quarterly  2010  rows=4
+  Both series are carried in full. Nothing dropped, nothing smoothed,
+  tolerance unchanged. Section 4.3 selects monthly and the piece says why.
+
+[4] OUTPUT SHAPE
+  compensation_employees   monthly    n=150  through 2026
+  compensation_employees   quarterly  n=70   through 2026
+  errors_omissions         monthly    n=150  through 2026
+  errors_omissions         quarterly  n=70   through 2026
+  fdi_equity_directional   monthly    n=131  through 2024
+  fdi_equity_directional   quarterly  n=58   through 2026
+  fdi_equity_excl_re       monthly    n=131  through 2024
+  fdi_equity_excl_re       quarterly  n=58   through 2026
+  fdi_equity_incl_re       monthly    n=150  through 2026
+  fdi_equity_incl_re       quarterly  n=70   through 2026
+  remittances              monthly    n=150  through 2026
+  remittances              quarterly  n=70   through 2026
+  travel_credits           monthly    n=150  through 2026
+  travel_credits           quarterly  n=70   through 2026
+  total rows: 1478 | columns: 18
+
+====================================================================================================
+GUARD SUMMARY: all hard guards passed.
+====================================================================================================

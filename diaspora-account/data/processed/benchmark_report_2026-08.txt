@@ -1,0 +1,80 @@
+====================================================================================================
+06_diaspora_account.R — vintage 2026-08
+====================================================================================================
+
+[1] LINE-BY-LINE STATUS AGAINST CR 21/41
+----------------------------------------------------------------------------------------------------
+  VALIDATED    the same concept is independently published in Table 5, so our
+               series can be checked against a number we did not choose.
+  CALIBRATED   Table 5 does not publish the concept. The mapping was SELECTED
+               because it reproduces Box 1. Agreement is therefore assumed,
+               not tested.
+  UNVERIFIABLE Table 5 publishes only a parent aggregate, not the diaspora
+               line. The parent can be checked; the attribution cannot.
+
+                        box_line       status                                                                 reference
+                  Primary Income    VALIDATED                                  Table 5 'Compensation of employees, net'
+        Net errors and omissions    VALIDATED                                        Table 5 'Net errors and omissions'
+          Direct investment, net   CALIBRATED      no equity/reinvested split in Table 5; mapping chosen to match Box 1
+   Exports of Goods and Services UNVERIFIABLE                    Table 5 gives total services receipts only, not travel
+        Secondary Income (Other) UNVERIFIABLE Table 5 gives 'Other transfers (incl. remittances), net', not remittances
+
+  Direct comparison where an independent reference exists (EUR million):
+   year comp_ours comp_t5 comp_d eo_ours eo_t5   eo_d
+   2018    237.04     237   0.04  193.02   184   9.02
+   2019    257.13     257   0.13  247.25   215  32.25
+   2020    262.38     249  13.38 -107.33   -16 -91.33
+  2020 is an IMF PROJECTION (Est./P, data through 2020:Q3); its deviation
+  mixes revision with projection error and is not a revision measurement.
+
+  Parent aggregates that DO validate, though the diaspora split does not:
+   year services_receipts_t5 other_transfers_t5 di_net_t5 di_net_pct_imfgdp
+   2018                 1562               1034      -226             -3.36
+   2019                 1676               1123      -201             -2.83
+   2020                 1049               1240      -208             -3.05
+  Box 1 Total column, Direct investment net: -3.1 (avg 2018-19), -3.0 (2020).
+  Table 5 DI net over IMF GDP: -3.09 and -3.05. The Box TOTAL column is
+  whole-economy net DI; the Box DIASPORA column is not.
+
+[2] BENCHMARK — diaspora account, IMF baseline band
+----------------------------------------------------------------------------------------------------
+             vname      period ours_ask ours_imf  box denom_pp series_pp total_pp
+   excl_reinvested avg 2018-19   37.541   37.263 37.1    0.278     0.163    0.441
+   excl_reinvested        2020   29.870   29.671 29.1    0.199     0.571    0.770
+   incl_reinvested avg 2018-19   37.976   37.694 37.1    0.282     0.594    0.876
+   incl_reinvested        2020   30.844   30.638 29.1    0.205     1.538    1.744
+       directional avg 2018-19   38.641   38.355 37.1    0.287     1.255    1.541
+       directional        2020   30.205   30.004 29.1    0.201     0.904    1.105
+
+  denom_pp  = our series over ASK GDP minus our series over IMF GDP
+  series_pp = our series over IMF GDP minus the Box 1 figure
+  For CALIBRATED lines series_pp is not an independent test: the FDI mapping
+  was selected to reproduce Box 1, so its contribution is near zero by
+  construction. The residual gap measures the VALIDATED and UNVERIFIABLE
+  lines only.
+
+[3] LINE BY LINE vs the Box 1 Diaspora column (percent of GDP, IMF GDP)
+----------------------------------------------------------------------------------------------------
+                            line avg_2018_19 y2020       status mine_1819 mine_2020 d_1819 d_2020
+   Exports of Goods and Services        17.0   9.3 UNVERIFIABLE     16.96      8.48  -0.04  -0.82
+                  Primary Income         3.5   3.6    VALIDATED      3.57      3.85   0.07   0.25
+        Secondary Income (Other)        11.9  13.7 UNVERIFIABLE     11.95     14.38   0.05   0.68
+          Direct investment, net        -3.2  -2.5   CALIBRATED     -3.20     -3.76   0.00  -1.26
+        Net errors and omissions         1.4  -0.1    VALIDATED      1.59     -0.79   0.19  -0.69
+                 Overall balance        37.1  29.1            -     37.26     29.67   0.16   0.57
+
+[4] GUARDS
+  years without a GDP denominator: 2004, 2005, 2006, 2007, 2025
+  FDI treatment coverage: excl_reinvested 2007-2025 | incl_reinvested 2004-2025 | directional 2012-2025
+  narrow_scope identical across all three FDI treatments: yes
+  band ordering inverts (maximal_attribution < imf_baseline) in: 2020
+
+  *** 2024 EMBARGO ***
+  The 2024 account (46.3% of GDP, imf_baseline / excl_reinvested) rests on FOUR
+  consecutive provisional years (2021-2024) and inherits the travel services
+  series CBK has announced it will revise. It must NOT appear in any draft or
+  figure before that revision lands and the vintages are compared. Same for
+  2021-2023.
+
+====================================================================================================
+Wrote: diaspora_account_2026-08.csv | diaspora_account_2026-08.rds | benchmark_report_2026-08.txt

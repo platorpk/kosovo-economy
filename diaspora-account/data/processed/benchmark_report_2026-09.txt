@@ -1,0 +1,138 @@
+====================================================================================================
+06_diaspora_account.R — vintage 2026-09
+====================================================================================================
+
+[1] PARENT VALIDATION — computed, not asserted
+----------------------------------------------------------------------------------------------------
+  Box 1 TOTAL column against the same lines in CBK 26/26a, percent of IMF GDP.
+  A line VALIDATES when our published total reproduces the Box's Total column;
+  it does not validate when the concept or sign convention differs.
+
+  Average 2018-19:
+                        box_line  box  ours   dev              flag
+                 Current account -6.5 -6.59 -0.09         validates
+   Exports of Goods and Services 29.0 28.97 -0.03         validates
+   Imports of Goods and Services 56.4 56.43  0.03         validates
+                  Primary Income  1.9  1.97  0.07         validates
+                Secondary Income 19.0 18.90 -0.10         validates
+                 Capital account -0.1 -0.14 -0.04         validates
+               Financial account -3.8 -3.56  0.24 does NOT validate
+          Direct investment, net -3.1 -3.00  0.10         validates
+       Portfolio investment, net -1.1 -1.07  0.03         validates
+           Other investment, net -1.0 -0.80  0.20 does NOT validate
+                  Reserve assets  1.3  1.32  0.02         validates
+        Net errors and omissions  2.9  3.18  0.28 does NOT validate
+
+  2020 (IMF column is a projection):
+                        box_line  box  ours   dev              flag
+                 Current account -7.5 -6.93  0.57 does NOT validate
+   Exports of Goods and Services 22.0 21.56 -0.44 does NOT validate
+   Imports of Goods and Services 53.7 53.57 -0.13         validates
+                  Primary Income  2.3  2.41  0.11         validates
+                Secondary Income 21.9 22.67  0.77 does NOT validate
+                 Capital account -0.1  0.26  0.36 does NOT validate
+               Financial account -7.8 -8.25 -0.45 does NOT validate
+          Direct investment, net -3.0 -4.20 -1.20 does NOT validate
+       Portfolio investment, net -0.5 -1.20 -0.70 does NOT validate
+           Other investment, net -3.1 -3.52 -0.42 does NOT validate
+                  Reserve assets -1.2  0.68  1.88 does NOT validate
+        Net errors and omissions -0.2 -1.57 -1.37 does NOT validate
+
+  Table 5 parent test, EUR million, ours against PDF p37 [printed 33]:
+   year ca_ours ca_t5 ca_dev xgs_ours xgs_t5 xgs_dev eo_ours eo_t5 eo_dev
+   2018  -508.8  -509    0.2   1938.3   1939    -0.7   193.0   184    9.0
+   2019  -399.5  -392   -7.5   2068.3   2069    -0.7   247.2   215   32.2
+   2020  -472.2  -509   36.8   1470.0   1502   -32.0  -107.3   -16  -91.3
+
+[2] RESIDENTS' SIDE — against Box 1's Residents CURRENT ACCOUNT
+----------------------------------------------------------------------------------------------------
+  Box 1 Residents current account: -39 (avg 2018-19), -34.1 (2020).
+  Ours: CBK current account less the diaspora-attributed CURRENT-ACCOUNT
+  components (0.92*travel + compensation net + remittances). Both on IMF GDP.
+        period    ours   box    dev
+   avg 2018-19 -39.067 -39.0 -0.067
+          2020 -33.629 -34.1  0.471
+  The diaspora side and the residents side are the SAME identity from opposite
+  ends and are not independent tests. Reported so the arithmetic is visible.
+
+[3] FDI — THE MAPPING HAS NO ESTABLISHED BASIS
+----------------------------------------------------------------------------------------------------
+  Box 1 avg 2018-19:  Total -3.1  =  Residents 0.1  +  Diaspora -3.2
+  Table 5 net DI over IMF GDP, avg 2018-19 : -3.095%
+  Table 5 DI LIABILITIES over IMF GDP      : +3.894%
+  ours, equity EXCLUDING reinvested        : +3.203%
+  ours, equity INCLUDING reinvested        : +3.634%
+
+  THE SOURCE CONTRADICTS ITSELF. The footnote says the diaspora row is equity
+  liabilities under FDI. But Box 1's Diaspora row (-3.2) is essentially the
+  WHOLE of net direct investment (-3.095%), with Residents left at only +0.1%.
+  Equity liabilities are +3.894% — nowhere near -3.2. The two readings
+  cannot be reconciled from the published material.
+
+  Our excluding-reinvested series averages 3.203%, which sits close to the
+  3.2 the Box prints. That is a COINCIDENCE WITH A DIFFERENT CONCEPT, not
+  evidence: the Box's own arithmetic identifies that row with net DI, which is
+  a different quantity. The mapping is therefore NOT established, and the 2020
+  test fails: see the line table below, where DI deviates by -1.26 pp.
+  For this reason an FDI-EXCLUDED variant is carried alongside.
+
+[4] LINE BY LINE vs the Box 1 DIASPORA column, percent of IMF GDP
+----------------------------------------------------------------------------------------------------
+
+  Average 2018-19:
+                            line       status  box  ours   dev
+   Exports of Goods and Services UNVERIFIABLE 17.0 16.96 -0.04
+                  Primary Income    VALIDATED  3.5  3.57  0.07
+         Secondary Income: Other UNVERIFIABLE 11.9 11.95  0.05
+          Direct investment, net   CALIBRATED -3.2 -3.20  0.00
+        Net errors and omissions    VALIDATED  1.4  1.59  0.19
+                 Overall balance            - 37.1 37.26  0.16
+
+  2020:
+                            line       status  box  ours   dev
+   Exports of Goods and Services UNVERIFIABLE  9.3  8.48 -0.82
+                  Primary Income    VALIDATED  3.6  3.85  0.25
+         Secondary Income: Other UNVERIFIABLE 13.7 14.38  0.68
+          Direct investment, net   CALIBRATED -2.5 -3.76 -1.26
+        Net errors and omissions    VALIDATED -0.1 -0.79 -0.69
+                 Overall balance            - 29.1 29.67  0.57
+
+[5] WHAT THE STATUS TABLE WEIGHS — shares of the account by year
+----------------------------------------------------------------------------------------------------
+  UNVERIFIABLE = travel + remittances | CALIBRATED = FDI | VALIDATED = compensation + E&O
+   year unverifiable calibrated validated
+   2008         61.7       17.8      20.5
+   2009         64.7       15.9      19.3
+   2010         62.6       18.2      19.1
+   2011         62.4       18.3      19.3
+   2012         73.6       10.5      15.9
+   2013         78.5        6.4      15.1
+   2014         77.6        2.9      19.5
+   2015         75.8        7.9      16.3
+   2016         78.5        4.5      17.0
+   2017         80.4        7.8      11.8
+   2018         79.4        6.9      13.7
+   2019         75.9       10.2      14.0
+   2020         77.0       12.7      10.3
+
+  2019: 76% UNVERIFIABLE / 10% CALIBRATED / 14% VALIDATED.
+  Independently checkable lines carry roughly a seventh of the account.
+
+[6] BENCHMARK RESOLUTION FLOOR
+----------------------------------------------------------------------------------------------------
+  Box 1 prints to one decimal, so its rows are only resolved to +/-0.05 pp,
+  which on avg 2018-19 GDP of 6915 EUR m is +/-3.5 EUR m.
+  The travel line deviates by -0.04 pp. Any revision is therefore bounded
+  at about 7.1 EUR m of travel credits ((|-0.04| + 0.05)/100 * 6915 / 0.92);
+  it does NOT establish that travel was unrevised.
+
+[7] GUARDS
+  remittances_and_travel identical across all four FDI treatments: yes
+  band ordering inverts (maximal < baseline) in: 2020
+  FDI treatment coverage: excl_reinvested 2007-2025 | incl_reinvested 2004-2025 | directional 2012-2025 | excluded n/a
+
+  *** 2024 EMBARGO *** 46.3% of GDP, four provisional years, travel under
+  announced revision. Not to appear in any draft or figure. Same for 2021-2023.
+
+====================================================================================================
+Wrote: diaspora_account_2026-09.csv | diaspora_account_2026-09.rds | benchmark_report_2026-09.txt

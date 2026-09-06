@@ -1,0 +1,3 @@
+table,role,url,file,downloaded_utc,bytes,md5,newly_fetched
+gdp13.px,denominator of record (expenditure),https://askdata.rks-gov.net/api/v1/en/ASKdata/National%20and%20government%20accounts/National%20accounts/Annual%20national%20accounts/gdp13.px,gdp13_expenditure_current_raw.csv,2026-08-13 17:41:16,10897,4127965f5e7114dc53bee23384128adf,FALSE
+gdp09.px,cross-check (production),https://askdata.rks-gov.net/api/v1/en/ASKdata/National%20and%20government%20accounts/National%20accounts/Annual%20national%20accounts/gdp09.px,gdp09_activities_current_raw.csv,2026-08-13 17:41:16,30621,24a61559d1479753bf3186f0d317559c,FALSE

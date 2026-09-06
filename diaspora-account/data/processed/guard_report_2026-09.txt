@@ -1,0 +1,54 @@
+================================================================================================
+04_parse_components.R — vintage 2026-09
+================================================================================================
+
+[1] EXTRACTION — anchor checks and block bounds
+  remittances              r8-29  2004..2025 (n=22)  code 967.1DF00Z.c.O.A.6 @ r7
+  travel_credits           r7-28  2004..2025 (n=22)  code 967.1BD000.C.X.N.6 @ r6
+  compensation_employees   r9-30  2004..2025 (n=22)  code 967.1CA000.B.X.A.6 @ r8
+  fdi_equity_excl_re       r6-24  2007..2025 (n=19)  label 'Kapitali dhe fondi i investimeve n' @ r5 (no code published)
+  fdi_equity_incl_re       r7-28  2004..2025 (n=22)  label 'Kapitali dhe fondi i investimeve n' @ r6 (no code published)
+  errors_omissions         r9-30  2004..2025 (n=22)  label 'Errors and omission' @ r4 (no code published)
+  fdi_equity_directional   r6-24  2007..2025 (n=19)  label 'Kapitali dhe fondi i investimeve n' @ r5 (no code published)
+
+[2] REFERENCE VALUE
+  remittances 2023 = 1335.7617  | expected 1335.8 +/- 0.5  | prior vintage (scoping note) 1344.5
+    pass
+
+[3] WITHIN-FILE IDENTITIES (hard assertions, must error on breach)
+  27 Services c2 = c15 - c28                     max|balance-(credit-debit)| = 0.000000  breaches=0
+  28 Primary Income c2 = c10 - c18               max|balance-(credit-debit)| = 0.000000  breaches=0
+  29 Secondary Income c2 = c6 - c10              max|balance-(credit-debit)| = 0.000000  breaches=0
+  29 c8 >= c9 (containment)                      min(other_sectors - remittances) = 86.8300  breaches=0
+  28 c3 = c11 - c19 (compensation is net)        max|net-(credit-debit)| = 0.000000  breaches=0
+
+[4] CROSS-FILE IDENTITIES (tolerance; breach reports, does not error)
+  29 c9 remittances  vs  31 c2 total remittance inflow n=22  max|diff|=0.2153  tol=0.50  breaches=0
+  26 c7 secondary income  vs  29 c2 balance            n=22  max|diff|=0.0077  tol=0.05  breaches=0
+  26 c6 primary income  vs  28 c2 balance              n=22  max|diff|=0.0916  tol=0.10  breaches=0
+  26 c5 services  vs  27 c2 balance                    n=22  max|diff|=2.0000  tol=0.05  breaches=1
+      BREACH — non-atomic republication is the first hypothesis:
+        26 Balance of payments - main components.xls   Last-Modified: Mon, 31 Aug 2026 13:38:50 GMT
+        27 Services.xls                                Last-Modified: Mon, 31 Aug 2026 12:13:15 GMT
+        2025: 2370.0795 vs 2368.0795  diff +2.0000
+      Recorded as observed. Not reconciled, not smoothed.
+  33.1 c3 + c4  vs  30 c35 (equity + reinvested)       n=19  max|diff|=0.0088  tol=0.05  breaches=0
+
+[5] ROW COUNTS AND NA WHITELIST
+  remittances              rows=22  expected=22  pass
+  travel_credits           rows=22  expected=22  pass
+  compensation_employees   rows=22  expected=22  pass
+  fdi_equity_excl_re       rows=19  expected=19  pass
+  fdi_equity_incl_re       rows=22  expected=22  pass
+  errors_omissions         rows=22  expected=22  pass
+  fdi_equity_directional   rows=19  expected=19  pass
+  NA cells: 5 total | whitelisted: 5 | unexpected: 0 | whitelisted-but-present: 0
+
+[6] PROVISIONAL FLAGS
+  provisional=FALSE rows=113 -
+  provisional=TRUE  rows=7   CBK annual figure preliminary; p marker carried in cell formatting, not machine-readable
+  provisional=TRUE  rows=28  CBK services revision announced for September 2026
+
+================================================================================================
+GUARD SUMMARY: all hard guards passed.
+================================================================================================
