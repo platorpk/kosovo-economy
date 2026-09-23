@@ -135,9 +135,18 @@ into composition or within-division.
   Tests the December-link assumption in all 12 months.
 - (b) Published rate: derived December-to-December all-items rate against the
   published `RCH_A` for December, within its publication rounding.
-- Threshold: |R| ≤ 0.05 pp in every area-year, and every month in (a).
+- Threshold for (a): |R| ≤ 0.05 pp in every month of every area-year.
   Rounding alone should keep it near 0.03 pp; the script computes that bound
   from the actual index levels rather than hard-coding it.
+- Threshold for (b): the computed rounding bound for that area-year (half a unit
+  of `RCH_A`'s published decimals plus the rounding error of the derived
+  all-items ratio, from the actual index levels).
+  - **Amendment, made after the first gate run (2026-09-23 vintage).** (b)
+    originally used the same 0.05 pp threshold as (a). `RCH_A` is published to
+    1 decimal, so rounding alone can put it up to about 0.06 pp from the derived
+    rate, and a fixed 0.05 pp could fail on rounding. The first run passed the
+    original 0.05 pp threshold for every area-year (max 0.041 pp), so the
+    outcome is unchanged.
 - Any breach: stop and report. The piece fails the gate.
 
 ## Mechanical
@@ -150,3 +159,11 @@ into composition or within-division.
 - **Weights:** normalised to shares over the 13 divisions. Removes the
   ≤ 0.065 per-mille rounding miss so shares sum to exactly 1; changes any share
   by at most 0.0065% of its value.
+
+## Limitations recorded at design
+
+Carried into the README's limitations section, alongside the Croatia (§1) and
+`u`-flag (§2) notes:
+
+- "Pre-2026 figures are back-calculated under the 2026 classification (ECOICOP
+  ver.2) and can differ from figures published at the time."
