@@ -184,3 +184,8 @@ Carried into the README's limitations section, alongside the Croatia (§1) and
 
 - "Pre-2026 figures are back-calculated under the 2026 classification (ECOICOP
   ver.2) and can differ from figures published at the time."
+- 2026 year-to-date (added 2026-09-23, before any further output): the YTD row
+  spans December to August, not a full seasonal cycle. Division-level YTD
+  contributions can reflect differing seasonal patterns between the two areas
+  (for example, sales calendars) and are **not reported in the piece**. The YTD
+  aggregate appears only with this caveat attached.
