@@ -1,0 +1,142 @@
+# hicp-gap — design
+
+Approved 2026-09-23. Builds on the verification in `HANDOFF.md` (data vintage:
+Eurostat last update 17/09/26). This document fixes the analytical choices
+before any rate or decomposition is computed.
+
+Notation, per area a ∈ {XK, EA}, weight year t, division i ∈ CP01–CP13:
+
+- s_a,i — year-t item weight of division i as a share of the 13 division
+  weights (see Mechanical).
+- r_a,i = I_a,i,Dec t / I_a,i,Dec t−1 − 1 — December-to-December division rate.
+- π_a — published all-items December-to-December rate, derived from the
+  all-items index.
+- R_a = π_a − Σ_i s_a,i r_a,i — residual.
+- gap_t = π_XK − π_EA.
+
+---
+
+## 1. Comparator
+
+**Choice:** `EA`, the euro area with membership as it changed over time.
+
+**Reason:** it is the euro area as it actually was in each year, which is what
+a Kosova reader means by "euro-area inflation". Within one weight year, EA's
+item weights and division indices cover the same countries, which is all a
+within-year decomposition needs. Membership changes only at the January link.
+The fixed-membership series project members backwards to years before they used
+the euro (`EA21` carries weights from 2000).
+
+**Rules out:** reading the gap as a comparison against a constant set of
+countries; other comparators (EU27, Western Balkan neighbours), which would be a
+different piece.
+
+**Limitation text:** "From 2023 the EA comparator includes Croatia."
+
+## 2. Window
+
+**Choice:** weight years 2016–2025 (December 2015 to December 2025), each year
+shown separately plus the ten-year average. No sub-period averages.
+
+**Reason:**
+- 2016 is the first weight year with a December base in the XK index (the
+  series starts 2015-01, so weight year 2015 has no December 2014 base).
+- 2025 is the last complete year.
+- Year-by-year figures already show 2021–2023. Sub-period averages would need
+  cut points chosen after seeing the data, and ten years leave groups of 2–5.
+
+**Rules out:**
+- The 2015 weights (unused).
+- 2026 in any average: December 2025 to August 2026 is 8 months, and EA
+  includes Bulgaria from January 2026. It appears only as a labelled
+  year-to-date row in the table.
+- Period statements such as "during the surge"; the text points to individual
+  years.
+
+**EA `u` flags (2020-04 to 2021-05):** the design uses December values only.
+Of the flagged months, only EA CP11 December 2020 is a December; it enters
+CP11's 2020 and 2021 rates, and so both terms in those years. It is used as
+published, because it is the value inside Eurostat's own EA all-items index.
+2020 and 2021 are marked in the table and named in the limitations.
+
+## 3. Decomposition, chain-linking and gate
+
+**Choice:** decompose within each weight year, December to December, then
+average the yearly terms across the window.
+
+**Midpoint form (headline):**
+
+    composition_t = Σ_i (s_XK,i − s_EA,i) · (r_XK,i + r_EA,i) / 2
+    within_t      = Σ_i (s_XK,i + s_EA,i) / 2 · (r_XK,i − r_EA,i)
+    residual_t    = R_XK − R_EA
+
+    gap_t = composition_t + within_t + residual_t
+
+**Ordered variants (bounds):** both are computed and reported alongside the
+midpoint.
+
+| variant | composition | within-division |
+|---|---|---|
+| A: composition at EA rates | Σ (s_XK − s_EA) · r_EA | Σ s_XK · (r_XK − r_EA) |
+| B: composition at XK rates | Σ (s_XK − s_EA) · r_XK | Σ s_EA · (r_XK − r_EA) |
+
+Each variant adds up to the same gap with the same residual. The midpoint terms
+are the average of A and B.
+
+**Term naming:** the second term is the **within-division** term, never "price".
+It mixes price differences for the same goods with differences in what each
+area's basket holds inside a division; division-level data cannot separate the
+two.
+
+**Pre-registered dominance rule:** the piece may state that one term dominates
+only if it does so under **both** ordered variants. Otherwise it reports the
+range across A and B. This applies at the level of the statement: year-level
+statements use that year's terms, window statements use the window averages.
+Operational definition of "dominates": |term| > |other term| within the variant.
+
+**Aggregation over years:** the window figure is the arithmetic mean of the
+yearly terms, in percentage points, so the parts still add up (mean gap = mean
+composition + mean within + mean residual, for the midpoint and for each
+variant). Compounded price-level gaps are not decomposed.
+
+**Reason for December to December:** if year-t weights apply to price change
+from the December link, then within a weight year the all-items index is
+exactly the weighted sum of division indices relative to December, and the
+decomposition is an identity. This is an assumption about Eurostat's
+compilation, not a citation; gate check (a) tests it directly.
+
+**Why not annual averages:** a year-average rate mixes months under last year's
+weights with months under this year's, so no single weight vector reproduces
+it; the residual would be structural, not rounding.
+
+**Reference column:** Eurostat's published annual-average all-items rate per
+area-year, shown beside the December-to-December gap and **labelled as not
+decomposed**. Intended source: `prc_hicp_minr`, unit `RCH_MV12MAVR`, December
+value (the 12-month moving-average rate, which in December covers the calendar
+year). That equivalence is to be confirmed in the build script that produces
+the table; it is not part of the gate.
+
+**Residual:** its own column in every year and in the average, never folded
+into composition or within-division.
+
+**Gate (first build script; stop for review after it):**
+- (a) Aggregation identity: for every month of every weight year 2016–2025 and
+  both areas, all-items I_m / I_Dec t−1 against Σ_i s_i · I_i,m / I_i,Dec t−1.
+  Tests the December-link assumption in all 12 months.
+- (b) Published rate: derived December-to-December all-items rate against the
+  published `RCH_A` for December, within its publication rounding.
+- Threshold: |R| ≤ 0.05 pp in every area-year, and every month in (a).
+  Rounding alone should keep it near 0.03 pp; the script computes that bound
+  from the actual index levels rather than hard-coding it.
+- Any breach: stop and report. The piece fails the gate.
+
+## Mechanical
+
+- **Index base:** `I25`. December-to-December ratios are base-invariant up to
+  rounding; the build asserts `I15` and `I25` give the same rates within
+  rounding.
+- **Rates:** derived from indices. Published `RCH_A` only for gate check (b);
+  published `RCH_MV12MAVR` only for the reference column.
+- **Weights:** normalised to shares over the 13 divisions. Removes the
+  ≤ 0.065 per-mille rounding miss so shares sum to exactly 1; changes any share
+  by at most 0.0065% of its value.

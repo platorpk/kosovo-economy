@@ -5,9 +5,10 @@ decomposition have been computed. Nothing here is a finding for the piece.
 
 Planned piece: decompose the gap between Kosova's HICP inflation and the euro
 area's into a composition term (weight differences × EA category inflation) and
-a price term (Kosova weights × category inflation differences), at ECOICOP
-ver.2 division level (CP01–CP13). This phase asks only whether the data support
-that design.
+a within-division term (Kosova weights × category inflation differences), at
+ECOICOP ver.2 division level (CP01–CP13). This phase asks only whether the data
+support that design. The decomposition has since been fixed in `DESIGN.md`
+(midpoint form, with both ordered variants as bounds).
 
 Script: `verify/01_coverage.R` (run from the piece root:
 `Rscript verify/01_coverage.R`).
