@@ -160,6 +160,23 @@ into composition or within-division.
   ≤ 0.065 per-mille rounding miss so shares sum to exactly 1; changes any share
   by at most 0.0065% of its value.
 
+## Pre-registered extension: division contributions, 2025 and 2026 YTD
+
+Added 2026-09-23, after the first decomposition run and **before** any
+division-level contribution was computed.
+
+- Scope: weight year 2025 and the 2026 year-to-date row only.
+- Per division i: midpoint within-division contribution
+  c_i = (s_XK,i + s_EA,i) / 2 · (r_XK,i − r_EA,i), in pp. The 13 contributions
+  sum to the midpoint within-division term (asserted).
+- Reported: the top three divisions by contribution, and their combined share
+  of the midpoint within-division term (Σ top-three c_i / within_mid; can exceed
+  100% if other divisions offset).
+- "Top by contribution" means ranked by c_i in the direction of the
+  within-division term's sign (largest c_i when the term is positive, most
+  negative when it is negative).
+- Nothing else from the division table is reported or saved.
+
 ## Limitations recorded at design
 
 Carried into the README's limitations section, alongside the Croatia (§1) and
