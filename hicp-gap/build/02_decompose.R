@@ -11,7 +11,11 @@
 #   output/hicp_gap_decomposition.csv   one row per weight year, window mean, 2026 YTD
 #   output/hicp_gap_within_top3.csv     pre-registered extension (DESIGN.md): top three
 #                                       division contributions to the midpoint
-#                                       within-division term, 2025 and 2026 YTD only
+#                                       within-division term, 2025 and 2026 YTD only,
+#                                       with Eurostat COICOP18 division labels
+#   YTD rows of both files carry a seasonality_caveat note (DESIGN.md limitations).
+# Also reads: data/raw/<date>/eurostat_codelist_COICOP18_<version>.tsv
+#   (from build/00_pull_coicop18_codelist.R)
 #
 # Per weight year t (2016-2025), in percentage points:
 #   r_a,i = I25_a,i,Dec t / I25_a,i,Dec t-1 - 1;  s_a,i = weight / sum of 13 divisions
@@ -70,6 +74,21 @@ minr <- readRDS(file.path(raw_dir, rds_name("prc_hicp_minr")))
 iw   <- readRDS(file.path(raw_dir, rds_name("prc_hicp_iw")))
 cat("data:", raw_dir, "| Eurostat LAST UPDATE:",
     paste(unique(c(minr[["LAST UPDATE"]], iw[["LAST UPDATE"]])), collapse = " | "), "\n")
+
+# Division labels: Eurostat COICOP18 codelist (build/00_pull_coicop18_codelist.R)
+cl_f <- list.files(file.path(PROJ, "data/raw"), "^eurostat_codelist_COICOP18_.*\\.tsv$",
+                   recursive = TRUE, full.names = TRUE)
+stopifnot(length(cl_f) >= 1)
+cl_f <- sort(cl_f, decreasing = TRUE)[1]
+labels <- read_tsv(cl_f, col_names = c("code", "label"), col_types = "cc", progress = FALSE) |>
+  filter(code %in% DIVS)
+stopifnot(nrow(labels) == 13, setequal(labels$code, DIVS), !anyNA(labels$label))
+cat("division labels:", basename(cl_f), "\n")
+
+SEASONALITY_CAVEAT <- paste(
+  "Dec to Aug, not a full seasonal cycle; division-level YTD contributions can",
+  "reflect differing seasonal patterns between the areas (e.g. sales calendars)",
+  "and are not reported in the piece. The YTD aggregate appears only with this caveat.")
 
 ndec <- function(v) {
   v <- v[!is.na(v)]
@@ -236,7 +255,9 @@ out <- tab |> select(period, type, pi_XK_pp, pi_EA_pp, gap_pp,
                      comp_mid_pp, within_mid_pp, resid_pp,
                      comp_A_pp, within_A_pp, comp_B_pp, within_B_pp, interaction_pp,
                      ref_aa_XK_pp, ref_aa_EA_pp, ref_aa_gap_pp_not_decomposed,
-                     ea_u_flag, verdict, offset_by_other)
+                     ea_u_flag, verdict, offset_by_other) |>
+  mutate(seasonality_caveat = if_else(type == "ytd_excluded_from_averages",
+                                      SEASONALITY_CAVEAT, NA_character_))
 stopifnot(nrow(out) == length(YEARS) + 2)
 dir.create(file.path(PROJ, "output"), showWarnings = FALSE)
 out_f <- file.path(PROJ, "output/hicp_gap_decomposition.csv")
@@ -257,13 +278,20 @@ top3 <- bind_rows(lapply(seq_len(nrow(ext)), function(k) {
   dir <- sign(e$within_mid_pp)
   stopifnot(dir != 0)
   e$div_c[[1]] |> arrange(desc(dir * c_pp)) |> slice_head(n = 3) |>
-    transmute(period = e$period, rank = row_number(), division = code,
+    transmute(period = e$period, type = e$type, rank = row_number(), division = code,
               contribution_pp = c_pp, within_mid_pp = e$within_mid_pp,
               top3_combined_share = sum(c_pp) / e$within_mid_pp)
 }))
 stopifnot(nrow(top3) == 6)
+top3 <- top3 |>
+  left_join(labels |> rename(division = code, division_label = label), by = "division") |>
+  mutate(seasonality_caveat = if_else(type == "ytd_excluded_from_averages",
+                                      SEASONALITY_CAVEAT, NA_character_)) |>
+  select(period, rank, division, division_label, contribution_pp, within_mid_pp,
+         top3_combined_share, seasonality_caveat)
+stopifnot(nrow(top3) == 6, !anyNA(top3$division_label))
 top3_f <- file.path(PROJ, "output/hicp_gap_within_top3.csv")
-write_csv(top3 |> mutate(across(where(is.numeric), ~ round(.x, 6))), top3_f)
+write_csv(top3 |> mutate(across(where(is.numeric), ~ round(.x, 6))), top3_f, na = "")
 cat("\nwrote", top3_f, "\n\n")
 print(as.data.frame(top3 |> mutate(across(c(contribution_pp, within_mid_pp), ~ round(.x, 3)),
                                    top3_combined_share = round(top3_combined_share, 4))),

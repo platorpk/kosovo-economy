@@ -1,7 +1,7 @@
-period,rank,division,contribution_pp,within_mid_pp,top3_combined_share
-2025,1,CP01,1.46516,3.385323,0.873188
-2025,2,CP04,1.126243,3.385323,0.873188
-2025,3,CP11,0.36462,3.385323,0.873188
-"2026 YTD — cumulative Dec 2025→Aug 2026, 8 months, not annual; provisional",1,CP07,2.587673,2.922649,1.122877
-"2026 YTD — cumulative Dec 2025→Aug 2026, 8 months, not annual; provisional",2,CP03,0.556258,2.922649,1.122877
-"2026 YTD — cumulative Dec 2025→Aug 2026, 8 months, not annual; provisional",3,CP05,0.137846,2.922649,1.122877
+period,rank,division,division_label,contribution_pp,within_mid_pp,top3_combined_share,seasonality_caveat
+2025,1,CP01,Food and non-alcoholic beverages,1.46516,3.385323,0.873188,
+2025,2,CP04,"Housing, water, electricity, gas and other fuels",1.126243,3.385323,0.873188,
+2025,3,CP11,Restaurants and accommodation services,0.36462,3.385323,0.873188,
+"2026 YTD — cumulative Dec 2025→Aug 2026, 8 months, not annual; provisional",1,CP07,Transport,2.587673,2.922649,1.122877,"Dec to Aug, not a full seasonal cycle; division-level YTD contributions can reflect differing seasonal patterns between the areas (e.g. sales calendars) and are not reported in the piece. The YTD aggregate appears only with this caveat."
+"2026 YTD — cumulative Dec 2025→Aug 2026, 8 months, not annual; provisional",2,CP03,Clothing and footwear,0.556258,2.922649,1.122877,"Dec to Aug, not a full seasonal cycle; division-level YTD contributions can reflect differing seasonal patterns between the areas (e.g. sales calendars) and are not reported in the piece. The YTD aggregate appears only with this caveat."
+"2026 YTD — cumulative Dec 2025→Aug 2026, 8 months, not annual; provisional",3,CP05,"Furnishings, household equipment and routine household maintenance",0.137846,2.922649,1.122877,"Dec to Aug, not a full seasonal cycle; division-level YTD contributions can reflect differing seasonal patterns between the areas (e.g. sales calendars) and are not reported in the piece. The YTD aggregate appears only with this caveat."

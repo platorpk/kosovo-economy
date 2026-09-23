@@ -1,0 +1,932 @@
+TOTAL	Total
+CP01	Food and non-alcoholic beverages
+CP011	Food
+CP0111	Cereals and cereal products (ND)
+CP01111	Cereals (ND)
+CP011111	Wheat
+CP011112	Rice
+CP011113	Sorghum
+CP011114	Barley
+CP011115	Millet
+CP011116	Maize (corn)
+CP011117	Quinoa
+CP011118	Teff
+CP011119	Other cereals
+CP01112	Flour of cereals (ND)
+CP011121	Flour of wheat
+CP011122	Flour of rice
+CP011123	Flour of sorghum
+CP011124	Flour of barley
+CP011125	Flour of millet
+CP011126	Flour of maize or cornmeal
+CP011127	Flour of quinoa
+CP011128	Flour of teff
+CP011129	Other flours of cereals
+CP01113	Bread and bakery products (ND)
+CP011131	Bread
+CP011139	Other bakery products
+CP01114	Breakfast cereals (ND)
+CP011140	Breakfast cereals
+CP01115	Macaroni, noodles, couscous and similar pasta products (ND)
+CP011150	Macaroni, noodles, couscous and similar pasta products
+CP01119	Other milled cereal and grain products (ND)
+CP011190	Other milled cereal and grain products
+CP0112	Live animals, and meat and other parts of slaughtered land animals (ND)
+CP01121	Live land animals (ND)
+CP011211	Bovine animal, live
+CP011212	Pigs, live
+CP011213	Goats, lambs and sheep, live
+CP011214	Poultry, live
+CP011215	Hares and rabbits, live
+CP011219	Other live animals
+CP01122	Meat, fresh, chilled or frozen (ND)
+CP011221	Meat of bovine animals, fresh, chilled or frozen
+CP011222	Meat of pigs, fresh, chilled or frozen
+CP011223	Meat of goats, lambs and sheep, fresh, chilled or frozen
+CP011224	Meat of poultry, fresh, chilled or frozen
+CP011225	Meat of hares and rabbits, fresh, chilled or frozen
+CP011226	Meat of horses and other equines, fresh, chilled or frozen
+CP011227	Meat of camels and camelids, fresh, chilled or frozen
+CP011229	Other meat, fresh, chilled or frozen
+CP01123	Meat, dried, salted, in brine or smoked (ND)
+CP011231	Meat of bovine, salted, dried or smoked
+CP011232	Meat of pigs, cuts, salted, dried or smoked (bacon and ham)
+CP011239	Other meat, dried, salted or smoked
+CP01124	Offal, blood and other parts of slaughtered animals, fresh, chilled or frozen, dried, salted, in brine or smoked (ND)
+CP011240	Offal, blood and other parts of slaughtered animals fresh, chilled or frozen, dried, salted, in brine or smoked
+CP01125	Preparations of meat, offal, blood and other parts of slaughtered animals (ND)
+CP011251	Sausages and similar products of meat, offal or blood
+CP011252	Canned meat
+CP011253	Pâté, including liver pâté
+CP011259	Other preparations of meat, offal or blood n.e.c.
+CP0113	Fish and other seafood (ND)
+CP01131	Fish, live, fresh, chilled or frozen (ND)
+CP011311	Freshwater fish, live, fresh, chilled or frozen
+CP011312	Salmonoidae, live, fresh, chilled or frozen
+CP011313	Flatfish, live, fresh, chilled, or frozen
+CP011314	Gadiformes, live, fresh, chilled, or frozen
+CP011315	Tunas, skipjack or stripe-bellied bonito, live, fresh, chilled, or frozen
+CP011316	Other pelagic fish, live, fresh, chilled, or frozen
+CP011319	Other fish, live, fresh, chilled, or frozen
+CP01132	Fish, dried, salted, in brine or smoked (ND)
+CP011321	Salmonoidae, smoked
+CP011322	Gadiformes, dried, salted or in brine
+CP011329	Other fish, dried, salted, in brine, smoked
+CP01133	Fish preparations (ND)
+CP011331	Tunas, skipjack or stripe-bellied bonito, prepared or preserved
+CP011332	Other pelagic fish, prepared or preserved
+CP011333	Caviar and caviar substitutes
+CP011339	Other fish, prepared or preserved
+CP01134	Other seafood, live, fresh, chilled or frozen (ND)
+CP011341	Shrimps and prawns, live, fresh, chilled or frozen
+CP011342	Other crustaceans, live, fresh, chilled or frozen
+CP011343	Bivalves, live, fresh, chilled or frozen
+CP011344	Cephalopods, live, fresh, chilled or frozen
+CP011345	Other molluscs, live, fresh, chilled or frozen
+CP011349	Other aquatic invertebrates, live, fresh, chilled or frozen
+CP01135	Other seafood, dried, salted, in brine or smoked (ND)
+CP011351	Shrimps and prawns, dried, salted or in brine; smoked
+CP011352	Other crustaceans, dried, salted or in brine; smoked
+CP011353	Bivalves, dried, salted or in brine; smoked
+CP011354	Cephalopods, dried, salted or in brine; smoked
+CP011355	Other molluscs, dried, salted or in brine; smoked
+CP011359	Other aquatic invertebrates, dried, salted or in brine; smoked
+CP01136	Other seafood preparations (ND)
+CP011361	Shrimps and prawns, prepared or preserved
+CP011362	Other crustaceans, prepared or preserved
+CP011363	Bivalves, prepared or preserved
+CP011364	Cephalopods, prepared or preserved
+CP011365	Other molluscs, prepared or preserved
+CP011369	Other aquatic invertebrates, prepared or preserved
+CP01137	Livers, roes and other offal of fish and of other seafood in all forms (ND)
+CP011370	Livers, roes and other offal of fish and of other seafood in all forms
+CP0114	Milk, other dairy products and eggs (ND)
+CP01141	Raw and whole milk (ND)
+CP011411	Raw and whole milk of cattle
+CP011412	Raw and whole milk of buffaloes
+CP011413	Raw and whole milk of sheep and goats
+CP011414	Raw and whole milk of camels
+CP011419	Other raw and whole milk
+CP01142	Skimmed milk (ND)
+CP011420	Skimmed milk
+CP01143	Other milk and cream (ND)
+CP011431	Condensed or evaporated milk
+CP011432	Powdered milk
+CP011433	Cream
+CP011439	Other milk
+CP01144	Non-animal milk (ND)
+CP011441	Coconut milk
+CP011442	Almond milk
+CP011443	Soy milk
+CP011444	Rice milk
+CP011445	Oat milk
+CP011449	Other non-animal milk
+CP01145	Cheese (ND)
+CP011450	Cheese
+CP01146	Yoghurt and similar products (ND)
+CP011460	Yoghurt and similar products
+CP01147	Milk-based dessert and beverages (ND)
+CP011470	Milk-based dessert and beverages
+CP01148	Eggs (ND)
+CP011481	Eggs of hen and other birds, in shell, fresh
+CP011482	Eggs of other animals, in shell, fresh
+CP011489	Other egg products
+CP01149	Other dairy products (ND)
+CP011490	Other dairy products
+CP0115	Oils and fats (ND)
+CP01151	Vegetable oils (ND)
+CP011511	Sunflower-seed and safflower-seed oil
+CP011512	Palm oil
+CP011513	Olive oil
+CP011514	Soya bean oil
+CP011515	Groundnut oil
+CP011516	Coconut oil
+CP011517	Corn oil
+CP011519	Other edible vegetable oils n.e.c.
+CP01152	Butter and other oils and fats derived from milk (ND)
+CP011521	Butter
+CP011529	Other oils and fats derived from milk
+CP01153	Margarine and similar preparations (ND)
+CP011530	Margarine and similar preparations
+CP01159	Other animal oils and fats (ND)
+CP011591	Lard
+CP011592	Tallow
+CP011593	Edible oils and fats of fish
+CP011599	Other animal oils and fats n.e.c.
+CP0116	Fruits and nuts (ND)
+CP01161	Dates, figs and tropical fruits, fresh (ND)
+CP011611	Avocados, fresh
+CP011612	Bananas, fresh
+CP011613	Dates, fresh
+CP011614	Figs, fresh
+CP011615	Mangoes, guavas and mangosteens, fresh
+CP011616	Papayas, fresh
+CP011617	Pineapples, fresh
+CP011618	Coconuts, fresh
+CP011619	Other tropical fruits, fresh
+CP01162	Citrus fruits, fresh (ND)
+CP011621	Pomelos and grapefruits, fresh
+CP011622	Lemons and limes, fresh
+CP011623	Oranges, fresh
+CP011624	Tangerines, mandarins and clementines, fresh
+CP011629	Other citrus fruits, fresh
+CP01163	Stone fruits and pome fruits, fresh (ND)
+CP011631	Apples, fresh
+CP011632	Pears and quinces, fresh
+CP011633	Apricots, fresh
+CP011634	Cherries, fresh
+CP011635	Peaches and nectarines, fresh
+CP011636	Plums and sloes, fresh
+CP011639	Other stone fruits and pome fruits, fresh
+CP01164	Berries, fresh (ND)
+CP011641	Currants, fresh
+CP011642	Gooseberries, fresh
+CP011643	Raspberries, fresh
+CP011644	Blackberries, mulberries and loganberries, fresh
+CP011645	Strawberries, fresh
+CP011646	Blueberries, fresh
+CP011647	Cranberries, fresh
+CP011649	Other berries, fresh
+CP01165	Other fruits, fresh (ND)
+CP011651	Grapes, fresh
+CP011652	Kiwi fruits, fresh
+CP011653	Cantaloupes and other melons, fresh
+CP011654	Watermelons, fresh
+CP011655	Persimmons, fresh
+CP011656	Cashew apples, fresh
+CP011659	Other fruits or mixtures of fruit, fresh, n.e.c.
+CP01166	Fruits, frozen (ND)
+CP011660	Fruits, frozen
+CP01167	Fruits, dried and dehydrated (ND)
+CP011671	Raisins
+CP011672	Prunes
+CP011679	Other dried fruit
+CP01168	Nuts, in shell or shelled (ND)
+CP011681	Almonds, in shell or shelled
+CP011682	Cashew nuts, in shell or shelled
+CP011683	Chestnuts, in shell or shelled
+CP011684	Hazelnuts, in shell or shelled
+CP011685	Pistachios, in shell or shelled
+CP011686	Walnuts, in shell or shelled
+CP011687	Brazil nuts, in shell or shelled
+CP011688	Groundnuts, in shell or shelled
+CP011689	Other nuts, in shell or shelled
+CP01169	Fruits and nuts, ground, and in other preparations (ND)
+CP011691	Fruit and nuts flour
+CP011692	Canned fruit
+CP011693	Homogenized fruit preparations
+CP011694	Nuts and seeds roasted, salted or otherwise prepared
+CP011699	Other fruit and nuts preparations
+CP0117	Vegetables, tubers, plantains, cooking bananas and pulses (ND)
+CP01171	Leafy or stem vegetables, fresh or chilled (ND)
+CP011711	Asparagus, fresh or chilled
+CP011712	Cabbages, fresh or chilled
+CP011713	Cauliflowers and broccoli, fresh or chilled
+CP011714	Lettuce and chicory, fresh or chilled
+CP011715	Spinach, fresh or chilled
+CP011716	Artichokes, fresh or chilled
+CP011717	Cassava leaves, fresh or chilled
+CP011719	Other leafy or stem vegetables, fresh or chilled
+CP01172	Fruit-bearing vegetables, fresh or chilled (ND)
+CP011721	Chillies and peppers, fresh or chilled
+CP011722	Cucumbers and gherkins, fresh or chilled
+CP011723	Eggplants (aubergines), fresh or chilled
+CP011724	Tomatoes, fresh or chilled
+CP011725	Pumpkins, squash and gourds, fresh or chilled
+CP011726	Okra, fresh or chilled
+CP011729	Other fruit-bearing vegetables, fresh or chilled
+CP01173	Green leguminous vegetables, fresh or chilled (ND)
+CP011731	Beans, fresh or chilled
+CP011732	String beans, fresh or chilled
+CP011733	Peas, fresh or chilled
+CP011734	Broad beans and horse beans, fresh or chilled
+CP011735	Soya beans, fresh or chilled
+CP011739	Other green leguminous vegetables, fresh or chilled
+CP01174	Other vegetables, fresh or chilled (ND)
+CP011741	Carrots and turnips, fresh or chilled
+CP011742	Garlic, fresh or chilled
+CP011743	Onions and shallots, fresh or chilled
+CP011744	Leeks and other alliaceous vegetables, fresh or chilled
+CP011745	Mushrooms and truffles, fresh or chilled
+CP011746	Edible seaweeds and other aquatic plants, fresh or chilled
+CP011747	Olives, fresh or chilled
+CP011748	Green maize (green corn)
+CP011749	Other vegetable n.e.c., mixtures of vegetables, fresh or chilled
+CP01175	Tubers, plantains and cooking bananas, fresh or chilled (ND)
+CP011751	Potatoes
+CP011752	Sweet potatoes
+CP011753	Cassava (manioc, yuca)
+CP011754	Yams
+CP011755	Taro
+CP011756	Yautia
+CP011757	Plantains and cooking bananas
+CP011759	Other tubers
+CP01176	Pulses (ND)
+CP011761	Beans, dried
+CP011762	Broad beans and horse beans, dried
+CP011763	Chickpeas, dried
+CP011764	Lentils, dried
+CP011765	Peas, dried
+CP011766	Cow peas, dried
+CP011767	Pigeon peas, dried
+CP011768	Bambara beans, dried
+CP011769	Other pulses
+CP01177	Other vegetables, tubers, plantains and cooking bananas, dried and dehydrated (ND)
+CP011770	Other vegetables, tubers, plantains and cooking bananas, dried and dehydrated
+CP01178	Vegetables, tubers, plantains and cooking bananas, frozen (ND)
+CP011780	Vegetables, tubers, plantains and cooking bananas, frozen
+CP01179	Vegetables, tubers, plantains, cooking bananas and pulses, ground, and in other preparations (ND)
+CP011791	Flour of vegetables, pulses, tubers, plantains and cooking bananas
+CP011792	Canned vegetables
+CP011793	Preserved olives
+CP011794	Chipped potatoes, frozen
+CP011795	Tofu
+CP011796	Tempeh, soy meat and burgers
+CP011799	Other vegetables, pulses and tubers preserved or processed
+CP0118	Sugar, confectionery and desserts (ND)
+CP01181	Cane sugar and beet sugar (ND)
+CP011811	Cane sugar
+CP011812	Beet sugar
+CP01182	Other sugars and sugar substitutes (ND)
+CP011820	Other sugars and sugar substitutes
+CP01183	Jams, marmalades, fruit jellies, purées and pastes, and honey (ND)
+CP011831	Honey
+CP011839	Other jams, marmalades, fruit jellies, purées and pastes
+CP01184	Nut purées, nut butters and nut pastes (ND)
+CP011840	Nut purées, nut butters and nut pastes
+CP01185	Chocolate, cocoa and cocoa-based food products (ND)
+CP011851	Chocolate
+CP011852	Cocoa beans
+CP011853	Cocoa powder
+CP011859	Other cocoa-based foods and cocoa-based dessert preparations
+CP01186	Ice, ice cream and sorbets (ND)
+CP011860	Ice, ice cream and sorbets
+CP01189	Other sugar confectionery and desserts n.e.c. (ND)
+CP011891	Other sugar confectionery and desserts n.e.c. (not containing cocoa)
+CP011899	Precooked dishes based on pasta and cereals
+CP0119	Ready-made food and other food products (ND)
+CP01191	Ready-made food (ND)
+CP011911	Precooked dishes based on pasta and cereals
+CP011912	Precooked dishes based on meat and/or fish
+CP011913	Mixed salads and prepared dishes based on vegetables
+CP011914	Sandwiches, pizzas, quiches, meat or fish pies, frozen or not
+CP011915	Omelettes, crepes and other ready-made food based on eggs
+CP011916	Ready-made soups
+CP011919	Other prepared ready-made dishes and meals n.e.c.
+CP01192	Baby food (ND)
+CP011921	Baby formula
+CP011922	Baby rice cereals and flours for baby meals
+CP011923	Homogenized baby food
+CP011929	Other baby food
+CP01193	Salt, condiments and sauces (ND)
+CP011931	Salt
+CP011939	Other condiments and sauces
+CP01194	Spices, culinary herbs and seeds (ND)
+CP011940	Spices, culinary herbs and seeds
+CP01199	Other food products n.e.c. (ND)
+CP011990	Other food products n.e.c.
+CP012	Non-alcoholic beverages
+CP0121	Fruit and vegetable juices (ND)
+CP01210	Fruit and vegetable juices (ND)
+CP012100	Fruit and vegetable juices
+CP0122	Coffee and coffee substitutes (ND)
+CP01220	Coffee and coffee substitutes (ND)
+CP012201	Coffee
+CP012202	Coffee substitutes
+CP012209	Other coffee
+CP0123	Tea, maté and other plant-derived products for infusion (ND)
+CP01230	Tea, maté and other plant-derived products for infusion (ND)
+CP012301	Green tea, leaves
+CP012302	Black tea, leaves
+CP012303	Iced tea
+CP012304	Instant tea powder
+CP012305	Maté
+CP012309	Other tea products and plant-derived products for infusion
+CP0124	Cocoa drinks (ND)
+CP01240	Cocoa drinks (ND)
+CP012400	Cocoa drinks
+CP0125	Water (ND)
+CP01250	Water (ND)
+CP012500	Water
+CP0126	Soft drinks (ND)
+CP01260	Soft drinks (ND)
+CP012600	Soft drinks
+CP0129	Other non-alcoholic beverages (ND)
+CP01290	Other non-alcoholic beverages (ND)
+CP012900	Other non-alcoholic beverages
+CP013	Services for processing primary goods for food and non-alcoholic beverages
+CP0130	Services for processing primary goods for food and non-alcoholic beverages (S)
+CP01300	Services for processing primary goods for food and non-alcoholic beverages (S)
+CP013000	Services for processing primary goods for food and non-alcoholic beverages
+CP02	Alcoholic beverages, tobacco and narcotics
+CP021	Alcoholic beverages
+CP0211	Spirits and liquors (ND)
+CP02110	Spirits and liquors (ND)
+CP0212	Wine (ND)
+CP02121	Wine from grapes (ND)
+CP02122	Wine from other sources (ND)
+CP0213	Beer (ND)
+CP02130	Beer (ND)
+CP0219	Other alcoholic beverages (ND)
+CP02190	Other alcoholic beverages (ND)
+CP022	Alcohol production services
+CP0220	Alcohol production services (S)
+CP02200	Alcohol production services (S)
+CP023	Tobacco
+CP0230	Tobacco (ND)
+CP02301	Cigarettes (ND)
+CP02302	Cigars (ND)
+CP02309	Other tobacco products (ND)
+CP024	Narcotics
+CP0240	Narcotics (ND)
+CP02400	Narcotics (ND)
+CP03	Clothing and footwear
+CP031	Clothing
+CP0311	Clothing materials (SD)
+CP03110	Clothing materials (SD)
+CP0312	Garments (SD)
+CP03121	Garments for men or boys (SD)
+CP03122	Garments for women or girls (SD)
+CP03123	Garments for infants (under 2 years of age) (SD)
+CP03124	School uniforms (SD)
+CP0313	Other articles of clothing and clothing accessories (SD)
+CP03131	Other articles of clothing (SD)
+CP03132	Clothing accessories (SD)
+CP0314	Cleaning, repair, tailoring and hire of clothing (S)
+CP03141	Cleaning of clothing (S)
+CP03142	Repair, tailoring and hire of clothing (S)
+CP032	Footwear
+CP0321	Shoes and other footwear (SD)
+CP03211	Footwear for men (SD)
+CP03212	Footwear for women (SD)
+CP03213	Footwear for infants and children (SD)
+CP0322	Cleaning, repair and hire of footwear (S)
+CP03220	Cleaning, repair and hire of footwear (S)
+CP04	Housing, water, electricity, gas and other fuels
+CP041	Actual rental payments made for housing
+CP0411	Actual rental payments made by tenants for main residence (S)
+CP04110	Actual rental payments made by tenants for main residence (S)
+CP0412	Other actual rental payments (S)
+CP04121	Actual rental payments made by tenants for secondary residences (S)
+CP04122	Garage rental payments and other rental payments made by tenants (S)
+CP042	Imputed rental payments for housing
+CP0421	Imputed rental payments of owner-occupiers for their main residence (S)
+CP04210	Imputed rental payments of owner-occupiers for their main residence (S)
+CP0422	Other imputed rentals (S)
+CP04220	Other imputed rentals (S)
+CP043	Maintenance, repair and security of the dwelling
+CP0431	Security equipment and materials for dwelling maintenance and repair
+CP04311	Materials for the maintenance and repair of the dwelling (ND)
+CP04312	Security equipment (SD)
+CP0432	Services for the maintenance, repair and security of the dwelling (S)
+CP04320	Services for the maintenance, repair and security of the dwelling (S)
+CP044	Water supply and miscellaneous services relating to the dwelling
+CP0441	Water supply (ND)
+CP04411	Water supply delivered through network systems (ND)
+CP04412	Water supply delivered through other systems (ND)
+CP0442	Refuse collection (S)
+CP04420	Refuse collection (S)
+CP0443	Sewage collection (S)
+CP04431	Sewage collection through sewer systems (S)
+CP04432	Sewage collection through on-site sanitation systems (S)
+CP0444	Other services related to the dwelling (S)
+CP04441	Charges for maintenance of multi-occupied buildings (S)
+CP04449	Other services related to the dwelling n.e.c. (S)
+CP045	Electricity, gas and other fuels
+CP0451	Electricity (ND)
+CP04510	Electricity (ND)
+CP0452	Gas (ND)
+CP04521	Natural gas through networks (ND)
+CP04522	Liquefied hydrocarbons (ND)
+CP0453	Liquid fuels (ND)
+CP04530	Liquid fuels (ND)
+CP0454	Solid fuels (ND)
+CP04541	Coal, coal briquettes, peat and peat briquettes (ND)
+CP04542	Wood fuel, including pellets and briquettes (ND)
+CP04543	Charcoal (ND)
+CP04549	Other solid fuels (ND)
+CP0455	Other energy for heating and cooling (ND)
+CP04550	Other energy for heating and cooling (ND)
+CP05	Furnishings, household equipment and routine household maintenance
+CP051	Furniture, furnishings, and loose carpets
+CP0511	Furniture, furnishings and loose carpets (D)
+CP05111	Household furniture (D)
+CP05112	Garden and camping furniture (D)
+CP05113	Lighting equipment (D)
+CP05114	Furnishings, loose carpets and rugs (D)
+CP0512	Repair, installation and hire of furniture, furnishings and loose carpets (S)
+CP05120	Repair, installation and hire of furniture, furnishings and loose carpets (S)
+CP052	Household textiles
+CP0521	Household textiles (SD)
+CP05211	Furnishing fabrics and curtains (SD)
+CP05212	Bed linen and bedding (SD)
+CP05213	Table linen and bathroom linen (SD)
+CP05219	Other household textiles (SD)
+CP0522	Repair, hire and sewing services of household textiles (S)
+CP05220	Repair, hire and sewing services of household textiles (S)
+CP053	Household appliances
+CP0531	Major electric and other household appliances (D)
+CP05311	Major kitchen appliances (D)
+CP05312	Major laundry appliances (D)
+CP05313	Heaters and air conditioners (D)
+CP05314	Cleaning equipment (D)
+CP05319	Other major household appliances (D)
+CP0532	Small household appliances (SD)
+CP05321	Small appliances for the cooking and processing of food (SD)
+CP05322	Small appliances for the preparation of beverages (SD)
+CP05329	Other small household appliances (SD)
+CP0533	Repair, installation and hire of household appliances (S)
+CP05330	Repair, installation and hire of household appliances (S)
+CP054	Glassware, tableware and household utensils
+CP0540	Glassware, tableware and household utensils (SD)
+CP05401	Glassware, crystal ware, ceramic ware and china ware (SD)
+CP05402	Cutlery, flatware and silverware (SD)
+CP05403	Kitchen utensils and articles (SD)
+CP05404	Repair and hire of glassware, tableware and household utensils (S)
+CP055	Tools and equipment for house and garden
+CP0551	Motorized tools and equipment (D)
+CP05510	Motorized tools and equipment (D)
+CP0552	Non-motorized tools and miscellaneous accessories (SD)
+CP05521	Non-motorized tools (SD)
+CP05522	Miscellaneous accessories (SD)
+CP0553	Repair and hire of motorized and non-motorized tools and equipment (S)
+CP05530	Repair and hire of motorized and non-motorized tools and equipment (S)
+CP056	Goods and services for routine household maintenance
+CP0561	Non-durable household goods (ND)
+CP05611	Household cleaning and maintenance products (ND)
+CP05619	Other non-durable household goods (ND)
+CP0562	Domestic services and household services (S)
+CP05621	Domestic services provided by paid staff (S)
+CP05629	Other household services (S)
+CP06	Health
+CP061	Medicines and health products
+CP0611	Medicines (ND)
+CP06111	Medicines, vaccines and other pharmaceutical preparations (ND)
+CP06112	Herbal medicines and homeopathic products (ND)
+CP0612	Medical products (ND)
+CP06121	Medical diagnostic products (ND)
+CP06122	Preventive and protective devices (ND)
+CP06123	Treatment devices for personal use (ND)
+CP0613	Assistive products (D)
+CP06131	Assistive products for vision (D)
+CP06132	Assistive products for hearing and communication (D)
+CP06133	Assistive products for mobility and daily living (D)
+CP0614	Repair, rental and maintenance of medical and assistive products (S)
+CP06140	Repair, rental and maintenance of medical and assistive products (S)
+CP062	Outpatient care services
+CP0621	Preventive care services (S)
+CP06211	Immunization services (S)
+CP06219	Other preventive care services (S)
+CP0622	Outpatient dental services (S)
+CP06221	Dental preventive services (S)
+CP06229	Other outpatient dental services (S)
+CP0623	Other outpatient care services (S)
+CP06231	Outpatient curative and rehabilitative services (S)
+CP06232	Outpatient long-term care services (S)
+CP063	Inpatient care services
+CP0631	Inpatient curative and rehabilitative services (S)
+CP06310	Inpatient curative and rehabilitative services (S)
+CP0632	Inpatient long-term care services (S)
+CP06320	Inpatient long-term care services (S)
+CP064	Other health services
+CP0641	Diagnostic imaging services and medical laboratory services (S)
+CP06410	Diagnostic imaging services and medical laboratory services (S)
+CP0642	Patient emergency transportation and emergency rescue services (S)
+CP06420	Patient emergency transportation and emergency rescue services (S)
+CP07	Transport
+CP071	Purchase of vehicles
+CP0711	Motor cars (D)
+CP07111	New motor cars (D)
+CP07112	Second-hand motor cars (D)
+CP0712	Motorcycles (D)
+CP07120	Motorcycles (D)
+CP0713	Bicycles (D)
+CP07130	Bicycles (D)
+CP0714	Animal-drawn vehicles (D)
+CP07140	Animal-drawn vehicles (D)
+CP072	Operation of personal transport equipment
+CP0721	Parts and accessories for personal transport equipment (SD)
+CP07211	Tyres (SD)
+CP07212	Parts for personal transport equipment (SD)
+CP07213	Accessories for personal transport equipment (SD)
+CP0722	Fuels and lubricants for personal transport equipment (ND)
+CP07221	Diesel (ND)
+CP07222	Petrol (ND)
+CP07223	Other fuels for personal transport equipment (ND)
+CP07224	Lubricants (ND)
+CP0723	Maintenance and repair of personal transport equipment (S)
+CP07230	Maintenance and repair of personal transport equipment (S)
+CP0724	Other services related to personal transport equipment (S)
+CP07241	Parking services (S)
+CP07242	Toll facilities (S)
+CP07243	Driving lessons, tests, licences and roadworthiness tests (S)
+CP07244	Hire of personal transport equipment without driver (S)
+CP073	Passenger transport services
+CP0731	Passenger transport by railway (S)
+CP07311	Passenger transport by train (S)
+CP07312	Passenger transport by rapid transit and tram (S)
+CP0732	Passenger transport by road (S)
+CP07321	Passenger transport by bus and coach (S)
+CP07322	Passenger transport by taxi and hired vehicle with driver (S)
+CP07323	Passenger transport for students to and from school (S)
+CP07329	Other passenger transport by road (S)
+CP0733	Passenger transport by air (S)
+CP07331	Passenger transport by air, domestic (S)
+CP07332	Passenger transport by air, international (S)
+CP0734	Passenger transport by sea and inland waterway (S)
+CP07340	Passenger transport by sea and inland waterway (S)
+CP0735	Combined passenger transport (S)
+CP07350	Combined passenger transport (S)
+CP0736	Other passenger transport services (S)
+CP07360	Other passenger transport services (S)
+CP074	Transport services for goods
+CP0741	Postal and courier services (S)
+CP07411	Letter handling services (S)
+CP07412	Courier and parcel delivery services (S)
+CP0749	Other transport of goods (S)
+CP07491	Removal and storage services (S)
+CP07492	Delivery of goods (S)
+CP08	Information and communication
+CP081	Information and communication equipment
+CP0811	Fixed telephone equipment (D)
+CP08110	Fixed telephone equipment (D)
+CP0812	Mobile telephone equipment (D)
+CP08120	Mobile telephone equipment (D)
+CP0813	Information processing equipment (D)
+CP08131	Computers, laptops and tablets (D)
+CP08132	Peripheral equipment and its consumable components (D)
+CP0814	Equipment for the reception, recording and reproduction of sound and vision (D)
+CP08140	Equipment for the reception, recording and reproduction of sound and vision (D)
+CP0815	Unrecorded recording media (SD)
+CP08150	Unrecorded recording media (SD)
+CP0819	Other information and communication equipment and accessories (D)
+CP08191	Other information and communication equipment (D)
+CP08192	Other information and communication accessories (SD)
+CP082	Software, excluding games
+CP0820	Software, excluding games (S)
+CP08200	Software, excluding games (S)
+CP083	Information and communication services
+CP0831	Fixed communication services (S)
+CP08310	Fixed communication services (S)
+CP0832	Mobile communication services (S)
+CP08320	Mobile communication services (S)
+CP0833	Internet access provision services and online storage services (S)
+CP08330	Internet access provision services and online storage services (S)
+CP0834	Bundled telecommunication services (S)
+CP08340	Bundled telecommunication services (S)
+CP0835	Repair and rental of information and communication equipment (S)
+CP08350	Repair and rental of information and communication equipment (S)
+CP0839	Other information and communication services (S)
+CP08391	Television and radio licences and fees (S)
+CP08392	Subscriptions to audiovisual streaming services and rental of audiovisual content (S)
+CP08399	Other information and communication services n.e.c. (S)
+CP09	Recreation, sport and culture
+CP091	Recreational durables
+CP0911	Photographic and cinematographic equipment and optical instruments (D)
+CP09111	Cameras (D)
+CP09112	Accessories for photographic and cinematographic equipment (D)
+CP09113	Optical instruments (D)
+CP0912	Major recreational durables (D)
+CP09121	Camper vans, caravans and trailers (D)
+CP09122	Aeroplanes, microlight aircraft, gliders, hang gliders and hot-air balloons (D)
+CP09123	Boats, yachts, outboard motors and other water-sport equipment (D)
+CP09124	Horses, ponies, camels and dromedaries and accessories (D)
+CP09129	Other major recreational durables (D)
+CP092	Other recreational goods
+CP0921	Games, toys and hobby-related articles (SD)
+CP09211	Video game computers, consoles, game applications and software (SD)
+CP09212	Other games, toys and hobby-related articles (SD)
+CP09213	Celebration articles (ND)
+CP0922	Sporting, camping and open-air recreation equipment (SD)
+CP09221	Sporting equipment (SD)
+CP09222	Camping and open-air recreation equipment (SD)
+CP093	Garden products and pets
+CP0931	Garden products, plants and flowers (ND)
+CP09311	Garden products (ND)
+CP09312	Plants, seeds and flowers (ND)
+CP0932	Pets and pet products (D)
+CP09321	Pets (D)
+CP09322	Products for pets and other household animals (ND)
+CP094	Recreational services
+CP0941	Hire and repair of photographic and cinematographic equipment and optical instruments (S)
+CP09410	Hire and repair of photographic and cinematographic equipment and optical instruments (S)
+CP0942	Hire, maintenance and repair of major recreational durables (S)
+CP09421	Hire, maintenance and repair of camper vans and caravans (S)
+CP09422	Hire, maintenance and repair of other major recreational durables (S)
+CP0943	Hire and repair of games, toys and hobby-related articles (S)
+CP09431	Hire of game software and subscription to online games (S)
+CP09432	Hire and repair of other games, toys and hobby-related articles (S)
+CP0944	Hire and repair of sporting, camping and open-air recreational equipment (S)
+CP09440	Hire and repair of sporting, camping and open-air recreational equipment (S)
+CP0945	Veterinary and other services for pets (S)
+CP09450	Veterinary and other services for pets (S)
+CP0946	Recreational and sporting services (S)
+CP09461	Recreational and leisure services (S)
+CP09462	Services associated with the practice of sports (S)
+CP09463	Services associated with attendance at sporting events (S)
+CP0947	Games of chance (S)
+CP09470	Games of chance (S)
+CP095	Cultural goods
+CP0951	Musical instruments (D)
+CP09510	Musical instruments (D)
+CP0952	Audiovisual media (SD)
+CP09520	Audiovisual media (SD)
+CP096	Cultural services
+CP0961	Services provided by cinemas, theatres and concert venues (S)
+CP09610	Services provided by cinemas, theatres and concert venues (S)
+CP0962	Services provided by museums, libraries and cultural sites (S)
+CP09620	Services provided by museums, libraries and cultural sites (S)
+CP0963	Photographic services (S)
+CP09630	Photographic services (S)
+CP0969	Other cultural services (S)
+CP09690	Other cultural services (S)
+CP097	Newspapers, books and stationery
+CP0971	Books (SD)
+CP09711	Educational books and textbooks (SD)
+CP09719	Other books (SD)
+CP0972	Newspapers and periodicals (ND)
+CP09721	Newspapers (ND)
+CP09722	Magazines and periodicals (ND)
+CP0973	Miscellaneous printed matter (ND)
+CP09730	Miscellaneous printed matter (ND)
+CP0974	Stationery and drawing materials (ND)
+CP09740	Stationery and drawing materials (ND)
+CP098	Package holidays
+CP0980	Package holidays (S)
+CP09800	Package holidays (S)
+CP10	Education services
+CP101	Early childhood and primary education
+CP1010	Early childhood and primary education (S)
+CP10101	Early childhood education (S)
+CP10102	Primary education (S)
+CP102	Secondary education
+CP1020	Secondary education (S)
+CP10200	Secondary education (S)
+CP103	Post-secondary non-tertiary education
+CP1030	Post-secondary non-tertiary education (S)
+CP10300	Post-secondary non-tertiary education (S)
+CP104	Tertiary education
+CP1040	Tertiary education (S)
+CP10400	Tertiary education (S)
+CP105	Education not defined by level
+CP1050	Education not defined by level (S)
+CP10501	Tutoring (S)
+CP10509	Other education not defined by level (S)
+CP11	Restaurants and accommodation services
+CP111	Food and beverage serving services
+CP1111	Restaurants, cafés and the like (S)
+CP11111	Restaurants, cafés and the like – with full service (S)
+CP11112	Restaurants, cafés and the like – with limited service (S)
+CP1112	Canteens, cafeterias and refectories (S)
+CP11121	Canteens and cafeterias of universities, schools and kindergartens (S)
+CP11129	Other canteens, cafeterias and refectories (S)
+CP112	Accommodation services
+CP1120	Accommodation services (S)
+CP11201	Hotels, motels, inns and similar accommodation services (S)
+CP11202	Holiday centres, camping sites, youth hostels and similar accommodation services (S)
+CP11203	Accommodation services of boarding schools, universities and other educational establishments (S)
+CP11209	Other accommodation services (S)
+CP12	Insurance and financial services
+CP121	Insurance
+CP1211	Life and accident insurance (S)
+CP12110	Life and accident insurance (S)
+CP1212	Insurance connected with health (S)
+CP12120	Insurance connected with health (S)
+CP1213	Insurance connected with dwellings (S)
+CP12130	Insurance connected with dwellings (S)
+CP1214	Insurance connected with transport (S)
+CP12141	Personal transport insurance (S)
+CP12142	Travel insurance (S)
+CP1219	Other insurance (S)
+CP12190	Other insurance (S)
+CP122	Financial services
+CP1221	Financial intermediation services indirectly measured (S)
+CP12210	Financial intermediation services indirectly measured (S)
+CP1222	Explicit charges by deposit-taking corporations (S)
+CP12220	Explicit charges by deposit-taking corporations (S)
+CP1229	Other financial services (S)
+CP12291	Remittances fees (S)
+CP12299	Other financial services n.e.c. (S)
+CP13	Personal care, social protection and miscellaneous goods and services
+CP131	Personal care
+CP1311	Electric appliances for personal care (SD)
+CP13111	Purchase of electric appliances for personal care (SD)
+CP13112	Repair of electric appliances for personal care (S)
+CP1312	Other appliances, articles and products for personal care (ND)
+CP13120	Other appliances, articles and products for personal care (ND)
+CP1313	Hairdressing salons and personal grooming establishments (S)
+CP13131	Hairdressing (S)
+CP13132	Personal grooming treatments (S)
+CP132	Other personal effects
+CP1321	Jewellery and watches (D)
+CP13211	Purchase of jewellery and watches (D)
+CP13212	Repair and hire of jewellery, clocks and watches (S)
+CP1322	Devotional articles and articles for religious and ritual celebrations (SD)
+CP13220	Devotional articles and articles for religious and ritual celebrations (SD)
+CP1329	Other personal effects n.e.c. (SD)
+CP13291	Travel goods, baby articles and other personal effects n.e.c. (SD)
+CP13292	Repair and hire of other personal effects (S)
+CP133	Social protection
+CP1330	Social protection (S)
+CP13301	Childcare services (S)
+CP13302	Retirement homes for elderly persons and residences for disabled persons, not providing medical care (S)
+CP13303	Home care services for elderly and disabled (S)
+CP13309	Other social protection services (S)
+CP139	Other services
+CP1390	Other services (S)
+CP13901	Prostitution (S)
+CP13902	Religious services (S)
+CP13909	Other services n.e.c. (S)
+CP14	Individual consumption expenditure of Non-profit Institutions Serving Households
+CP141	Housing
+CP1410	Housing (S)
+CP14100	Housing (S)
+CP142	Health
+CP1421	Pharmaceutical products (ND)
+CP14210	Pharmaceutical products (ND)
+CP1422	Other medical products (ND)
+CP14220	Other medical products (ND)
+CP1423	Therapeutic appliances and equipment (D)
+CP14230	Therapeutic appliances and equipment (D)
+CP1424	Outpatient medical services (S)
+CP14240	Outpatient medical services (S)
+CP1425	Outpatient dental services (S)
+CP14250	Outpatient dental services (S)
+CP1426	Outpatient paramedical services (S)
+CP14260	Outpatient paramedical services (S)
+CP1427	Hospital services (S)
+CP14270	Hospital services (S)
+CP1428	Other health services (S)
+CP14280	Other health services (S)
+CP143	Recreation and culture
+CP1431	Recreational and sporting services (S)
+CP14310	Recreational and sporting services (S)
+CP1432	Cultural services (S)
+CP14320	Cultural services (S)
+CP144	Education
+CP1441	Pre-primary and primary education (S)
+CP14410	Pre-primary and primary education (S)
+CP1442	Secondary education (S)
+CP14420	Secondary education (S)
+CP1443	Post-secondary non-tertiary education (S)
+CP14430	Post-secondary non-tertiary education (S)
+CP1444	Tertiary education (S)
+CP14440	Tertiary education (S)
+CP1445	Education not defined by level (S)
+CP14450	Education not defined by level (S)
+CP1446	Other educational services (S)
+CP14460	Other educational services (S)
+CP145	Social protection
+CP1450	Social protection (S)
+CP14500	Social protection (S)
+CP146	Other services
+CP1461	Religion (S)
+CP14610	Religion (S)
+CP1462	Political parties, labour and professional organizations (S)
+CP14620	Political parties, labour and professional organizations (S)
+CP1463	Environmental protection (S)
+CP14630	Environmental protection (S)
+CP1464	Services n.e.c. (S)
+CP14640	Services n.e.c. (S)
+CP15	Individual consumption expenditure of general government
+CP151	Housing
+CP1510	Housing (S)
+CP15100	Housing (S)
+CP152	Health
+CP1521	Pharmaceutical products (ND)
+CP15210	Pharmaceutical products (ND)
+CP1522	Other medical products (ND)
+CP15220	Other medical products (ND)
+CP1523	Therapeutic appliances and equipment (D)
+CP15230	Therapeutic appliances and equipment (D)
+CP1524	Outpatient medical services (S)
+CP15240	Outpatient medical services (S)
+CP1525	Outpatient dental services (S)
+CP15250	Outpatient dental services (S)
+CP1526	Outpatient paramedical services (S)
+CP15260	Outpatient paramedical services (S)
+CP1527	Hospital services (S)
+CP15270	Hospital services (S)
+CP1528	Public health services (S)
+CP15280	Public health services (S)
+CP153	Recreation and culture
+CP1531	Recreational and sporting services (S)
+CP15310	Recreational and sporting services (S)
+CP1532	Cultural services (S)
+CP15320	Cultural services (S)
+CP154	Education
+CP1541	Pre-primary and primary education (S)
+CP15410	Pre-primary and primary education (S)
+CP1542	Secondary education (S)
+CP15420	Secondary education (S)
+CP1543	Post-secondary non-tertiary education (S)
+CP15430	Post-secondary non-tertiary education (S)
+CP1544	Tertiary education (S)
+CP15440	Tertiary education (S)
+CP1545	Education not defined by level (S)
+CP15450	Education not defined by level (S)
+CP1546	Subsidiary services to education (S)
+CP15460	Subsidiary services to education (S)
+CP155	Social protection
+CP1550	Social protection (S)
+CP15500	Social protection (S)
+GD	Goods (overall index excluding services)
+FOOD	Food including alcohol and tobacco
+FOOD_X_TBC	Food excluding tobacco
+FOOD_P	Processed food including alcohol and tobacco
+FOOD_P_X_TBC	Processed food excluding tobacco
+FOOD_P_X_ALC_TBC	Processed food excluding alcohol and tobacco
+FOOD_NP	Unprocessed food
+FOOD_S	Seasonal food
+FOOD_HOUS	Food and non-alcoholic beverages, and housing, water, electricity, gas and other fuels
+IGD	Industrial goods
+IGD_NNRG	Non-energy industrial goods
+IGD_NNRG_D	Non-energy industrial goods, durables only
+IGD_NNRG_SD	Non-energy industrial goods, semi-durables only
+IGD_NNRG_ND	Non-energy industrial goods, non-durables only
+NRG	Energy
+ELC_GAS	Electricity, gas, solid fuels and heat energy
+FUEL	Liquid fuels and fuels for personal transport equipment
+SERV_ESS	Essential services (excluding financial services)
+SERV	Services (overall index excluding goods)
+SERV_COM	Services related to communication
+SERV_HOUS	Services related to housing
+SERV_MSC	Services - miscellaneous
+SERV_REC	Services related to recreation, including repairs and personal care
+SERV_REC_X_HOA	Services related to recreation and personal care, excluding package holidays and accommodation
+SERV_REC_HOA	Services related to package holidays and accommodation
+SERV_TRA	Services related to transport
+NRG_FOOD_NP	Energy and unprocessed food
+NRG_FOOD_S	Energy and seasonal food
+EDUC_HLTH_SPR	Education, health and social protection
+FROOPP	Frequent out-of-pocket purchases
+TOT_X_FOOD_S	Overall index excluding seasonal food
+TOT_X_ALC_TBC	Overall index excluding alcohol and tobacco
+TOT_X_TBC	Overall index excluding tobacco
+TOT_X_NRG	Overall index excluding energy
+TOT_X_NRG_FOOD	Overall index excluding energy, food, alcohol and tobacco
+TOT_X_NRG_FOOD_NP	Overall index excluding energy and unprocessed food
+TOT_X_NRG_FOOD_S	Overall index excluding energy and seasonal food
+TOT_X_FUEL	Overall index excluding liquid fuels and fuels for personal transport equipment
+TOT_X_HOUS	Overall index excluding housing, water, electricity, gas and other fuels
+TOT_X_EDUC_HLTH_SPR	Overall index excluding education, health and social protection
+TOT_X_FROOPP	Overall index excluding frequent out-of-pocket purchases
+AP	Administered prices
+AP_NRG	Administered prices - energy
+AP_NNRG	Administered prices - non-energy
+AP_X_NRG	Administered prices excluding energy
+AP_X_NRG_FOOD	Administered prices excluding energy and food
+AP_NRG_FOOD	Administered prices - energy and food
+APF	Fully administered prices
+APM	Mainly administered prices
+TOT_X_AP	Overall index excluding administered prices
+TOT_X_APF	Overall index excluding fully administered prices
+TOT_X_APM	Overall index excluding mainly administered prices
+EQ_SOUND	Equipment for the reception, recording and reproduction of sound (including earphones)
+CI_TH_CO	Cinemas, theatres, concerts (excluding services of musicians, clowns, performers for private entertainments)
+PERF_PHOT	Services of musicians, clowns, performers for private entertainers, and photographers
+FCEH	Final consumption expenditure of households
+HFMCE	Household Financial Monetary Consumption Expenditure
+INC	Income in kind (such as free food for employees in agriculture, and other own final consumption that does not involve monetary transactions)
+PEN	Administrative charges of private pension funds and the like
+UNK	Unknown
