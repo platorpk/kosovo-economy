@@ -1,0 +1,3 @@
+# Eurostat bulk downloads: prc_hicp_minr exceeds GitHub's 100 MB limit.
+# Regenerate with verify/01_coverage.R. The filtered XK+EA .rds files are kept.
+data/raw/*/eurostat_*_bulk.csv.gz
