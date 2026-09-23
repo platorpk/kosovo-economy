@@ -88,11 +88,21 @@ It mixes price differences for the same goods with differences in what each
 area's basket holds inside a division; division-level data cannot separate the
 two.
 
-**Pre-registered dominance rule:** the piece may state that one term dominates
-only if it does so under **both** ordered variants. Otherwise it reports the
-range across A and B. This applies at the level of the statement: year-level
-statements use that year's terms, window statements use the window averages.
-Operational definition of "dominates": |term| > |other term| within the variant.
+**Pre-registered dominance rule:** a term (composition or within-division)
+dominates only if, under **both** ordered variants A and B:
+- it has the same sign as the gap, **and**
+- |term| exceeds |other term| by more than 0.05 pp (the gate threshold).
+
+Otherwise:
+- if the two terms have opposite signs, they are reported as **offsetting**;
+- if |composition| and |within-division| differ by 0.05 pp or less, the result
+  is reported as a **tie**;
+- in any other case the piece reports the range across A and B and makes no
+  dominance statement.
+
+Year-level statements apply the rule to that year's terms. **Window statements
+apply the rule to the window averages of variant A and of variant B
+separately**, never to a count of years in which a term dominates.
 
 **Aggregation over years:** the window figure is the arithmetic mean of the
 yearly terms, in percentage points, so the parts still add up (mean gap = mean
