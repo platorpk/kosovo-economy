@@ -261,6 +261,20 @@ toc_lu <- read_tsv(file.path(toc_dirs[1], "eurostat_catalogue_toc_en.txt"),
 toc_date <- basename(toc_dirs[1])
 stopifnot(nrow(toc_lu) == 2, all(toc_lu$last_update == format(vintage_date, "%d.%m.%Y")))
 
+# Documents consulted in verification but not redistributed (gitignored locally,
+# never in the public history): source URLs read from verify/02_peers.R, the
+# script that downloaded them, so the citation matches what was fetched
+peers_src <- readLines(file.path(PROJ, "verify/02_peers.R"), warn = FALSE, encoding = "UTF-8")
+src_url <- function(nm) {
+  u <- str_match(peers_src, sprintf('^\\s*%s\\s*=\\s*"([^"]+)"', gsub(".", "\\.", nm, fixed = TRUE)))[, 2]
+  u <- u[!is.na(u)]
+  stopifnot(length(u) == 1, grepl("^https://", u))
+  u
+}
+url_qa   <- src_url("eurostat_HICP_improvements_QA_2026_EN.pdf")
+url_bhas <- src_url("bhas_esms_PRI00_cpi_EN.htm")
+stopifnot(grepl("^https://ec\\.europa\\.eu/eurostat/", url_qa), grepl("^https://bhas\\.gov\\.ba/", url_bhas))
+
 within_yrs <- F$verdict_years[["within-division"]]
 range_yrs  <- F$verdict_years[["range"]]
 stopifnot(setequal(c(within_yrs, range_yrs), YEARS))        # no other verdict occurs
@@ -331,6 +345,12 @@ sprintf(paste("- **Kosova's %d weights** in the decomposition. The Kosova index 
   F$xk_weight_years[1], F$xk_index_first, F$xk_weight_years[1] - 1),
 "- **Eurostat's published rates as inputs.** Rates are derived from the index levels; the",
 "  published rates serve only as checks.",
+"",
+"Consulted during verification (`verify/02_peers.R`), cited by URL and not redistributed here:",
+"",
+sprintf("- Eurostat, *HICP improvements - Questions and Answers - 2026* (PDF): <%s>", url_qa),
+sprintf(paste("- Agency for Statistics of Bosnia and Herzegovina (BHAS), ESMS metadata page for the monthly",
+  "consumer price index (PRI00): <%s>"), url_bhas),
 "")
 
 add(
