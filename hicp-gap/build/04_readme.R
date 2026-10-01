@@ -671,6 +671,9 @@ sq(sprintf(paste("- **%d year to date.** It is cumulative from December %d to %s
 "",
 "---",
 "",
+paste("Design, decisions and verification by the author; code written with AI assistance (Claude",
+"Code). Two independent cold-context reviews were run before publication."),
+"",
 "Data: Eurostat (`prc_hicp_minr`, `prc_hicp_iw`, COICOP 2018 codelist). Analysis: Plator Krasniqi.")
 
 n_blank <- sum(L == "")

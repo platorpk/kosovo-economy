@@ -230,4 +230,6 @@ record of the vintage used here.
 
 ---
 
+Design, decisions and verification by the author; code written with AI assistance (Claude Code). Two independent cold-context reviews were run before publication.
+
 Data: Eurostat (`prc_hicp_minr`, `prc_hicp_iw`, COICOP 2018 codelist). Analysis: Plator Krasniqi.
