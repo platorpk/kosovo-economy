@@ -25,6 +25,10 @@
 # published decimals:
 #   index ratio L/B with both rounded to +-h:  |error| <= h (B + L) / (B (B - h))
 #   share s = w / W with w rounded to +-hw:     |error| <= hw (1 + 13 s) / (W - 13 hw)
+#     hw is taken per geo-year, from the significant decimals of all item weights of
+#     that geo-year (DECISIONS.md C3). XK 2021-2022 item weights carry no nonzero
+#     second decimal, so hw = 0.05 there. The first runs used one hw per geo
+#     (0.005 everywhere) and passed.
 #   (a) bound = TOTAL ratio error + sum_i s_i * ratio error_i + sum_i share error_i * |x_i - 1|
 #       (the share term uses |x_i - 1| because shares sum to exactly 1)
 #   (b) bound = half a unit of RCH_A's published decimals + TOTAL ratio error
@@ -85,15 +89,20 @@ w <- iw |>
   filter(coicop18 %in% DIVS, as.integer(time) %in% YEARS) |>
   transmute(geo, year = as.integer(time), code = coicop18, w = values)
 stopifnot(nrow(w) == length(GEOS) * length(YEARS) * 13, !anyNA(w$w))
-w_dec <- w |> group_by(geo) |> summarise(decimals = ndec(w), .groups = "drop") |>
+# Precision per geo-year, from all item weights of that geo-year (the 13 division
+# weights alone could end in 0 by chance)
+w_dec <- iw |> filter(geo %in% GEOS, as.integer(time) %in% YEARS) |>
+  group_by(geo, year = as.integer(time)) |>
+  summarise(n_items = n(), decimals = ndec(values), .groups = "drop") |>
   mutate(hw = 0.5 * 10^-decimals)
-cat("\nweight decimals (published, division weights 2016-2025):\n")
+stopifnot(nrow(w_dec) == length(GEOS) * length(YEARS))
+cat("\nweight decimals (published, all item weights, per geo-year 2016-2025):\n")
 print(as.data.frame(w_dec), row.names = FALSE)
-w <- w |> left_join(w_dec |> select(geo, hw), by = "geo") |>
+w <- w |> left_join(w_dec |> select(geo, year, hw), by = c("geo", "year")) |>
   group_by(geo, year) |>
   mutate(W = sum(w), s = w / W, s_err = hw * (1 + 13 * s) / (W - 13 * hw)) |>
   ungroup()
-stopifnot(all(abs(tapply(w$s, paste(w$geo, w$year), sum) - 1) < 1e-12))
+stopifnot(!anyNA(w$hw), all(abs(tapply(w$s, paste(w$geo, w$year), sum) - 1) < 1e-12))
 
 # Month m of weight year t against December of t-1, per geo x unit x code
 rel_dec <- function(u) {

@@ -73,6 +73,17 @@ stopifnot(nrow(t25) == 3, e$verdict == "within-division")
 divs <- iw |> filter(grepl("^CP\\d{2}$", coicop18))
 w_sum <- divs |> group_by(geo, time) |> summarise(s = sum(values), .groups = "drop")
 w_dec <- max(nchar(sub("^[^.]*\\.?", "", format(divs$values, scientific = FALSE, drop0trailing = TRUE))))
+# Precision per geo-year, from all item weights of that geo-year (DECISIONS.md C3)
+sig_dec <- function(v) {
+  v <- v[!is.na(v)]
+  for (k in 0:6) if (all(abs(round(v, k) - v) < 1e-9)) return(k)
+  stop("more than 6 decimals")
+}
+w_dec_gy <- iw |> group_by(geo, year = as.integer(time)) |>
+  summarise(dec = sig_dec(values), .groups = "drop")
+w_low <- w_dec_gy |> filter(dec < w_dec)
+stopifnot(max(w_dec_gy$dec) == w_dec, n_distinct(w_low$dec) == 1,
+          all(w_low$geo == "XK"), identical(w_low$year, 2021:2022))   # verify/followup_report.md
 idx_div <- minr |> filter(unit == "I25", grepl("^CP\\d{2}$", coicop18))
 uf <- idx_div |> filter(geo == "EA", OBS_FLAG %in% "u")
 uf_dec <- uf |> filter(substr(time, 6, 7) == "12") |> distinct(coicop18, time)
@@ -91,6 +102,9 @@ F <- list(
   w_sum_max_dev    = max(abs(w_sum$s - 1000)),
   w_decimals       = w_dec,
   w_round_bound    = 13 * 0.5 * 10^-w_dec,
+  w_low_years_xk   = w_low$year,
+  w_low_decimals   = unique(w_low$dec),
+  w_low_round_bound = 13 * 0.5 * 10^-unique(w_low$dec),
   gate_pp          = GATE_PP,
   max_abs_resid    = max(abs(yr$resid_pp)),
   u_first          = min(uf$time), u_last = max(uf$time),
@@ -184,10 +198,13 @@ sprintf(paste("1. **`verify/01_coverage.R`** — pulls both tables in bulk with 
 "JSON API errors on `prc_hicp_minr`), filters to `XK` and `EA`, and saves the result as `.rds`.",
 "Guards: Kosova weights exist for %d–%d and euro-area weights for %d–%d, with all %d divisions",
 "in every year, and the division weights sum to 1,000 within publication rounding (weights",
-"carry %d decimals, so %d rounded weights can miss 1,000 by up to %s; the largest miss is %s).",
+"are published to %d decimals, but Kosova's %s item weights carry no nonzero second decimal,",
+"so they are effectively %d-decimal; %d rounded weights can therefore miss 1,000 by up to %s,",
+"or %s in those years; the largest miss is %s).",
 "Division indices run from %s for Kosova and %s for the euro area to %s, with no missing months."),
   F$xk_weight_years[1], F$xk_weight_years[2], F$ea_weight_years[1], F$ea_weight_years[2], F$n_div,
-  F$w_decimals, F$n_div, u3(F$w_round_bound), u2(F$w_sum_max_dev),
+  F$w_decimals, year_runs(F$w_low_years_xk), F$w_low_decimals, F$n_div, u3(F$w_round_bound),
+  u2(F$w_low_round_bound), u2(F$w_sum_max_dev),
   F$xk_index_first, F$ea_index_first, F$index_last),
 "2. **`build/00_pull_coicop18_codelist.R`** — pulls the COICOP 2018 codelist for division labels.",
 sprintf(paste("3. **`build/01_gate.R`** — checks that the design closes on the published data before",
