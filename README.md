@@ -4,8 +4,7 @@
 **Contact:** plator.pk@gmail.com
 **Background:** M.Sc. Economics, Heidelberg University, completed December 2025,
 specialisation in causal inference and development economics. Currently based in
-Prishtina, working as Junior Advisor for Data Management, Monitoring and
-Reporting at GIZ Kosovo.
+Prishtina.
 
 Short data analyses on Kosova's economy, written for a general audience. Each
 piece lives in its own folder with its own README, its code, its data and its
