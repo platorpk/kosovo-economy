@@ -246,6 +246,17 @@ vintage_date <- as.Date(F$vintage, format = "%d/%m/%y")
 stopifnot(length(F$vintage) == 1, !is.na(vintage_date), format(vintage_date, "%d/%m/%y") == F$vintage)
 vintage_long <- sprintf("%d %s %s", as.integer(format(vintage_date, "%d")),
                         month.name[as.integer(format(vintage_date, "%m"))], format(vintage_date, "%Y"))
+# Latest saved Eurostat catalogue (verify/06_catalogue_check.R) must still list this
+# release for both tables; otherwise the vintage sentence would be stale. Stop if not.
+toc_dirs <- sort(list.dirs(file.path(PROJ, "data/raw"), recursive = FALSE), decreasing = TRUE)
+toc_dirs <- toc_dirs[file.exists(file.path(toc_dirs, "eurostat_catalogue_toc_en.txt"))]
+stopifnot(length(toc_dirs) >= 1)
+toc_lu <- read_tsv(file.path(toc_dirs[1], "eurostat_catalogue_toc_en.txt"),
+                   col_types = cols(.default = "c"), progress = FALSE) |>
+  filter(code %in% c("prc_hicp_minr", "prc_hicp_iw")) |>
+  distinct(code, last_update = `last update of data`)
+toc_date <- basename(toc_dirs[1])
+stopifnot(nrow(toc_lu) == 2, all(toc_lu$last_update == format(vintage_date, "%d.%m.%Y")))
 
 within_yrs <- F$verdict_years[["within-division"]]
 range_yrs  <- F$verdict_years[["range"]]
@@ -301,8 +312,10 @@ add(
 "  data structure definition) — division labels, used verbatim.",
 "",
 sprintf(paste("Geographies: `XK` (Kosova; the source labels it `Kosovo*`) and `EA`, the euro area",
-"with its membership as it changed over time. Vintage: Eurostat release of %s, downloaded %s."),
-  vintage_long, F$downloaded),
+"with its membership as it changed over time. Vintage: Eurostat release of %s, downloaded %s.",
+"Eurostat's catalogue, retrieved %s, still lists this release for both tables",
+"(`verify/06_catalogue_check.R`)."),
+  vintage_long, F$downloaded, toc_date),
 "",
 "Deliberately not used:",
 "",
