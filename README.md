@@ -42,6 +42,12 @@ The same standards apply to every piece here:
 Findings are quoted from each piece's own README; see the linked folder for the
 full result, method and limitations.
 
+## Licence
+
+Code in this repository is released under the MIT License (see [`LICENSE`](LICENSE)).
+The licence covers the code only. Data, metadata and documents from official and
+open-data sources remain under their providers' terms, which each piece's README states.
+
 ---
 
 *Country labels inside individual pieces follow whatever the data source
