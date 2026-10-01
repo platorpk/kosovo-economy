@@ -12,11 +12,16 @@
 #         output/hicp_gap_xk_weight_sources.csv   (build/02_decompose.R section 6,
 #           added after cold review 2026-10-01, not pre-registered)
 #         data/raw/<date>/eurostat_prc_hicp_minr_XK_EA.rds, ..._iw_XK_EA.rds
+#         data/raw/<date>/eurostat_prc_hicp_iw_bulk.csv.gz   (EA membership check
+#           only: EA item weights equal EA20 through 2025 and EA21 from 2026, i.e.
+#           Bulgaria joins in January 2026; gitignored, verify/01_coverage.R
+#           downloads it again if missing)
 # Writes: data/processed/figures.json   (post-review values under `post_review`)
 #         README.md
 #         output/linkedin_post.txt   (gitignored; not part of the public piece)
-# The post's 2026 sentence quotes the pre-registered 2026 YTD row (with its
-# seasonality caveat); no monthly 12-month-rate series is used.
+# Post v3 (2026-10-01): every claim in the post must hold under variant A and
+# variant B, and every figure in it is pre-registered (headline, reference
+# column, top-three share). The 2026 year-to-date row is not quoted in the post.
 #
 # Run from the piece root:  Rscript build/04_readme.R
 # ==============================================================================
@@ -49,6 +54,8 @@ year_runs <- function(y) {
               else sprintf("%d\u2013%d", min(r), max(r)), "")
   if (length(s) == 1) s else paste(paste(s[-length(s)], collapse = ", "), "and", s[length(s)])
 }
+and_list <- function(x) if (length(x) == 1) x else if (length(x) == 2) paste(x, collapse = " and ") else
+  paste0(paste(x[-length(x)], collapse = ", "), ", and ", x[length(x)])   # serial comma: names contain "and"
 
 # ------------------------------------------------------------------------------
 # Inputs
@@ -139,6 +146,41 @@ stopifnot(length(F$top3_share_2025) == 1, F$w_sum_max_dev <= F$w_round_bound + 1
 # --- Added after cold review (2026-10-01) ---------------------------------------
 PR_LABEL  <- "added after cold review (2026-10-01), not pre-registered"
 REF_LABEL <- "pre-registered reference column, quoted in the post after cold review"
+
+# EA membership: the year Bulgaria enters the EA comparator. EA's item weights
+# equal EA20's up to the year before and EA21's from that year (bulk prc_hicp_iw).
+iw_bulk_f <- file.path(dated[1], "eurostat_prc_hicp_iw_bulk.csv.gz")
+stopifnot(file.exists(iw_bulk_f))
+ea_cmp <- read_csv(iw_bulk_f, col_types = cols(.default = "c"), progress = FALSE) |>
+  filter(geo %in% c("EA", "EA20", "EA21"), grepl("^CP\\d{2}$", coicop18),
+         as.integer(TIME_PERIOD) >= max(YEARS) - 2) |>
+  select(geo, coicop18, year = TIME_PERIOD, OBS_VALUE) |>
+  tidyr::pivot_wider(names_from = geo, values_from = OBS_VALUE) |>
+  group_by(year = as.integer(year)) |>
+  summarise(n = n(), eq20 = all(EA == EA20), eq21 = all(EA == EA21), .groups = "drop")
+bg_year <- min(ea_cmp$year[ea_cmp$eq21 & !ea_cmp$eq20])
+print(as.data.frame(ea_cmp), row.names = FALSE)
+stopifnot(all(ea_cmp$n == 13), bg_year == max(YEARS) + 1,
+          all(ea_cmp$eq20[ea_cmp$year < bg_year]), all(!ea_cmp$eq21[ea_cmp$year < bg_year]),
+          all(ea_cmp$eq21[ea_cmp$year >= bg_year]))
+
+# Within-division contributions of the three named divisions under variants A and B
+# (post guard: the named set's share must hold under both orderings)
+r25 <- minr |> filter(unit == "I25", coicop18 %in% sprintf("CP%02d", 1:13),
+                      time %in% sprintf(c("%d-12", "%d-12"), c(EMPH - 1, EMPH))) |>
+  select(geo, code = coicop18, time, values) |>
+  tidyr::pivot_wider(names_from = time, values_from = values) |>
+  mutate(r = .data[[sprintf("%d-12", EMPH)]] / .data[[sprintf("%d-12", EMPH - 1)]] - 1) |>
+  select(geo, code, r) |>
+  left_join(iw |> filter(time == as.character(EMPH), grepl("^CP\\d{2}$", coicop18)) |>
+              group_by(geo) |> mutate(s = values / sum(values)) |> ungroup() |>
+              select(geo, code = coicop18, s), by = c("geo", "code")) |>
+  tidyr::pivot_wider(names_from = geo, values_from = c(s, r)) |>
+  mutate(cA = 100 * s_XK * (r_XK - r_EA), cB = 100 * s_EA * (r_XK - r_EA))
+stopifnot(nrow(r25) == 13, !anyNA(r25),
+          abs(sum(r25$cA) - e$within_A_pp) < 1e-5, abs(sum(r25$cB) - e$within_B_pp) < 1e-5)
+named_share <- c(A = sum(r25$cA[r25$code %in% t25$division]) / sum(r25$cA),
+                 B = sum(r25$cB[r25$code %in% t25$division]) / sum(r25$cB))
 food   <- cdiv |> filter(division == "CP01")
 rob_h  <- rob |> filter(headline)
 rob_o  <- rob |> filter(!headline)
@@ -155,17 +197,37 @@ F$post_review <- list(
   label = PR_LABEL,
   composition_by_division_2025 = list(
     label = PR_LABEL,
-    form = "deviation: (s_XK - s_EA) * (rbar_i - rbar), midpoint",
+    form = paste("deviation, centred at the share-midpoint-weighted mean of each form's rates:",
+                 "midpoint (s_XK - s_EA) * (rbar_i - rbar); A (s_XK - s_EA) * (r_EA,i - rbarA);",
+                 "B (s_XK - s_EA) * (r_XK,i - rbarB)"),
     basket_mean_rate_pp = unique(cdiv$basket_mean_rate_pp),
-    divisions = cdiv |> select(division, division_label, share_XK, share_EA, mean_rate_pp, comp_dev_pp),
+    basket_mean_rate_A_pp = unique(cdiv$basket_mean_rate_A_pp),
+    basket_mean_rate_B_pp = unique(cdiv$basket_mean_rate_B_pp),
+    divisions = cdiv |> select(division, division_label, share_XK, share_EA, mean_rate_pp,
+                               comp_dev_A_pp, comp_dev_pp, comp_dev_B_pp),
     food_share_XK = food$share_XK, food_share_EA = food$share_EA, food_comp_dev_pp = food$comp_dev_pp,
+    food_comp_dev_A_pp = food$comp_dev_A_pp, food_comp_dev_B_pp = food$comp_dev_B_pp,
     positive_sum_pp = sum(pmax(cdiv$comp_dev_pp, 0)), negative_sum_pp = sum(pmin(cdiv$comp_dev_pp, 0)),
+    sign_differs_A_B = cdiv$division[sign(round(cdiv$comp_dev_A_pp, 2)) * sign(round(cdiv$comp_dev_B_pp, 2)) < 0],
     xk_food_share_by_weight_year = food_s),
   weight_year_robustness_2025 = list(
     label = PR_LABEL, ea_weight_year = unique(rob$ea_weight_year),
     rows = rob |> select(xk_weight_year, comp_mid_pp, within_mid_pp, resid_pp,
                          comp_A_pp, within_A_pp, comp_B_pp, within_B_pp, verdict, headline),
+    xk_weight_years = range(rob$xk_weight_year),
+    all_within_division = all(rob$verdict == "within-division"),
+    comp_mid_range_other_years = range(rob_o$comp_mid_pp),
+    comp_A_range_other_years = range(rob_o$comp_A_pp),
+    comp_B_range_other_years = range(rob_o$comp_B_pp),
+    resid_range_other_years = range(rob_o$resid_pp),
     max_abs_resid_other_years = max(abs(rob_o$resid_pp))),
+  ea_membership = list(
+    label = PR_LABEL,
+    bulgaria_from = bg_year,
+    check = "EA item weights equal EA20 before that year and EA21 from it (bulk prc_hicp_iw)"),
+  post_guards = list(
+    label = "computed for the LinkedIn post guards only; not quoted",
+    top3_named_share_A = unname(named_share["A"]), top3_named_share_B = unname(named_share["B"])),
   annual_average_2025 = list(
     label = REF_LABEL, XK_pp = e$ref_aa_XK_pp, EA_pp = e$ref_aa_EA_pp,
     gap_pp = e$ref_aa_gap_pp_not_decomposed),
@@ -240,7 +302,9 @@ sprintf(paste("Geographies: `XK` (Kosova; the source labels it `Kosovo*`) and `E
 "- **Fixed-composition euro-area aggregates** (`EA19`, `EA20`, `EA21`). They project members",
 "  backwards to years before they used the euro; the piece compares against the euro area as",
 "  it actually was in each year.",
-sprintf("- **Kosova's %d weights.** The Kosova index starts in %s, so there is no December %d base to link from.",
+sprintf(paste("- **Kosova's %d weights** in the decomposition. The Kosova index starts in %s, so there is",
+  "no December %d base to link from. They appear only as one of the alternative baskets in the",
+  "weight-year sensitivity check under *Added after cold review*."),
   F$xk_weight_years[1], F$xk_index_first, F$xk_weight_years[1] - 1),
 "- **Eurostat's published rates as inputs.** Rates are derived from the index levels; the",
 "  published rates serve only as checks.",
@@ -346,16 +410,27 @@ win_row <- sprintf("| **Mean %d–%d** | %s | %s | %s | %s | %s | %s | %s to %s 
   s2(F$win$comp_mid_pp), s2(F$win$within_mid_pp), s2(F$win$resid_pp),
   s2(min(F$win$comp_A_pp, F$win$comp_B_pp)), s2(max(F$win$comp_A_pp, F$win$comp_B_pp)),
   win$verdict, s1(F$win$ref_aa_gap_pp_not_decomposed))
+# 2026 year-to-date row (DESIGN.md §2: a labelled row, excluded from all averages).
+# The README label is set here; the CSV period string is pre-registered output and unchanged.
+ytd_last  <- as.Date(paste0(F$index_last, "-01"))
+ytd_mon   <- sprintf("%s %s", month.abb[as.integer(format(ytd_last, "%m"))], format(ytd_last, "%Y"))
+ytd_label <- sprintf("%s, cumulative Dec %d → %s (latest), provisional", format(ytd_last, "%Y"), EMPH, ytd_mon)
+stopifnot(format(ytd_last, "%Y") == as.character(EMPH + 1),
+          grepl(sprintf("Dec %d→%s", EMPH, ytd_mon), ytd$period, fixed = TRUE))
+ytd_row <- sprintf("| %s | %s | %s | %s | %s | %s | %s | %s to %s | %s | — |",
+  ytd_label, u2(F$ytd$pi_XK_pp), u2(F$ytd$pi_EA_pp), s2(F$ytd$gap_pp), s2(F$ytd$comp_mid_pp),
+  s2(F$ytd$within_mid_pp), s2(F$ytd$resid_pp), s2(min(F$ytd$comp_A_pp, F$ytd$comp_B_pp)),
+  s2(max(F$ytd$comp_A_pp, F$ytd$comp_B_pp)), ytd$verdict)
 
 add(
 "## Key results",
 "",
 "Percentage points; December to December unless marked. Midpoint terms; the composition range",
-"is variant A to variant B.",
+sprintf("is variant A to variant B. The %d row is cumulative and is excluded from the mean.", EMPH + 1),
 "",
 "| Weight year | Kosova | Euro area | Gap | Composition | Within-division | Residual | Composition, A–B | Verdict | Annual-average gap (not decomposed) |",
 "|---|---|---|---|---|---|---|---|---|---|",
-yr_rows, win_row,
+yr_rows, win_row, ytd_row,
 "",
 sprintf(paste("- **%d:** gap %s pp, within-division %s pp, composition %s pp; within-division",
 "dominates under both variants. The three divisions with the largest within-division",
@@ -371,11 +446,12 @@ sprintf(paste("- **Window %d–%d:** mean gap %s pp. Under variant A the within-
 "verdict is therefore range, and no statement is made about which part is larger over the window."),
   F$years[1], F$years[2], s1(F$win$gap_pp), s2(F$win$within_A_pp), s2(F$win$comp_A_pp),
   s2(F$win$comp_B_pp), s2(F$win$within_B_pp)),
-sprintf(paste("- **2026 year to date (provisional):** from December 2025 to %s, cumulative, not",
-"annual, and excluded from all averages: Kosova %s%%, euro area %s%%, gap %s pp. This spans",
-"December to August, not a full seasonal cycle, so it appears only with that caveat, and its",
-"division-level split is not reported."),
-  F$index_last, u1(F$ytd$pi_XK_pp), u1(F$ytd$pi_EA_pp), s1(F$ytd$gap_pp)),
+sprintf(paste("- **%s:** not annual, and excluded from all averages: Kosova %s%%, euro area %s%%, gap",
+"%s pp. This spans December to %s, not a full seasonal cycle, so it appears only with that caveat,",
+"and its division-level split is not reported. From January %d the euro-area comparator includes",
+"Bulgaria."),
+  ytd_label, u1(F$ytd$pi_XK_pp), u1(F$ytd$pi_EA_pp), s1(F$ytd$gap_pp),
+  month.name[as.integer(format(ytd_last, "%m"))], F$post_review$ea_membership$bulgaria_from),
 "")
 
 # --- Added after cold review (2026-10-01) ---------------------------------------
@@ -386,21 +462,26 @@ PRw <- F$post_review$weight_sources
 p1  <- function(x) sprintf("%.1f%%", 100 * x)
 year_list <- function(y) if (length(y) == 1) as.character(y) else
   paste(paste(y[-length(y)], collapse = ", "), "and", y[length(y)])
-cdiv_rows <- vapply(seq_len(nrow(cdiv)), function(k) with(cdiv[k, ], sprintf("| %s | %s | %s | %s | %s |",
-  it(division_label), p1(share_XK), p1(share_EA), s2(mean_rate_pp), s2(comp_dev_pp))), "")
-rob_rows <- vapply(seq_len(nrow(rob)), function(k) with(rob[k, ], sprintf("| %d%s | %s | %s to %s | %s | %s | %s |",
-  xk_weight_year, if (headline) " (published)" else "", s2(comp_mid_pp),
-  s2(min(comp_A_pp, comp_B_pp)), s2(max(comp_A_pp, comp_B_pp)), s2(within_mid_pp), s2(resid_pp), verdict)), "")
-rob_all_within <- all(rob$verdict == "within-division")
-rob_summary <- if (rob_all_within) {
-  sprintf(paste("Within-division dominates under every Kosova weight year from %d to %d. With the",
-    "weights of %s, the composition term lies between %s and %s pp, against %s pp with the 2025 weights."),
-    min(rob$xk_weight_year), max(rob$xk_weight_year), year_runs(rob_o$xk_weight_year),
-    s2(min(rob_o$comp_mid_pp)), s2(max(rob_o$comp_mid_pp)), s2(e$comp_mid_pp))
-} else {
-  sprintf("The verdict differs from the published one with the Kosova weights of %s.",
-    year_list(rob$xk_weight_year[rob$verdict != e$verdict]))
-}
+cdiv_rows <- vapply(seq_len(nrow(cdiv)), function(k) with(cdiv[k, ], sprintf("| %s | %s | %s | %s | %s | %s |",
+  it(division_label), p1(share_XK), p1(share_EA), s2(comp_dev_A_pp), s2(comp_dev_pp), s2(comp_dev_B_pp))), "")
+sign_ab <- cdiv |> filter(division %in% PRc$sign_differs_A_B)
+rob_rows <- vapply(seq_len(nrow(rob)), function(k) with(rob[k, ],
+  sprintf("| %d%s | %s | %s | %s | %s | %s | %s | %s | %s |",
+  xk_weight_year, if (headline) " (published)" else "", s2(comp_mid_pp), s2(comp_A_pp), s2(comp_B_pp),
+  s2(within_mid_pp), s2(within_A_pp), s2(within_B_pp), s2(resid_pp), verdict)), "")
+# Summary sentences. The wording below holds only if these conditions do; on
+# failure stop and report rather than reword.
+stopifnot(PRr$all_within_division,                         # "dominates under every Kosova weight year"
+          all(rob_o$comp_A_pp < 0), all(rob_o$comp_B_pp > 0),   # sign statements per variant
+          nrow(sign_ab) >= 1)
+rob_summary <- sq(sprintf(paste("Within-division dominates under every Kosova weight year from %d to %d.",
+  "The composition term does not keep its sign: with the other weight years it lies between %s and %s pp",
+  "at the midpoint; under variant A it is negative with every weight year (%s to %s pp), and under",
+  "variant B it is positive with every weight year except %d (%s to %s pp)."),
+  PRr$xk_weight_years[1], PRr$xk_weight_years[2],
+  s2(PRr$comp_mid_range_other_years[1]), s2(PRr$comp_mid_range_other_years[2]),
+  s2(PRr$comp_A_range_other_years[1]), s2(PRr$comp_A_range_other_years[2]), EMPH,
+  s2(PRr$comp_B_range_other_years[1]), s2(PRr$comp_B_range_other_years[2])))
 
 add(
 "## Added after cold review (2026-10-01)",
@@ -411,50 +492,54 @@ paste("The items in this section were added after all results above had been see
 "",
 sprintf("### 2025 composition term by division — *%s*", PR_LABEL),
 "",
-sq(sprintf(paste("The 2025 midpoint composition term (%s pp) is the balance of division terms with",
-"opposite signs. Per division, in deviation form, the term is (s_XK − s_EA) · (r̄_i − r̄), where r̄_i is",
-"the mean of the two areas' December-to-December rates in division *i* and r̄ is the basket-weighted",
-"mean of those (%s%%). The %d terms add up exactly to the composition term; unlike the raw form",
-"(s_XK − s_EA) · r̄_i, they do not change if every rate shifts by the same amount. Food is %s of",
-"Kosova's basket against %s of the euro area's, a term of %s pp. The positive terms sum to %s pp and",
-"the negative terms to %s pp. The shares are Kosova's 2025 weights, whose source year is not",
+sq(sprintf(paste("The 2025 composition term is the balance of division terms with opposite signs. Per",
+"division, in deviation form, the midpoint term is (s_XK − s_EA) · (r̄_i − r̄), where r̄_i is the mean",
+"of the two areas' December-to-December rates in division *i* and r̄ is the mean of those, weighted by",
+"the average of the two areas' shares (%s%%). Variant A uses the euro-area rates in place of r̄_i,",
+"centred on their mean with the same weights (%s%%); variant B uses the Kosova rates (%s%%). Each",
+"column adds up exactly to its composition term (A %s, midpoint %s, B %s pp), and unlike the raw form",
+"(s_XK − s_EA) · rate it does not change if every rate shifts by the same amount; the choice of centre",
+"is a convention. The per-division terms depend on the ordering. Food is %s of Kosova's basket against",
+"%s of the euro area's; its term is %s pp under A, %s pp at the midpoint and %s pp under B. The terms of",
+"%s have opposite signs under A and B (at two decimals). At the midpoint the positive terms sum to %s pp",
+"and the negative terms to %s pp. The shares are Kosova's %d weights, whose source year is not",
 "documented (see Limitations)."),
-  s2(e$comp_mid_pp), u2(PRc$basket_mean_rate_pp), F$n_div, p1(PRc$food_share_XK), p1(PRc$food_share_EA),
-  s2(PRc$food_comp_dev_pp), s2(PRc$positive_sum_pp), s2(PRc$negative_sum_pp))),
+  u2(PRc$basket_mean_rate_pp), u2(PRc$basket_mean_rate_A_pp), u2(PRc$basket_mean_rate_B_pp),
+  s2(e$comp_A_pp), s2(e$comp_mid_pp), s2(e$comp_B_pp),
+  p1(PRc$food_share_XK), p1(PRc$food_share_EA),
+  s2(PRc$food_comp_dev_A_pp), s2(PRc$food_comp_dev_pp), s2(PRc$food_comp_dev_B_pp),
+  and_list(it(sign_ab$division_label)), s2(PRc$positive_sum_pp), s2(PRc$negative_sum_pp), EMPH)),
 "",
-"| Division | Kosova share | Euro-area share | Mean rate r̄_i (%) | Composition term (pp) |",
-"|---|---|---|---|---|",
+"| Division | Kosova share | Euro-area share | Variant A (pp) | Midpoint (pp) | Variant B (pp) |",
+"|---|---|---|---|---|---|",
 cdiv_rows,
 "",
-sprintf("### 2025 split with Kosova's %d–%d weights — *%s*", min(rob$xk_weight_year), max(rob$xk_weight_year), PR_LABEL),
+sprintf("### 2025 split with every Kosova weight year, %d–%d — *%s*", PRr$xk_weight_years[1],
+  PRr$xk_weight_years[2], PR_LABEL),
 "",
-sq(sprintf(paste("Eurostat's Kosova metadata gives no weight source year for %d (see Limitations), so",
-"the 2025 rates are split again with each Kosova weight year from %d to %d, keeping the euro area at",
-"its %d weights. Only the %d row is a valid decomposition: Kosova's published all-items index is",
-"compiled with its %d weights, so with any other weight year the parts no longer add up to the gap",
-"exactly, and the residual (its own column) reaches %s pp. The other rows are a sensitivity check.",
-"The verdict applies the pre-registered dominance rule to variants A and B."),
-  EMPH, min(rob$xk_weight_year), max(rob$xk_weight_year), PRr$ea_weight_year, EMPH, EMPH,
-  s2(rob_o$resid_pp[which.max(abs(rob_o$resid_pp))]))),
+sq(sprintf(paste("The %d rates are split again with every Kosova weight year Eurostat publishes, %d to %d,",
+"keeping the euro area at its %d weights. This tests how the split changes with an older or newer",
+"Kosova basket. It does not test the undocumented source year of the %d weights (see Limitations):",
+"gate (a) shows that Kosova's published all-items index is compiled with its %d weights, within %s pp",
+"in every month, so those are the weights it decomposes with, whatever national-accounts year they are",
+"based on. Only the %d row is a valid decomposition. With any other weight year the parts no longer add",
+"up to the gap exactly, and the residual (its own column) lies between %s and %s pp. The verdict",
+"applies the pre-registered dominance rule to variants A and B."),
+  EMPH, PRr$xk_weight_years[1], PRr$xk_weight_years[2], PRr$ea_weight_year, EMPH, EMPH, u2(F$gate_pp),
+  EMPH, s2(PRr$resid_range_other_years[1]), s2(PRr$resid_range_other_years[2]))),
 "",
-"| Kosova weight year | Composition | Composition, A–B | Within-division | Residual | Verdict |",
-"|---|---|---|---|---|---|",
+"| Kosova weight year | Composition, midpoint | Composition, A | Composition, B | Within-division, midpoint | Within-division, A | Within-division, B | Residual | Verdict |",
+"|---|---|---|---|---|---|---|---|---|",
 rob_rows,
 "",
 rob_summary,
 "",
-sprintf("### 2025 annual-average gap — *%s*", REF_LABEL),
+sprintf("### %d annual-average rates — *%s*", EMPH, REF_LABEL),
 "",
 sq(sprintf(paste("Eurostat's published annual-average rates for %d (`RCH_MV12MAVR`, December value)",
 "are %s%% for Kosova and %s%% for the euro area, a gap of %s pp, against %s pp December to",
 "December. This is the reference column of the table above and is not decomposed."),
   EMPH, u1(PRa$XK_pp), u1(PRa$EA_pp), s1(PRa$gap_pp), s1(e$gap_pp))),
-"",
-"### 2026",
-"",
-paste("The post also quotes the pre-registered 2026 year-to-date row (Key results), with its",
-"seasonality caveat. A planned addition of published monthly 12-month rates for 2026 was not",
-"built, because that row already covers 2026."),
 "")
 
 add(
@@ -487,8 +572,8 @@ add(
 sprintf("- `output/hicp_gap_within_top3.csv` — top three division contributions to the within-division term, %d and 2026 year to date (the latter not reported in prose, see Limitations).", EMPH),
 "- `output/hicp_gap_decomposition.png` — lead figure.",
 "- `output/hicp_gap_linkedin.png` — portrait version, 1200 × 1500.",
-sprintf("- `output/hicp_gap_2025_composition_by_division.csv` — %s: the 2025 midpoint composition term per division, deviation form.", PR_LABEL),
-sprintf("- `output/hicp_gap_2025_weight_year_robustness.csv` — %s: the 2025 split with each Kosova weight year %d–%d.", PR_LABEL, min(rob$xk_weight_year), max(rob$xk_weight_year)),
+sprintf("- `output/hicp_gap_2025_composition_by_division.csv` — %s: the %d composition term per division, deviation form, under variant A, the midpoint and variant B.", PR_LABEL, EMPH),
+sprintf("- `output/hicp_gap_2025_weight_year_robustness.csv` — %s: the %d split with every Kosova weight year %d–%d (midpoint, A, B, residual, verdict).", PR_LABEL, EMPH, min(rob$xk_weight_year), max(rob$xk_weight_year)),
 "- `output/hicp_gap_xk_weight_sources.csv` — weight source years as stated on Eurostat's Kosova metadata page, with the verbatim fragments.",
 "- `data/processed/figures.json` — every number used in this README; post-review values under `post_review`.",
 "- `DESIGN.md`, `HANDOFF.md` — the design as fixed before computation, and the verification record.",
@@ -506,7 +591,11 @@ sq(sprintf(paste("- **December to December is not the headline annual rate.** Th
 "(reference column) can have the opposite sign: it does in %s, and is zero in %s. Only December to",
 "December can be split exactly."),
   year_runs(F$sign_mismatch), year_runs(F$ref_zero_years))),
-"- **Comparator.** From 2023 the EA comparator includes Croatia.",
+sq(sprintf(paste("- **Comparator.** From 2023 the EA comparator includes Croatia. EA includes Bulgaria from",
+"January %d (EA item weights equal `EA20`'s up to %d and `EA21`'s from %d), which affects only the",
+"%d year-to-date row."),
+  F$post_review$ea_membership$bulgaria_from, F$post_review$ea_membership$bulgaria_from - 1,
+  F$post_review$ea_membership$bulgaria_from, EMPH + 1)),
 sq(sprintf(paste("- **Low-reliability flags.** Eurostat flags some euro-area division index values between",
 "%s and %s as low reliability (`u`). Of those, only %s is a December value, so it enters",
 "weight years %s. It is used as published, because it is the value inside Eurostat's own",
@@ -530,10 +619,11 @@ sq(sprintf(paste("- **Weight source years.** Eurostat's Kosova HICP metadata pag
   p1(food_s$share[food_s$year == EMPH]), EMPH, EMPH)),
 sq(sprintf(paste("- **Residual.** Up to %s pp in any year, from rounding in the published indices and",
 "weights. It is reported, not allocated."), u2(F$max_abs_resid))),
-"- **2026 year to date.** It spans December to August, not a full seasonal cycle. Division-level",
-"  year-to-date contributions can reflect differing seasonal patterns between the two areas (for",
-"  example, sales calendars) and are not reported. The year-to-date aggregate appears only with",
-"  this caveat.",
+sq(sprintf(paste("- **%d year to date.** It is cumulative from December %d to %s, provisional, and spans",
+"December to %s, not a full seasonal cycle. Division-level year-to-date contributions can reflect",
+"differing seasonal patterns between the two areas (for example, sales calendars) and are not",
+"reported. The year-to-date aggregate appears only with this caveat."),
+  EMPH + 1, EMPH, ytd_mon, month.name[as.integer(format(ytd_last, "%m"))])),
 "- **Vintage.** Eurostat revises HICP data; figures here are for the vintage stated above.",
 "",
 "---",
@@ -548,93 +638,70 @@ stopifnot(!any(grepl("\\S {2,}\\S", L[!in_code])))            # no stray space r
 kr  <- which(L == "## Key results"); pr <- which(L == "## Added after cold review (2026-10-01)")
 stopifnot(length(kr) == 1, length(pr) == 1, pr > kr)
 tbl <- L[kr:pr][grepl("^\\| (\\d{4}|\\*\\*Mean)", L[kr:pr])]          # Key results table only
-stopifnot(length(tbl) == length(YEARS) + 1,
+stopifnot(length(tbl) == length(YEARS) + 2,                         # years, mean, YTD row
+          sum(tbl == ytd_row) == 1,
           all(lengths(regmatches(tbl, gregexpr("\\|", tbl))) == 11))   # 10 columns per row
 writeLines(L, file.path(PROJ, "README.md"), useBytes = FALSE)
 
 # ------------------------------------------------------------------------------
 # LinkedIn post (not part of the public piece)
 # ------------------------------------------------------------------------------
-# v2 text (after cold review, 2026-10-01). Guards on the wording: each claim in the
-# post must follow from the computed terms.
+# v3 text (2026-10-01, after the second cold review). Guard rule: every claim in
+# the post must hold under variant A AND variant B. Every figure in the post is
+# pre-registered: the 2025 headline row, the reference column (published
+# RCH_MV12MAVR, December) and the top-three share. The A/B checks below are
+# guards only and print nothing into the post. On a failed guard, stop and
+# report; do not reword.
 
-# Short prose names for divisions: an explicit lookup, keyed by code. Source labels
+# Prose names for divisions: an explicit lookup, keyed by code. Source labels
 # stay verbatim in the README.
 POST_NAMES <- tribble(
-  ~division, ~short,        ~medium,
-  "CP01",    "food",        "food",
-  "CP04",    "housing",     "housing and energy",
-  "CP11",    "restaurants", "restaurants and accommodation")
-pname <- function(codes, col) {
+  ~division, ~name,
+  "CP01",    "food",
+  "CP04",    "housing and energy",
+  "CP11",    "restaurants and accommodation")
+pname <- function(codes) {
   miss <- setdiff(codes, POST_NAMES$division)
   if (length(miss)) stop("no post name for division(s): ", paste(miss, collapse = ", "))
-  POST_NAMES[[col]][match(codes, POST_NAMES$division)]
+  POST_NAMES$name[match(codes, POST_NAMES$division)]
 }
-and_list <- function(x) if (length(x) == 1) x else if (length(x) == 2) paste(x, collapse = " and ") else
-  paste0(paste(x[-length(x)], collapse = ", "), ", and ", x[length(x)])   # serial comma: names contain "and"
 
-# Sentence 1: annual-average gap (pre-registered reference column) and the
-# pre-registered 2026 YTD row, quoted with its seasonality caveat
-ytd_last  <- as.Date(paste0(F$index_last, "-01"))
-ytd_n     <- as.integer(format(ytd_last, "%m"))       # months since December of EMPH
-stopifnot(grepl(sprintf("Dec %d", EMPH), ytd$period), format(ytd_last, "%Y") == as.character(EMPH + 1),
-          grepl(sprintf("%d months", ytd_n), ytd$period),
-          PRa$gap_pp < e$gap_pp,                       # "on annual averages it was smaller"
-          PRa$gap_pp > 0, F$ytd$gap_pp > 0)            # "it hasn't closed"
+# "On annual averages, prices rose x% in Kosova against y% in the euro area":
+# the published December RCH_MV12MAVR values, read from the raw table, equal to
+# the pre-registered reference column and quoted exactly as published (1 decimal)
+aa_pub <- minr |> filter(unit == "RCH_MV12MAVR", coicop18 == "TOTAL", time == sprintf("%d-12", EMPH))
+aa_XK  <- aa_pub$values[aa_pub$geo == "XK"]
+aa_EA  <- aa_pub$values[aa_pub$geo == "EA"]
+stopifnot(nrow(aa_pub) == 2, length(aa_XK) == 1, length(aa_EA) == 1,
+          aa_XK == e$ref_aa_XK_pp, aa_EA == e$ref_aa_EA_pp,
+          aa_XK == PRa$XK_pp, aa_EA == PRa$EA_pp,
+          abs(round(aa_XK, 1) - aa_XK) < 1e-9, abs(round(aa_EA, 1) - aa_EA) < 1e-9)
 
-# Sentence 4: "nearly all of the gap is in the second part ... under both ways"
-stopifnot(e$verdict == "within-division", e$comp_mid_pp < 0,
-          sign(e$comp_A_pp) == sign(e$comp_B_pp), e$within_mid_pp > 0.9 * e$gap_pp)
+# "the second part accounts for more than the whole gap ... That holds under both
+# ways of computing the decomposition": within-division dominates under A and
+# under B (the §3 rule), exceeds the gap under A, B and the midpoint, and
+# composition is negative under A, B and the midpoint
+dom <- function(t, o) sign(t) == sign(e$gap_pp) & (abs(t) - abs(o) > GATE_PP)
+stopifnot(e$verdict == "within-division", e$gap_pp > 0,
+          dom(e$within_A_pp, e$comp_A_pp), dom(e$within_B_pp, e$comp_B_pp),
+          e$within_A_pp > e$gap_pp, e$within_B_pp > e$gap_pp, e$within_mid_pp > e$gap_pp,
+          e$comp_A_pp < 0, e$comp_B_pp < 0, e$comp_mid_pp < 0)
 
-# Sentence 5: food adds, the two largest negative deviation-form terms subtract
-neg2 <- cdiv |> arrange(comp_dev_pp) |> slice_head(n = 2)
-# "smaller shares for restaurants and housing": Kosova's 2025 share must be below the
-# euro area's for both named divisions. On failure stop and report; do not reword.
-NEG_EXPECTED <- c("CP11", "CP04")
-if (!identical(neg2$division, NEG_EXPECTED)) {
-  print(as.data.frame(neg2 |> select(division, share_XK, share_EA, comp_dev_pp)), row.names = FALSE)
-  stop("the two largest negative deviation-form terms are not ", paste(NEG_EXPECTED, collapse = ", "),
-       ". Stop and report.")
-}
-if (!all(neg2$share_XK < neg2$share_EA)) {
-  print(as.data.frame(neg2 |> select(division, share_XK, share_EA, comp_dev_pp)), row.names = FALSE)
-  stop("Kosova's 2025 share is not below the euro area's for every named subtracting division. Stop and report.")
-}
-stopifnot(food$comp_dev_pp > 0, food$share_XK > food$share_EA,
-          identical(cdiv$division[which.max(cdiv$comp_dev_pp)], "CP01"),    # food is the largest addition
-          all(neg2$comp_dev_pp < 0),
-          identical(sprintf("%.0f", 100 * food$share_XK), "32"),
-          identical(sprintf("%.0f", 100 * food$share_EA), "16"))
-neg2_sum <- sum(neg2$comp_dev_pp)
-
-# Sentence 6: the pre-registered top three and their combined share
+# "food, housing and energy, and restaurants and accommodation account for 87%":
+# the pre-registered top three and their combined share at the midpoint; the same
+# three divisions' share must lie within 85-90% under A and under B as well
+SHARE_BAND <- c(0.85, 0.90)
+in_band <- function(x) x >= SHARE_BAND[1] & x <= SHARE_BAND[2]
 stopifnot(identical(t25$rank, 1:3), all(t25$contribution_pp > 0),
           identical(t25$division, (top |> filter(period == as.character(EMPH)) |>
                                      arrange(desc(contribution_pp)))$division),
           abs(sum(t25$contribution_pp) / e$within_mid_pp - F$top3_share_2025) < 1e-5,
-          identical(pct(F$top3_share_2025), "87%"))
+          in_band(F$top3_share_2025), all(in_band(named_share)))
 
-# Sentence 7: the caveat, chosen by the weight-year robustness verdicts
-stopifnot(EMPH %in% PRw$undocumented_in_window, !any(rob_o$verdict == "composition"))
-# "+a–b" at 1 decimal; a single value when both ends round alike (both ends positive)
-rng1 <- function(x) {
-  stopifnot(all(x > 0))
-  v <- sprintf("%.1f", range(x))
-  paste0("+", if (v[1] == v[2]) v[1] else paste0(v[1], "–", v[2]))
-}
-holds <- all(rob_o$verdict == "within-division")
-if (holds) stopifnot(e$comp_mid_pp < 0,                                  # "turns ... positive"
-                     all(rob_o$comp_mid_pp > 0),
-                     max(rob_o$comp_mid_pp) < 0.1 * e$gap_pp)            # "slightly": under 10% of the gap
-cand_holds <- if (holds) sprintf(paste("As a rough check with Kosova's %s weights, the part inside the",
-  "categories still dominates (%s pp), while the split across them turns slightly positive (%s pp)."),
-  year_runs(rob_o$xk_weight_year), rng1(rob_o$within_mid_pp), rng1(rob_o$comp_mid_pp)) else
-  "As a rough check with Kosova's {years} weights, the part inside the categories still dominates ({min–max} pp), while the split across them turns slightly positive ({min–max} pp)."
-fail_yrs   <- rob_o$xk_weight_year[rob_o$verdict != "within-division"]
-cand_fails <- sprintf(paste("As a rough check with Kosova's %s weights, neither part clearly dominates,",
-  "so the %d split rests on weights whose source year is not documented."),
-  if (length(fail_yrs)) year_list(fail_yrs) else "{years}", EMPH)
-caveat <- if (holds) cand_holds else cand_fails
+# Caveat sentence: the 2025 weights' source year is undocumented; 2025 precedes
+# the classification change, so its division data are back-calculated
+ECOICOP2_FROM <- 2026L    # HICP compiled under ECOICOP ver.2 from January 2026 (README, Back-calculation)
+stopifnot(EMPH %in% PRw$undocumented_in_window, EMPH < ECOICOP2_FROM)
 
 NOT_IDENTIFIED <- paste("This is an accounting split, not an explanation: why prices inside these",
                         "categories rose faster in Kosova is not identified here.")
@@ -642,39 +709,35 @@ post <- c(
   sprintf(paste("Consumer prices in Kosova rose %s%% in %d, December to December. In the euro area: %s%%.",
                 "A gap of %s percentage points."),
           u1(e$pi_XK_pp), EMPH, u1(e$pi_EA_pp), u1(e$gap_pp)),
-  sprintf(paste("On annual averages it was smaller, %s pp, and it hasn't closed: from December %d to %s %s,",
-                "Kosova's prices rose %s%% against %s%% in the euro area (%d months, not a full seasonal cycle)."),
-          u1(PRa$gap_pp), EMPH, month.name[ytd_n], format(ytd_last, "%Y"),
-          u1(F$ytd$pi_XK_pp), u1(F$ytd$pi_EA_pp), ytd_n),
-  "Kosova uses the euro without being part of the euro area.",
+  sprintf(paste("Kosova uses the euro without being part of the euro area. On annual averages, prices rose",
+                "%s%% in Kosova against %s%% in the euro area; everything below uses December-to-December rates."),
+          u1(aa_XK), u1(aa_EA)),
   "A gap like this can come from two places:",
   "",
   sprintf("1. How spending is split across the %d main consumption categories.", F$n_div),
   "2. Differences inside each category: what exactly is bought within it, and how those prices moved.",
   "",
-  sprintf(paste("In %d nearly all of the gap is in the second part: %s pp inside the categories, %s pp",
-                "from the split across them, under both ways of computing it."),
+  sprintf(paste("In %d the second part accounts for more than the whole gap: %s pp inside the categories,",
+                "%s pp from the split across them. That holds under both ways of computing the decomposition."),
           EMPH, s1(e$within_mid_pp), s1(e$comp_mid_pp)),
-  sprintf(paste("That near-zero is a balance of offsetting effects: %s is %s%% of Kosova's HICP basket",
-                "against %s%% in the euro area's, which adds about %s pp; smaller shares for %s subtract",
-                "about %s pp."),
-          pname("CP01", "short"), sprintf("%.0f", 100 * food$share_XK), sprintf("%.0f", 100 * food$share_EA),
-          u1(food$comp_dev_pp), and_list(pname(neg2$division, "short")), u1(abs(neg2_sum))),
   sprintf("Inside the categories, %s account for %s of the %s pp.",
-          and_list(pname(t25$division, "medium")), pct(F$top3_share_2025), s1(e$within_mid_pp)),
-  sprintf("One caveat matters: Eurostat doesn't document the source year of Kosova's %d weights. %s",
-          EMPH, caveat),
+          and_list(pname(t25$division)), pct(F$top3_share_2025), s1(e$within_mid_pp)),
   NOT_IDENTIFIED,
-  sprintf("Method, data and limitations: %s", PIECE_URL),
+  sprintf(paste("Caveats: Eurostat has not fully evaluated whether Kosova's HICP meets its methodological",
+                "requirements; it does not document the source year of Kosova's %d weights; and %d category",
+                "data are back-calculated under the classification introduced in %d.",
+                "Details and sensitivity checks: %s"),
+          EMPH, EMPH, ECOICOP2_FROM, PIECE_URL),
   "Personal analysis, public data.")
 
 # CLAUDE.md §1: the "not identified here" sentence is present verbatim; no forbidden causal wording
-FORBIDDEN <- "\\b(caus(e|es|ed|ing)|driv(e|es|en|ing)|leads? to|results? in|reduc(e|es|ed|ing)|boost(s|ed|ing)?|because of|the effect of|impacts?)\\b"
+FORBIDDEN <- "\b(caus(e|es|ed|ing)|driv(e|es|en|ing)|leads? to|results? in|reduc(e|es|ed|ing)|boost(s|ed|ing)?|because of|the effect of|impacts?)\b"
 stopifnot(sum(post == NOT_IDENTIFIED) == 1, grepl("is not identified here", NOT_IDENTIFIED, fixed = TRUE),
           !any(grepl(FORBIDDEN, post, ignore.case = TRUE)))
 writeLines(post, file.path(PROJ, "output/linkedin_post.txt"))
-cat("\npost caveat candidates (chosen by the weight-year verdicts):\n",
-    sprintf("  [%s] holds: %s\n", if (identical(caveat, cand_holds)) "CHOSEN" else "not chosen", cand_holds),
-    sprintf("  [%s] fails: %s\n", if (identical(caveat, cand_fails)) "CHOSEN" else "not chosen", cand_fails), sep = "")
+cat(sprintf(paste("\npost guards: within-division A %.3f / B %.3f / mid %.3f vs gap %.3f | composition A %.3f /",
+                  "B %.3f / mid %.3f | named top-three share mid %.3f / A %.3f / B %.3f\n"),
+            e$within_A_pp, e$within_B_pp, e$within_mid_pp, e$gap_pp, e$comp_A_pp, e$comp_B_pp, e$comp_mid_pp,
+            F$top3_share_2025, named_share["A"], named_share["B"]))
 
 cat("wrote README.md (", length(L), "lines ), data/processed/figures.json, output/linkedin_post.txt\n")

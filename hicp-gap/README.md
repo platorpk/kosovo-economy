@@ -31,7 +31,7 @@ Deliberately not used:
 - **Fixed-composition euro-area aggregates** (`EA19`, `EA20`, `EA21`). They project members
   backwards to years before they used the euro; the piece compares against the euro area as
   it actually was in each year.
-- **Kosova's 2015 weights.** The Kosova index starts in 2015-01, so there is no December 2014 base to link from.
+- **Kosova's 2015 weights** in the decomposition. The Kosova index starts in 2015-01, so there is no December 2014 base to link from. They appear only as one of the alternative baskets in the weight-year sensitivity check under *Added after cold review*.
 - **Eurostat's published rates as inputs.** Rates are derived from the index levels; the
   published rates serve only as checks.
 
@@ -98,7 +98,7 @@ the other term has the opposite sign to the gap under both variants.
 ## Key results
 
 Percentage points; December to December unless marked. Midpoint terms; the composition range
-is variant A to variant B.
+is variant A to variant B. The 2026 row is cumulative and is excluded from the mean.
 
 | Weight year | Kosova | Euro area | Gap | Composition | Within-division | Residual | Composition, A–B | Verdict | Annual-average gap (not decomposed) |
 |---|---|---|---|---|---|---|---|---|---|
@@ -113,11 +113,12 @@ is variant A to variant B.
 | 2024 | 1.10 | 2.43 | −1.33 | +0.11 | −1.44 | +0.01 | −0.32 to +0.54 | within-division | −0.8 |
 | 2025 | 5.27 | 1.97 | +3.31 | −0.06 | +3.39 | −0.02 | −0.10 to −0.02 | within-division | +1.8 |
 | **Mean 2016–2025** | 3.34 | 2.65 | +0.69 | +0.34 | +0.35 | 0.00 | +0.16 to +0.51 | range | +0.5 |
+| 2026, cumulative Dec 2025 → Aug 2026 (latest), provisional | 5.78 | 3.04 | +2.74 | −0.19 | +2.92 | 0.00 | −0.53 to +0.16 | within-division | — |
 
 - **2025:** gap +3.3 pp, within-division +3.4 pp, composition −0.1 pp; within-division dominates under both variants. The three divisions with the largest within-division contributions are *Food and non-alcoholic beverages* (+1.5 pp), *Housing, water, electricity, gas and other fuels* (+1.1 pp) and *Restaurants and accommodation services* (+0.4 pp), together 87% of the within-division term.
 - **Verdicts by year:** within-division in 2017, 2019 and 2024–2025; range in 2016, 2018 and 2020–2023. No year is composition, offsetting or a tie.
 - **Window 2016–2025:** mean gap +0.7 pp. Under variant A the within-division term is larger (+0.53 against +0.16 pp); under variant B composition is larger (+0.51 against +0.18 pp). The verdict is therefore range, and no statement is made about which part is larger over the window.
-- **2026 year to date (provisional):** from December 2025 to 2026-08, cumulative, not annual, and excluded from all averages: Kosova 5.8%, euro area 3.0%, gap +2.7 pp. This spans December to August, not a full seasonal cycle, so it appears only with that caveat, and its division-level split is not reported.
+- **2026, cumulative Dec 2025 → Aug 2026 (latest), provisional:** not annual, and excluded from all averages: Kosova 5.8%, euro area 3.0%, gap +2.7 pp. This spans December to August, not a full seasonal cycle, so it appears only with that caveat, and its division-level split is not reported. From January 2026 the euro-area comparator includes Bulgaria.
 
 ## Added after cold review (2026-10-01)
 
@@ -125,45 +126,48 @@ The items in this section were added after all results above had been seen, foll
 
 ### 2025 composition term by division — *added after cold review (2026-10-01), not pre-registered*
 
-The 2025 midpoint composition term (−0.06 pp) is the balance of division terms with opposite signs. Per division, in deviation form, the term is (s_XK − s_EA) · (r̄_i − r̄), where r̄_i is the mean of the two areas' December-to-December rates in division *i* and r̄ is the basket-weighted mean of those (3.60%). The 13 terms add up exactly to the composition term; unlike the raw form (s_XK − s_EA) · r̄_i, they do not change if every rate shifts by the same amount. Food is 32.1% of Kosova's basket against 15.5% of the euro area's, a term of +0.32 pp. The positive terms sum to +0.42 pp and the negative terms to −0.48 pp. The shares are Kosova's 2025 weights, whose source year is not documented (see Limitations).
+The 2025 composition term is the balance of division terms with opposite signs. Per division, in deviation form, the midpoint term is (s_XK − s_EA) · (r̄_i − r̄), where r̄_i is the mean of the two areas' December-to-December rates in division *i* and r̄ is the mean of those, weighted by the average of the two areas' shares (3.60%). Variant A uses the euro-area rates in place of r̄_i, centred on their mean with the same weights (1.90%); variant B uses the Kosova rates (5.29%). Each column adds up exactly to its composition term (A −0.10, midpoint −0.06, B −0.02 pp), and unlike the raw form (s_XK − s_EA) · rate it does not change if every rate shifts by the same amount; the choice of centre is a convention. The per-division terms depend on the ordering. Food is 32.1% of Kosova's basket against 15.5% of the euro area's; its term is +0.09 pp under A, +0.32 pp at the midpoint and +0.55 pp under B. The terms of *Insurance and financial services*, *Personal care, social protection and miscellaneous goods and services*, and *Housing, water, electricity, gas and other fuels* have opposite signs under A and B (at two decimals). At the midpoint the positive terms sum to +0.42 pp and the negative terms to −0.48 pp. The shares are Kosova's 2025 weights, whose source year is not documented (see Limitations).
 
-| Division | Kosova share | Euro-area share | Mean rate r̄_i (%) | Composition term (pp) |
-|---|---|---|---|---|
-| *Food and non-alcoholic beverages* | 32.1% | 15.5% | +5.53 | +0.32 |
-| *Recreation, sport and culture* | 4.6% | 7.4% | +1.70 | +0.05 |
-| *Alcoholic beverages, tobacco and narcotics* | 6.2% | 3.8% | +4.46 | +0.02 |
-| *Insurance and financial services* | 1.9% | 3.1% | +2.35 | +0.02 |
-| *Clothing and footwear* | 4.4% | 4.8% | +1.90 | +0.01 |
-| *Education services* | 0.9% | 1.1% | +3.73 | 0.00 |
-| *Personal care, social protection and miscellaneous goods and services* | 4.2% | 6.4% | +3.78 | 0.00 |
-| *Information and communication* | 4.2% | 4.1% | −0.98 | −0.01 |
-| *Furnishings, household equipment and routine household maintenance* | 7.3% | 5.9% | +1.28 | −0.03 |
-| *Health* | 2.6% | 5.9% | +4.68 | −0.04 |
-| *Transport* | 18.6% | 15.6% | +0.85 | −0.08 |
-| *Housing, water, electricity, gas and other fuels* | 9.0% | 14.9% | +5.94 | −0.14 |
-| *Restaurants and accommodation services* | 4.1% | 11.3% | +6.11 | −0.18 |
-
-### 2025 split with Kosova's 2021–2025 weights — *added after cold review (2026-10-01), not pre-registered*
-
-Eurostat's Kosova metadata gives no weight source year for 2025 (see Limitations), so the 2025 rates are split again with each Kosova weight year from 2021 to 2025, keeping the euro area at its 2025 weights. Only the 2025 row is a valid decomposition: Kosova's published all-items index is compiled with its 2025 weights, so with any other weight year the parts no longer add up to the gap exactly, and the residual (its own column) reaches −0.39 pp. The other rows are a sensitivity check. The verdict applies the pre-registered dominance rule to variants A and B.
-
-| Kosova weight year | Composition | Composition, A–B | Within-division | Residual | Verdict |
+| Division | Kosova share | Euro-area share | Variant A (pp) | Midpoint (pp) | Variant B (pp) |
 |---|---|---|---|---|---|
-| 2021 | +0.12 | −0.08 to +0.32 | +3.55 | −0.36 | within-division |
-| 2022 | +0.11 | −0.07 to +0.29 | +3.53 | −0.33 | within-division |
-| 2023 | +0.15 | −0.04 to +0.35 | +3.54 | −0.39 | within-division |
-| 2024 | +0.11 | −0.03 to +0.25 | +3.48 | −0.28 | within-division |
-| 2025 (published) | −0.06 | −0.10 to −0.02 | +3.39 | −0.02 | within-division |
+| *Food and non-alcoholic beverages* | 32.1% | 15.5% | +0.09 | +0.32 | +0.55 |
+| *Recreation, sport and culture* | 4.6% | 7.4% | +0.01 | +0.05 | +0.10 |
+| *Alcoholic beverages, tobacco and narcotics* | 6.2% | 3.8% | +0.02 | +0.02 | +0.02 |
+| *Insurance and financial services* | 1.9% | 3.1% | −0.03 | +0.02 | +0.06 |
+| *Clothing and footwear* | 4.4% | 4.8% | +0.01 | +0.01 | +0.01 |
+| *Education services* | 0.9% | 1.1% | 0.00 | 0.00 | 0.00 |
+| *Personal care, social protection and miscellaneous goods and services* | 4.2% | 6.4% | −0.02 | 0.00 | +0.01 |
+| *Information and communication* | 4.2% | 4.1% | 0.00 | −0.01 | −0.01 |
+| *Furnishings, household equipment and routine household maintenance* | 7.3% | 5.9% | −0.02 | −0.03 | −0.04 |
+| *Health* | 2.6% | 5.9% | −0.04 | −0.04 | −0.04 |
+| *Transport* | 18.6% | 15.6% | −0.01 | −0.08 | −0.15 |
+| *Housing, water, electricity, gas and other fuels* | 9.0% | 14.9% | +0.04 | −0.14 | −0.32 |
+| *Restaurants and accommodation services* | 4.1% | 11.3% | −0.13 | −0.18 | −0.23 |
 
-Within-division dominates under every Kosova weight year from 2021 to 2025. With the weights of 2021–2024, the composition term lies between +0.11 and +0.15 pp, against −0.06 pp with the 2025 weights.
+### 2025 split with every Kosova weight year, 2015–2026 — *added after cold review (2026-10-01), not pre-registered*
 
-### 2025 annual-average gap — *pre-registered reference column, quoted in the post after cold review*
+The 2025 rates are split again with every Kosova weight year Eurostat publishes, 2015 to 2026, keeping the euro area at its 2025 weights. This tests how the split changes with an older or newer Kosova basket. It does not test the undocumented source year of the 2025 weights (see Limitations): gate (a) shows that Kosova's published all-items index is compiled with its 2025 weights, within 0.05 pp in every month, so those are the weights it decomposes with, whatever national-accounts year they are based on. Only the 2025 row is a valid decomposition. With any other weight year the parts no longer add up to the gap exactly, and the residual (its own column) lies between −0.60 and −0.11 pp. The verdict applies the pre-registered dominance rule to variants A and B.
+
+| Kosova weight year | Composition, midpoint | Composition, A | Composition, B | Within-division, midpoint | Within-division, A | Within-division, B | Residual | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| 2015 | +0.24 | −0.08 | +0.56 | +3.66 | +3.98 | +3.34 | −0.60 | within-division |
+| 2016 | +0.14 | −0.08 | +0.36 | +3.57 | +3.79 | +3.34 | −0.40 | within-division |
+| 2017 | +0.03 | −0.12 | +0.18 | +3.50 | +3.65 | +3.34 | −0.22 | within-division |
+| 2018 | +0.08 | −0.10 | +0.26 | +3.52 | +3.70 | +3.34 | −0.30 | within-division |
+| 2019 | +0.11 | −0.09 | +0.31 | +3.54 | +3.74 | +3.34 | −0.35 | within-division |
+| 2020 | +0.11 | −0.09 | +0.31 | +3.55 | +3.75 | +3.34 | −0.35 | within-division |
+| 2021 | +0.12 | −0.08 | +0.32 | +3.55 | +3.75 | +3.34 | −0.36 | within-division |
+| 2022 | +0.11 | −0.07 | +0.29 | +3.53 | +3.71 | +3.34 | −0.33 | within-division |
+| 2023 | +0.15 | −0.04 | +0.35 | +3.54 | +3.74 | +3.34 | −0.39 | within-division |
+| 2024 | +0.11 | −0.03 | +0.25 | +3.48 | +3.62 | +3.34 | −0.28 | within-division |
+| 2025 (published) | −0.06 | −0.10 | −0.02 | +3.39 | +3.43 | +3.34 | −0.02 | within-division |
+| 2026 | −0.01 | −0.09 | +0.08 | +3.43 | +3.51 | +3.34 | −0.11 | within-division |
+
+Within-division dominates under every Kosova weight year from 2015 to 2026. The composition term does not keep its sign: with the other weight years it lies between −0.01 and +0.24 pp at the midpoint; under variant A it is negative with every weight year (−0.12 to −0.03 pp), and under variant B it is positive with every weight year except 2025 (+0.08 to +0.56 pp).
+
+### 2025 annual-average rates — *pre-registered reference column, quoted in the post after cold review*
 
 Eurostat's published annual-average rates for 2025 (`RCH_MV12MAVR`, December value) are 3.9% for Kosova and 2.1% for the euro area, a gap of +1.8 pp, against +3.3 pp December to December. This is the reference column of the table above and is not decomposed.
-
-### 2026
-
-The post also quotes the pre-registered 2026 year-to-date row (Key results), with its seasonality caveat. A planned addition of published monthly 12-month rates for 2026 was not built, because that row already covers 2026.
 
 ## Reproduce
 
@@ -192,8 +196,8 @@ record of the vintage used here.
 - `output/hicp_gap_within_top3.csv` — top three division contributions to the within-division term, 2025 and 2026 year to date (the latter not reported in prose, see Limitations).
 - `output/hicp_gap_decomposition.png` — lead figure.
 - `output/hicp_gap_linkedin.png` — portrait version, 1200 × 1500.
-- `output/hicp_gap_2025_composition_by_division.csv` — added after cold review (2026-10-01), not pre-registered: the 2025 midpoint composition term per division, deviation form.
-- `output/hicp_gap_2025_weight_year_robustness.csv` — added after cold review (2026-10-01), not pre-registered: the 2025 split with each Kosova weight year 2021–2025.
+- `output/hicp_gap_2025_composition_by_division.csv` — added after cold review (2026-10-01), not pre-registered: the 2025 composition term per division, deviation form, under variant A, the midpoint and variant B.
+- `output/hicp_gap_2025_weight_year_robustness.csv` — added after cold review (2026-10-01), not pre-registered: the 2025 split with every Kosova weight year 2015–2026 (midpoint, A, B, residual, verdict).
 - `output/hicp_gap_xk_weight_sources.csv` — weight source years as stated on Eurostat's Kosova metadata page, with the verbatim fragments.
 - `data/processed/figures.json` — every number used in this README; post-review values under `post_review`.
 - `DESIGN.md`, `HANDOFF.md` — the design as fixed before computation, and the verification record.
@@ -206,7 +210,7 @@ record of the vintage used here.
 - **The split depends on the ordering.** The midpoint form is a convention. Variants A and B
   bound it, and the dominance rule only reports a winner when both variants agree.
 - **December to December is not the headline annual rate.** The annual-average gap (reference column) can have the opposite sign: it does in 2018–2020, and is zero in 2017. Only December to December can be split exactly.
-- **Comparator.** From 2023 the EA comparator includes Croatia.
+- **Comparator.** From 2023 the EA comparator includes Croatia. EA includes Bulgaria from January 2026 (EA item weights equal `EA20`'s up to 2025 and `EA21`'s from 2026), which affects only the 2026 year-to-date row.
 - **Low-reliability flags.** Eurostat flags some euro-area division index values between 2020-04 and 2021-05 as low reliability (`u`). Of those, only CP11 2020-12 is a December value, so it enters weight years 2020–2021. It is used as published, because it is the value inside Eurostat's own euro-area all-items index.
 - **Back-calculation.** Pre-2026 figures are back-calculated under the 2026 classification
   (ECOICOP ver.2) and can differ from figures published at the time.
@@ -216,10 +220,7 @@ record of the vintage used here.
   retrieved 2026-09-23).
 - **Weight source years.** Eurostat's Kosova HICP metadata page ([metadata](https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm), last update 23 October 2023, retrieved 2026-09-29) states the national-accounts source of the weights for weight years 2016–2021 and 2023. It gives none for 2022, 2024 and 2025, inside the window, or for 2015 and 2026, outside it. The 2025 headline uses the 2025 weights. Kosova's food share of the 13 division weights is 38.2% in 2023, the last documented weight year, and 32.1% in 2025. With other Kosova weight years the 2025 split changes as shown under *Added after cold review*.
 - **Residual.** Up to 0.02 pp in any year, from rounding in the published indices and weights. It is reported, not allocated.
-- **2026 year to date.** It spans December to August, not a full seasonal cycle. Division-level
-  year-to-date contributions can reflect differing seasonal patterns between the two areas (for
-  example, sales calendars) and are not reported. The year-to-date aggregate appears only with
-  this caveat.
+- **2026 year to date.** It is cumulative from December 2025 to Aug 2026, provisional, and spans December to August, not a full seasonal cycle. Division-level year-to-date contributions can reflect differing seasonal patterns between the two areas (for example, sales calendars) and are not reported. The year-to-date aggregate appears only with this caveat.
 - **Vintage.** Eurostat revises HICP data; figures here are for the vintage stated above.
 
 ---

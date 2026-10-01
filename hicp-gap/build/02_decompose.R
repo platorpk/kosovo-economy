@@ -16,10 +16,12 @@
 #   YTD rows of both files carry a seasonality_caveat note (DESIGN.md limitations).
 #   Section 6, ADDED AFTER COLD REVIEW (2026-10-01), NOT PRE-REGISTERED
 #   (DESIGN.md, "Post-review additions"), written after the two files above:
-#   output/hicp_gap_2025_composition_by_division.csv  2025 midpoint composition term
-#                                       per division, deviation form
-#   output/hicp_gap_2025_weight_year_robustness.csv   2025 split with each Kosova
-#                                       weight year 2021-2025 (only 2025 closes)
+#   output/hicp_gap_2025_composition_by_division.csv  2025 composition term per
+#                                       division, deviation form, midpoint and
+#                                       variants A and B
+#   output/hicp_gap_2025_weight_year_robustness.csv   2025 split with every Kosova
+#                                       weight year published (2015-2026; only 2025
+#                                       closes)
 #   output/hicp_gap_xk_weight_sources.csv  weight source years documented on
 #                                       Eurostat's XK metadata page (DECISIONS.md E1)
 # Also reads: data/raw/<date>/eurostat_codelist_COICOP18_<version>.tsv
@@ -312,8 +314,18 @@ print(as.data.frame(top3 |> mutate(across(c(contribution_pp, within_mid_pp), ~ r
 #    additions"). Nothing in sections 1-5 depends on this section, and the two
 #    pre-registered outputs above are written before it runs.
 # ==============================================================================
-ROB_YEARS <- 2021:2025       # Kosova weight years tried against the 2025 rates
-stopifnot(max(ROB_YEARS) == max(YEARS), all(ROB_YEARS %in% w$year[w$geo == "XK"]))
+# Shares for every published weight year, same normalisation as `w` (section 6
+# only; `w` above is left as it was, so sections 1-5 are untouched)
+w_all <- iw |>
+  filter(coicop18 %in% DIVS) |>
+  transmute(geo, year = as.integer(time), code = coicop18, w = values) |>
+  group_by(geo, year) |> mutate(s = w / sum(w)) |> ungroup()
+w_chk <- inner_join(w_all, w, by = c("geo", "year", "code"))       # same shares where both exist
+stopifnot(all(count(w_all, geo, year)$n == 13), nrow(w_chk) == nrow(w),
+          all(abs(w_chk$s.x - w_chk$s.y) < 1e-15))
+# Every Kosova weight year Eurostat publishes, tried against the 2025 rates (no chosen range)
+ROB_YEARS <- sort(unique(w_all$year[w_all$geo == "XK"]))
+stopifnot(identical(ROB_YEARS, 2015:2026), max(YEARS) %in% ROB_YEARS)
 base25 <- as.Date(sprintf("%d-12-01", max(YEARS) - 1))
 end25  <- as.Date(sprintf("%d-12-01", max(YEARS)))
 row25  <- tab |> filter(period == as.character(max(YEARS)))
@@ -326,7 +338,7 @@ div_sr <- function(base_m, end_m, wy_xk, wy_ea) {
   e <- lv |> filter(month == end_m)  |> select(geo, code, level)
   x <- inner_join(b, e, by = c("geo", "code")) |> mutate(r = level / base - 1)
   stopifnot(nrow(x) == 2 * length(CODES))
-  s <- bind_rows(w |> filter(geo == "XK", year == wy_xk), w |> filter(geo == "EA", year == wy_ea))
+  s <- bind_rows(w_all |> filter(geo == "XK", year == wy_xk), w_all |> filter(geo == "EA", year == wy_ea))
   stopifnot(nrow(s) == 26)
   d <- x |> filter(code %in% DIVS) |>
     inner_join(s |> select(geo, code, s), by = c("geo", "code")) |>
@@ -336,25 +348,38 @@ div_sr <- function(base_m, end_m, wy_xk, wy_ea) {
 }
 
 # ------------------------------------------------------------------------------
-# 6a. 2025 midpoint composition term per division, deviation form:
-#     comp_i = (s_XK,i - s_EA,i) * (rbar_i - rbar),  rbar_i = (r_XK,i + r_EA,i) / 2,
-#     rbar = sum_i (s_XK,i + s_EA,i) / 2 * rbar_i.
-#     The deviations sum to the midpoint composition term because the share
-#     differences sum to zero; unlike the raw form (s_XK - s_EA) * rbar_i, the
-#     per-division terms do not change if every rate shifts by the same amount.
+# 6a. 2025 composition term per division, deviation form, for the midpoint and
+#     for each ordered variant. With m_i = (s_XK,i + s_EA,i) / 2:
+#       midpoint:  (s_XK,i - s_EA,i) * (rbar_i - rbar),  rbar_i = (r_XK,i + r_EA,i) / 2,
+#                  rbar = sum_i m_i * rbar_i
+#       variant A: (s_XK,i - s_EA,i) * (r_EA,i - rbarA), rbarA = sum_i m_i * r_EA,i
+#       variant B: (s_XK,i - s_EA,i) * (r_XK,i - rbarB), rbarB = sum_i m_i * r_XK,i
+#     Each column sums to its composition term because the share differences sum
+#     to zero; unlike the raw form (s_XK - s_EA) * rate, the per-division terms do
+#     not change if every rate shifts by the same amount. The centre (m-weighted
+#     mean) is a convention; per-division terms depend on it, the sums do not.
 # ------------------------------------------------------------------------------
 z25 <- div_sr(base25, end25, max(YEARS), max(YEARS))
 comp_div <- z25$d |>
   mutate(m = (s_XK + s_EA) / 2, rbar_i = (r_XK + r_EA) / 2, rbar = sum(m * rbar_i),
-         comp_dev_pp = 100 * (s_XK - s_EA) * (rbar_i - rbar)) |>
+         rbarA = sum(m * r_EA), rbarB = sum(m * r_XK),
+         comp_dev_pp   = 100 * (s_XK - s_EA) * (rbar_i - rbar),
+         comp_dev_A_pp = 100 * (s_XK - s_EA) * (r_EA - rbarA),
+         comp_dev_B_pp = 100 * (s_XK - s_EA) * (r_XK - rbarB)) |>
   left_join(labels, by = "code") |>
   transmute(period = as.character(max(YEARS)), division = code, division_label = label,
             share_XK = s_XK, share_EA = s_EA, rate_XK_pp = 100 * r_XK, rate_EA_pp = 100 * r_EA,
-            mean_rate_pp = 100 * rbar_i, basket_mean_rate_pp = 100 * rbar, comp_dev_pp) |>
+            mean_rate_pp = 100 * rbar_i, basket_mean_rate_pp = 100 * rbar,
+            basket_mean_rate_A_pp = 100 * rbarA, basket_mean_rate_B_pp = 100 * rbarB,
+            comp_dev_pp, comp_dev_A_pp, comp_dev_B_pp) |>
   arrange(desc(comp_dev_pp))
 food <- comp_div |> filter(division == "CP01")
 stopifnot(nrow(comp_div) == 13, !anyNA(comp_div$division_label),
           abs(sum(comp_div$comp_dev_pp) - row25$comp_mid_pp) < 1e-10,
+          abs(sum(comp_div$comp_dev_A_pp) - row25$comp_A_pp) < 1e-10,
+          abs(sum(comp_div$comp_dev_B_pp) - row25$comp_B_pp) < 1e-10,
+          # midpoint column = mean of the A and B columns (the centres average too)
+          all(abs(comp_div$comp_dev_pp - (comp_div$comp_dev_A_pp + comp_div$comp_dev_B_pp) / 2) < 1e-10),
           abs(sum(comp_div$share_XK) - 1) < 1e-12, abs(sum(comp_div$share_EA) - 1) < 1e-12,
           # reference values from the independent recompute in the cold review
           abs(food$share_XK - 0.3211) < 0.00015, abs(food$share_EA - 0.1554) < 0.00015,
@@ -363,17 +388,22 @@ comp_div_f <- file.path(PROJ, "output/hicp_gap_2025_composition_by_division.csv"
 write_csv(comp_div |> mutate(across(where(is.numeric), ~ round(.x, 6))), comp_div_f, na = "")
 cat("\n== 6a. [added after cold review, not pre-registered] 2025 composition by division, deviation form ==\n")
 print(as.data.frame(comp_div |> transmute(division, share_XK = round(share_XK, 4), share_EA = round(share_EA, 4),
-                                          mean_rate_pp = round(mean_rate_pp, 2), comp_dev_pp = round(comp_dev_pp, 3))),
+                                          A_pp = round(comp_dev_A_pp, 3), mid_pp = round(comp_dev_pp, 3),
+                                          B_pp = round(comp_dev_B_pp, 3))),
       row.names = FALSE)
-cat(sprintf("  sum = %.6f pp (midpoint composition %.6f) | positives %+.3f | negatives %+.3f\nwrote %s\n",
-            sum(comp_div$comp_dev_pp), row25$comp_mid_pp,
-            sum(pmax(comp_div$comp_dev_pp, 0)), sum(pmin(comp_div$comp_dev_pp, 0)), comp_div_f))
+for (v in c("comp_dev_A_pp", "comp_dev_pp", "comp_dev_B_pp"))
+  cat(sprintf("  %-13s sum %+.6f | positives %+.3f | negatives %+.3f\n", v, sum(comp_div[[v]]),
+              sum(pmax(comp_div[[v]], 0)), sum(pmin(comp_div[[v]], 0))))
+cat(sprintf("  composition terms: A %+.6f | midpoint %+.6f | B %+.6f\nwrote %s\n",
+            row25$comp_A_pp, row25$comp_mid_pp, row25$comp_B_pp, comp_div_f))
 
 # ------------------------------------------------------------------------------
-# 6b. Robustness: the 2025 split with each Kosova weight year in ROB_YEARS, euro
-#     area at its 2025 weights. Only the 2025 row is a valid decomposition: the
-#     published Kosova all-items index is compiled with the 2025 weights, so with
-#     any other weight year the identity no longer closes and the residual grows.
+# 6b. Robustness: the 2025 split with every published Kosova weight year
+#     (ROB_YEARS, read from the data), euro area at its 2025 weights. Only the
+#     2025 row is a valid decomposition: the published Kosova all-items index is
+#     compiled with the 2025 weights (gate (a)), so with any other weight year the
+#     identity no longer closes and the residual grows. This tests an older or
+#     newer Kosova basket, not the undocumented source year of the 2025 weights.
 #     The residual stays in its own column; the verdict uses the same rule.
 # ------------------------------------------------------------------------------
 rob <- bind_rows(lapply(ROB_YEARS, function(wy) {

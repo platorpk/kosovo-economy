@@ -287,10 +287,68 @@ verdict or output changes. Each addition is labelled in the README as "added aft
   under the §3 rule) with each Kosova weight year 2021–2025, euro area at its 2025 weights.
   Only the 2025 row is a valid decomposition; the others do not close and are a sensitivity
   check against the undocumented source year of Kosova's 2025 weights.
+- **(c)** Not used. The letter was skipped when this section was first written; nothing is
+  missing.
 - **(d) Monthly 12-month rates for 2026: considered, not built.** The pre-registered 2026
-  year-to-date row (§2) already shows the 2026 gap, and is quoted with its seasonality caveat
-  instead.
+  year-to-date row (§2) already shows the 2026 gap. After the second review it is no longer
+  quoted in the post (see Revision 2).
 
-Not additions: the 2025 annual-average gap is the pre-registered reference column (§3), now
-also quoted in the post; the undocumented weight source years (2022, 2024, 2025) are added to
-the README limitations and the chart captions as `DECISIONS.md` E1 already required.
+Not additions: the 2025 annual-average rates are the pre-registered reference column (§3), and
+the post quotes them; the undocumented weight source years (2022, 2024, 2025) are added to the
+README limitations and the chart captions as `DECISIONS.md` E1 already required.
+
+### Revision 2 (2026-10-01, after the second cold review)
+
+Made after `review-cold-2-2026-10-01.md`, with all results, including (a) and (b) above,
+already seen. **Not pre-registered.** No pre-registered number, verdict or output changes:
+`output/hicp_gap_decomposition.csv` and `output/hicp_gap_within_top3.csv` are byte-identical
+before and after, and every `figures.json` key outside `post_review` is unchanged.
+
+- **(a) revised.** The per-division composition table now has variant A and variant B columns
+  beside the midpoint, in the same deviation form. Each is centred on the mean of that form's
+  rates, weighted by the average of the two areas' shares, and each column sums to its
+  composition term (asserted). The midpoint column is the mean of A and B (asserted). The centre
+  is a convention: per-division terms depend on it, the sums do not. The second review showed
+  that some per-division signs differ between A and B. The README states which ones, computed.
+- **(b) revised: full weight-year range.** The robustness check now uses every Kosova weight
+  year Eurostat publishes, 2015–2026, read from the data (asserted to be 2015–2026). This
+  replaces the 2021–2025 range. That range was set after the first review had shown the 2026
+  row, and no rationale for it was recorded. Each row reports the midpoint, A and B for both
+  terms, the residual, and the verdict.
+  - The README states that this tests an older or newer Kosova basket, not the undocumented
+    source year. Gate (a) shows that the published Kosova index is compiled with the 2025
+    weights, so those are the weights to decompose it with.
+  - The 2015 weights, which are outside the window, enter only this check.
+- **(e) EA membership.** "EA includes Bulgaria from January 2026" is added to the README's
+  comparator limitation. The year comes from the bulk `prc_hicp_iw`: EA's item weights equal
+  `EA20`'s up to 2025 and `EA21`'s from 2026 (asserted in `build/04_readme.R`). This
+  restates §2 and adds no new choice.
+- **(f) 2026 year-to-date row.** The README now shows it as a row in the Key results table
+  (§2's "labelled year-to-date row in the table"). The label is "2026, cumulative Dec 2025 →
+  <latest month> (latest), provisional", the annual-average cell is "—", and the row is excluded
+  from the mean. The CSV period string is pre-registered output and is not changed.
+- **Post v3: cuts.** Three sentences from the v2 post are removed, with their guards:
+  - the "rough check" sentence: its sign statement held only at the midpoint, and it left out a
+    residual larger than the term it described;
+  - the offsetting sentence: the per-division directions it named do not survive variant A;
+  - the 2026 year-to-date sentence: an 8-month cumulative comparison, and the euro area changes
+    composition in 2026.
+- **Post v3: guard rule.** Every claim in the post must hold under variant A and under
+  variant B, and the guards stop the build if one does not. The asserted claims are:
+  - within-division dominates under both variants (§3 rule);
+  - within-division exceeds the gap under A, B and the midpoint;
+  - composition is negative under A, B and the midpoint;
+  - the three named divisions' share of the within-division term lies within 85–90% under the
+    midpoint, A and B. That band was set after the values were known.
+
+  The "is not identified here" sentence guard and the forbidden-words guard are kept. The
+  A/B shares of the named divisions are computed only for these guards and recorded under
+  `post_review.post_guards`; they do not appear in the post.
+- **Post v3: no post-hoc figure.** Every figure in the post is pre-registered:
+  - the 2025 headline row (§3);
+  - the published 2025 December `RCH_MV12MAVR` rates (the §3 reference column), asserted equal to
+    the raw published values;
+  - the division count;
+  - the top-three share (division-contribution extension).
+
+  Nothing from (a), (b), (e) or (f) appears in the post.
