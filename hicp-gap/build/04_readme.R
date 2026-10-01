@@ -240,6 +240,13 @@ F$post_review <- list(
 dir.create(file.path(PROJ, "data/processed"), showWarnings = FALSE, recursive = TRUE)
 write_json(F, file.path(PROJ, "data/processed/figures.json"), auto_unbox = TRUE, pretty = TRUE, digits = NA)
 
+# Vintage in words, from Eurostat's "LAST UPDATE" stamp (dd/mm/yy). English month
+# names from month.name, so the session locale does not matter.
+vintage_date <- as.Date(F$vintage, format = "%d/%m/%y")
+stopifnot(length(F$vintage) == 1, !is.na(vintage_date), format(vintage_date, "%d/%m/%y") == F$vintage)
+vintage_long <- sprintf("%d %s %s", as.integer(format(vintage_date, "%d")),
+                        month.name[as.integer(format(vintage_date, "%m"))], format(vintage_date, "%Y"))
+
 within_yrs <- F$verdict_years[["within-division"]]
 range_yrs  <- F$verdict_years[["range"]]
 stopifnot(setequal(c(within_yrs, range_yrs), YEARS))        # no other verdict occurs
@@ -294,8 +301,8 @@ add(
 "  data structure definition) — division labels, used verbatim.",
 "",
 sprintf(paste("Geographies: `XK` (Kosova; the source labels it `Kosovo*`) and `EA`, the euro area",
-"with its membership as it changed over time. Vintage: downloaded %s; Eurostat last update %s."),
-  F$downloaded, F$vintage),
+"with its membership as it changed over time. Vintage: Eurostat release of %s, downloaded %s."),
+  vintage_long, F$downloaded),
 "",
 "Deliberately not used:",
 "",

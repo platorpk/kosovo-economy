@@ -24,7 +24,7 @@ prices (HICP) > Harmonised index of consumer prices (HICP) - ECOICOP ver.2*:
 - **COICOP 2018 codelist** (`ESTAT/COICOP18`, the version referenced by the `prc_hicp_minr`
   data structure definition) — division labels, used verbatim.
 
-Geographies: `XK` (Kosova; the source labels it `Kosovo*`) and `EA`, the euro area with its membership as it changed over time. Vintage: downloaded 2026-09-23; Eurostat last update 17/09/26.
+Geographies: `XK` (Kosova; the source labels it `Kosovo*`) and `EA`, the euro area with its membership as it changed over time. Vintage: Eurostat release of 17 September 2026, downloaded 2026-09-23.
 
 Deliberately not used:
 
