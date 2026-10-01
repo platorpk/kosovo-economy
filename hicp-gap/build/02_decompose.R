@@ -14,8 +14,17 @@
 #                                       within-division term, 2025 and 2026 YTD only,
 #                                       with Eurostat COICOP18 division labels
 #   YTD rows of both files carry a seasonality_caveat note (DESIGN.md limitations).
+#   Section 6, ADDED AFTER COLD REVIEW (2026-10-01), NOT PRE-REGISTERED
+#   (DESIGN.md, "Post-review additions"), written after the two files above:
+#   output/hicp_gap_2025_composition_by_division.csv  2025 midpoint composition term
+#                                       per division, deviation form
+#   output/hicp_gap_2025_weight_year_robustness.csv   2025 split with each Kosova
+#                                       weight year 2021-2025 (only 2025 closes)
+#   output/hicp_gap_xk_weight_sources.csv  weight source years documented on
+#                                       Eurostat's XK metadata page (DECISIONS.md E1)
 # Also reads: data/raw/<date>/eurostat_codelist_COICOP18_<version>.tsv
 #   (from build/00_pull_coicop18_codelist.R)
+#   data/raw/2026-09-29/eurostat_prc_hicp_esmshi_xk.htm  (section 6c only)
 #
 # Per weight year t (2016-2025), in percentage points:
 #   r_a,i = I25_a,i,Dec t / I25_a,i,Dec t-1 - 1;  s_a,i = weight / sum of 13 divisions
@@ -50,7 +59,7 @@
 # Run from the piece root:  Rscript build/02_decompose.R
 # ==============================================================================
 suppressWarnings(suppressMessages({
-  library(dplyr); library(tidyr); library(readr)
+  library(dplyr); library(tidyr); library(readr); library(stringr)
 }))
 options(width = 250)
 
@@ -296,3 +305,134 @@ cat("\nwrote", top3_f, "\n\n")
 print(as.data.frame(top3 |> mutate(across(c(contribution_pp, within_mid_pp), ~ round(.x, 3)),
                                    top3_combined_share = round(top3_combined_share, 4))),
       row.names = FALSE)
+
+# ==============================================================================
+# 6. ADDED AFTER COLD REVIEW (2026-10-01), NOT PRE-REGISTERED
+#    Added after all results above had been seen (DESIGN.md, "Post-review
+#    additions"). Nothing in sections 1-5 depends on this section, and the two
+#    pre-registered outputs above are written before it runs.
+# ==============================================================================
+ROB_YEARS <- 2021:2025       # Kosova weight years tried against the 2025 rates
+stopifnot(max(ROB_YEARS) == max(YEARS), all(ROB_YEARS %in% w$year[w$geo == "XK"]))
+base25 <- as.Date(sprintf("%d-12-01", max(YEARS) - 1))
+end25  <- as.Date(sprintf("%d-12-01", max(YEARS)))
+row25  <- tab |> filter(period == as.character(max(YEARS)))
+stopifnot(nrow(row25) == 1)
+
+# Division shares and December-to-December rates for one period, with the Kosova
+# and euro-area weight years set separately
+div_sr <- function(base_m, end_m, wy_xk, wy_ea) {
+  b <- lv |> filter(month == base_m) |> select(geo, code, base = level)
+  e <- lv |> filter(month == end_m)  |> select(geo, code, level)
+  x <- inner_join(b, e, by = c("geo", "code")) |> mutate(r = level / base - 1)
+  stopifnot(nrow(x) == 2 * length(CODES))
+  s <- bind_rows(w |> filter(geo == "XK", year == wy_xk), w |> filter(geo == "EA", year == wy_ea))
+  stopifnot(nrow(s) == 26)
+  d <- x |> filter(code %in% DIVS) |>
+    inner_join(s |> select(geo, code, s), by = c("geo", "code")) |>
+    select(geo, code, s, r) |> pivot_wider(names_from = geo, values_from = c(s, r))
+  stopifnot(nrow(d) == 13, !anyNA(d))
+  list(d = d, pi = setNames(x$r[x$code == "TOTAL"], x$geo[x$code == "TOTAL"]))
+}
+
+# ------------------------------------------------------------------------------
+# 6a. 2025 midpoint composition term per division, deviation form:
+#     comp_i = (s_XK,i - s_EA,i) * (rbar_i - rbar),  rbar_i = (r_XK,i + r_EA,i) / 2,
+#     rbar = sum_i (s_XK,i + s_EA,i) / 2 * rbar_i.
+#     The deviations sum to the midpoint composition term because the share
+#     differences sum to zero; unlike the raw form (s_XK - s_EA) * rbar_i, the
+#     per-division terms do not change if every rate shifts by the same amount.
+# ------------------------------------------------------------------------------
+z25 <- div_sr(base25, end25, max(YEARS), max(YEARS))
+comp_div <- z25$d |>
+  mutate(m = (s_XK + s_EA) / 2, rbar_i = (r_XK + r_EA) / 2, rbar = sum(m * rbar_i),
+         comp_dev_pp = 100 * (s_XK - s_EA) * (rbar_i - rbar)) |>
+  left_join(labels, by = "code") |>
+  transmute(period = as.character(max(YEARS)), division = code, division_label = label,
+            share_XK = s_XK, share_EA = s_EA, rate_XK_pp = 100 * r_XK, rate_EA_pp = 100 * r_EA,
+            mean_rate_pp = 100 * rbar_i, basket_mean_rate_pp = 100 * rbar, comp_dev_pp) |>
+  arrange(desc(comp_dev_pp))
+food <- comp_div |> filter(division == "CP01")
+stopifnot(nrow(comp_div) == 13, !anyNA(comp_div$division_label),
+          abs(sum(comp_div$comp_dev_pp) - row25$comp_mid_pp) < 1e-10,
+          abs(sum(comp_div$share_XK) - 1) < 1e-12, abs(sum(comp_div$share_EA) - 1) < 1e-12,
+          # reference values from the independent recompute in the cold review
+          abs(food$share_XK - 0.3211) < 0.00015, abs(food$share_EA - 0.1554) < 0.00015,
+          abs(food$comp_dev_pp - 0.320) < 0.0015)
+comp_div_f <- file.path(PROJ, "output/hicp_gap_2025_composition_by_division.csv")
+write_csv(comp_div |> mutate(across(where(is.numeric), ~ round(.x, 6))), comp_div_f, na = "")
+cat("\n== 6a. [added after cold review, not pre-registered] 2025 composition by division, deviation form ==\n")
+print(as.data.frame(comp_div |> transmute(division, share_XK = round(share_XK, 4), share_EA = round(share_EA, 4),
+                                          mean_rate_pp = round(mean_rate_pp, 2), comp_dev_pp = round(comp_dev_pp, 3))),
+      row.names = FALSE)
+cat(sprintf("  sum = %.6f pp (midpoint composition %.6f) | positives %+.3f | negatives %+.3f\nwrote %s\n",
+            sum(comp_div$comp_dev_pp), row25$comp_mid_pp,
+            sum(pmax(comp_div$comp_dev_pp, 0)), sum(pmin(comp_div$comp_dev_pp, 0)), comp_div_f))
+
+# ------------------------------------------------------------------------------
+# 6b. Robustness: the 2025 split with each Kosova weight year in ROB_YEARS, euro
+#     area at its 2025 weights. Only the 2025 row is a valid decomposition: the
+#     published Kosova all-items index is compiled with the 2025 weights, so with
+#     any other weight year the identity no longer closes and the residual grows.
+#     The residual stays in its own column; the verdict uses the same rule.
+# ------------------------------------------------------------------------------
+rob <- bind_rows(lapply(ROB_YEARS, function(wy) {
+  z <- div_sr(base25, end25, wy, max(YEARS)); pi <- z$pi
+  with(z$d, tibble(
+    period = as.character(max(YEARS)), xk_weight_year = wy, ea_weight_year = max(YEARS),
+    gap_pp        = 100 * (pi[["XK"]] - pi[["EA"]]),
+    comp_mid_pp   = 100 * sum((s_XK - s_EA) * (r_XK + r_EA) / 2),
+    within_mid_pp = 100 * sum((s_XK + s_EA) / 2 * (r_XK - r_EA)),
+    resid_pp      = 100 * ((pi[["XK"]] - sum(s_XK * r_XK)) - (pi[["EA"]] - sum(s_EA * r_EA))),
+    comp_A_pp     = 100 * sum((s_XK - s_EA) * r_EA), within_A_pp = 100 * sum(s_XK * (r_XK - r_EA)),
+    comp_B_pp     = 100 * sum((s_XK - s_EA) * r_XK), within_B_pp = 100 * sum(s_EA * (r_XK - r_EA))))
+})) |>
+  mutate(verdict  = verdict(comp_A_pp, within_A_pp, comp_B_pp, within_B_pp, gap_pp),
+         headline = xk_weight_year == max(YEARS))
+h <- rob |> filter(headline)
+cols <- c("gap_pp", "comp_mid_pp", "within_mid_pp", "resid_pp",
+          "comp_A_pp", "within_A_pp", "comp_B_pp", "within_B_pp")
+stopifnot(nrow(rob) == length(ROB_YEARS), nrow(h) == 1,
+          all(abs(unlist(h[cols]) - unlist(row25[cols])) < 1e-10),   # 2025 row = headline
+          h$verdict == row25$verdict,
+          all(abs(rob$gap_pp - row25$gap_pp) < 1e-10),               # gap does not depend on weights
+          all(abs(rob$gap_pp - (rob$comp_mid_pp + rob$within_mid_pp + rob$resid_pp)) < 1e-10),
+          all(abs(rob$gap_pp - (rob$comp_A_pp + rob$within_A_pp + rob$resid_pp)) < 1e-10),
+          all(abs(rob$gap_pp - (rob$comp_B_pp + rob$within_B_pp + rob$resid_pp)) < 1e-10))
+rob_f <- file.path(PROJ, "output/hicp_gap_2025_weight_year_robustness.csv")
+write_csv(rob |> mutate(across(where(is.numeric), ~ round(.x, 6))), rob_f, na = "")
+cat("\n== 6b. [added after cold review, not pre-registered] 2025 split by Kosova weight year ==\n")
+print(as.data.frame(rob |> select(-period, -ea_weight_year) |>
+                      mutate(across(where(is.numeric) & !xk_weight_year, ~ round(.x, 3)))), row.names = FALSE)
+cat("wrote", rob_f, "\n")
+
+# ------------------------------------------------------------------------------
+# 6c. Kosova weight source years as documented on Eurostat's XK HICP metadata
+#     page (DECISIONS.md E1). Parsed from the saved page; verbatim fragments kept.
+# ------------------------------------------------------------------------------
+META_URL <- "https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm"
+meta_f   <- file.path(PROJ, "data/raw/2026-09-29/eurostat_prc_hicp_esmshi_xk.htm")
+stopifnot(file.exists(meta_f))
+html <- paste(readLines(meta_f, warn = FALSE, encoding = "UTF-8"), collapse = " ")
+page_update <- str_match(html, "Metadata last update</h3>\\s*<p>([^<]+)</p>")[, 2]
+txt <- str_squish(gsub("<[^>]+>", " ", html))
+sent <- unique(c(str_extract_all(txt, "HICP weights for the year \\d{4}[^.]*\\.")[[1]],
+                 str_extract_all(txt, "Weights for \\d{4} are calculated[^.]*\\.")[[1]]))
+pairs <- str_match_all(paste(sent, collapse = " "),
+  "((?:for the year|for year|from January|January|Weights for) (\\d{4})[^,.]*?NA data(?:, reference year)? ([0-9/]+))")[[1]]
+src <- tibble(weight_year = as.integer(pairs[, 3]), source_text = pairs[, 2], na_reference = pairs[, 4])
+xk_wy <- sort(unique(as.integer(iw$time[iw$geo == "XK"])))   # every published XK weight year
+wsrc <- tibble(weight_year = xk_wy) |>
+  left_join(src, by = "weight_year") |>
+  mutate(documented = !is.na(source_text), in_window = weight_year %in% YEARS,
+         metadata_last_update = page_update, metadata_url = META_URL, retrieved = basename(dirname(meta_f)))
+undoc_win <- wsrc$weight_year[!wsrc$documented & wsrc$in_window]
+stopifnot(identical(page_update, "23 October 2023"), length(sent) == 2, !anyDuplicated(src$weight_year),
+          identical(sort(src$weight_year), c(2016:2021, 2023L)),
+          identical(undoc_win, c(2022L, 2024L, 2025L)),                 # verify/peers_report.md
+          identical(wsrc$weight_year[!wsrc$documented & !wsrc$in_window], c(2015L, 2026L)))
+wsrc_f <- file.path(PROJ, "output/hicp_gap_xk_weight_sources.csv")
+write_csv(wsrc, wsrc_f, na = "")
+cat("\n== 6c. Kosova weight source years (Eurostat XK metadata, last update", page_update, ") ==\n")
+print(as.data.frame(wsrc |> select(weight_year, na_reference, documented, in_window)), row.names = FALSE)
+cat("wrote", wsrc_f, "\n")

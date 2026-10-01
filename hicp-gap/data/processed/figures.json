@@ -109,5 +109,255 @@
   },
   "sign_mismatch": [2018, 2019, 2020],
   "ref_zero_years": 2017,
-  "r_version": "R version 4.5.3 (2026-03-11 ucrt)"
+  "r_version": "R version 4.5.3 (2026-03-11 ucrt)",
+  "post_review": {
+    "label": "added after cold review (2026-10-01), not pre-registered",
+    "composition_by_division_2025": {
+      "label": "added after cold review (2026-10-01), not pre-registered",
+      "form": "deviation: (s_XK - s_EA) * (rbar_i - rbar), midpoint",
+      "basket_mean_rate_pp": 3.59564,
+      "divisions": [
+        {
+          "division": "CP01",
+          "division_label": "Food and non-alcoholic beverages",
+          "share_XK": 0.3211,
+          "share_EA": 0.15543,
+          "mean_rate_pp": 5.52932,
+          "comp_dev_pp": 0.320353
+        },
+        {
+          "division": "CP09",
+          "division_label": "Recreation, sport and culture",
+          "share_XK": 0.04558,
+          "share_EA": 0.0745,
+          "mean_rate_pp": 1.704475,
+          "comp_dev_pp": 0.054692
+        },
+        {
+          "division": "CP02",
+          "division_label": "Alcoholic beverages, tobacco and narcotics",
+          "share_XK": 0.0622,
+          "share_EA": 0.03779,
+          "mean_rate_pp": 4.457766,
+          "comp_dev_pp": 0.021044
+        },
+        {
+          "division": "CP12",
+          "division_label": "Insurance and financial services",
+          "share_XK": 0.01863,
+          "share_EA": 0.03134,
+          "mean_rate_pp": 2.349439,
+          "comp_dev_pp": 0.015839
+        },
+        {
+          "division": "CP03",
+          "division_label": "Clothing and footwear",
+          "share_XK": 0.04419,
+          "share_EA": 0.04788,
+          "mean_rate_pp": 1.902658,
+          "comp_dev_pp": 0.006247
+        },
+        {
+          "division": "CP10",
+          "division_label": "Education services",
+          "share_XK": 0.0088,
+          "share_EA": 0.01086,
+          "mean_rate_pp": 3.729485,
+          "comp_dev_pp": -0.000276
+        },
+        {
+          "division": "CP13",
+          "division_label": "Personal care, social protection and miscellaneous goods and services",
+          "share_XK": 0.04183,
+          "share_EA": 0.06448,
+          "mean_rate_pp": 3.781695,
+          "comp_dev_pp": -0.004214
+        },
+        {
+          "division": "CP08",
+          "division_label": "Information and communication",
+          "share_XK": 0.04237,
+          "share_EA": 0.04081,
+          "mean_rate_pp": -0.984891,
+          "comp_dev_pp": -0.007146
+        },
+        {
+          "division": "CP05",
+          "division_label": "Furnishings, household equipment and routine household maintenance",
+          "share_XK": 0.07276,
+          "share_EA": 0.05913,
+          "mean_rate_pp": 1.277718,
+          "comp_dev_pp": -0.031593
+        },
+        {
+          "division": "CP06",
+          "division_label": "Health",
+          "share_XK": 0.02567,
+          "share_EA": 0.0595,
+          "mean_rate_pp": 4.679638,
+          "comp_dev_pp": -0.036672
+        },
+        {
+          "division": "CP07",
+          "division_label": "Transport",
+          "share_XK": 0.18593,
+          "share_EA": 0.15609,
+          "mean_rate_pp": 0.85142,
+          "comp_dev_pp": -0.081888
+        },
+        {
+          "division": "CP04",
+          "division_label": "Housing, water, electricity, gas and other fuels",
+          "share_XK": 0.08992,
+          "share_EA": 0.14923,
+          "mean_rate_pp": 5.940313,
+          "comp_dev_pp": -0.139063
+        },
+        {
+          "division": "CP11",
+          "division_label": "Restaurants and accommodation services",
+          "share_XK": 0.04102,
+          "share_EA": 0.11296,
+          "mean_rate_pp": 6.111621,
+          "comp_dev_pp": -0.181
+        }
+      ],
+      "food_share_XK": 0.3211,
+      "food_share_EA": 0.15543,
+      "food_comp_dev_pp": 0.320353,
+      "positive_sum_pp": 0.418175,
+      "negative_sum_pp": -0.481852,
+      "xk_food_share_by_weight_year": [
+        {
+          "year": 2015,
+          "share": 0.4088
+        },
+        {
+          "year": 2016,
+          "share": 0.3924
+        },
+        {
+          "year": 2017,
+          "share": 0.3762
+        },
+        {
+          "year": 2018,
+          "share": 0.3979
+        },
+        {
+          "year": 2019,
+          "share": 0.39989
+        },
+        {
+          "year": 2020,
+          "share": 0.4012
+        },
+        {
+          "year": 2021,
+          "share": 0.3987
+        },
+        {
+          "year": 2022,
+          "share": 0.3957
+        },
+        {
+          "year": 2023,
+          "share": 0.381897637952759
+        },
+        {
+          "year": 2024,
+          "share": 0.35113
+        },
+        {
+          "year": 2025,
+          "share": 0.3211
+        },
+        {
+          "year": 2026,
+          "share": 0.327583275832758
+        }
+      ]
+    },
+    "weight_year_robustness_2025": {
+      "label": "added after cold review (2026-10-01), not pre-registered",
+      "ea_weight_year": 2025,
+      "rows": [
+        {
+          "xk_weight_year": 2021,
+          "comp_mid_pp": 0.120263,
+          "within_mid_pp": 3.546155,
+          "resid_pp": -0.359798,
+          "comp_A_pp": -0.081815,
+          "within_A_pp": 3.748233,
+          "comp_B_pp": 0.322341,
+          "within_B_pp": 3.344078,
+          "verdict": "within-division",
+          "headline": false
+        },
+        {
+          "xk_weight_year": 2022,
+          "comp_mid_pp": 0.109506,
+          "within_mid_pp": 3.527206,
+          "resid_pp": -0.330092,
+          "comp_A_pp": -0.073622,
+          "within_A_pp": 3.710334,
+          "comp_B_pp": 0.292634,
+          "within_B_pp": 3.344078,
+          "verdict": "within-division",
+          "headline": false
+        },
+        {
+          "xk_weight_year": 2023,
+          "comp_mid_pp": 0.154171,
+          "within_mid_pp": 3.540213,
+          "resid_pp": -0.387763,
+          "comp_A_pp": -0.041964,
+          "within_A_pp": 3.736348,
+          "comp_B_pp": 0.350305,
+          "within_B_pp": 3.344078,
+          "verdict": "within-division",
+          "headline": false
+        },
+        {
+          "xk_weight_year": 2024,
+          "comp_mid_pp": 0.110429,
+          "within_mid_pp": 3.480833,
+          "resid_pp": -0.284642,
+          "comp_A_pp": -0.026326,
+          "within_A_pp": 3.617589,
+          "comp_B_pp": 0.247185,
+          "within_B_pp": 3.344078,
+          "verdict": "within-division",
+          "headline": false
+        },
+        {
+          "xk_weight_year": 2025,
+          "comp_mid_pp": -0.063674,
+          "within_mid_pp": 3.385323,
+          "resid_pp": -0.015028,
+          "comp_A_pp": -0.104919,
+          "within_A_pp": 3.426568,
+          "comp_B_pp": -0.022429,
+          "within_B_pp": 3.344078,
+          "verdict": "within-division",
+          "headline": true
+        }
+      ],
+      "max_abs_resid_other_years": 0.387763
+    },
+    "annual_average_2025": {
+      "label": "pre-registered reference column, quoted in the post after cold review",
+      "XK_pp": 3.9,
+      "EA_pp": 2.1,
+      "gap_pp": 1.8
+    },
+    "weight_sources": {
+      "metadata_url": "https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm",
+      "metadata_last_update": "23 October 2023",
+      "retrieved": "2026-09-29",
+      "documented_years": [2016, 2017, 2018, 2019, 2020, 2021, 2023],
+      "undocumented_in_window": [2022, 2024, 2025],
+      "undocumented_outside_window": [2015, 2026]
+    }
+  }
 }

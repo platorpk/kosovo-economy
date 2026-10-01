@@ -6,8 +6,8 @@
 #
 #   GitHub   output/hicp_gap_decomposition.png   2000 x 1400 px
 #            full subtitle; composition A-B range as a thin line beside each bar;
-#            caption carries residual, Croatia, u-flag, back-calculation and
-#            Eurostat conformity notes.
+#            caption carries residual, Croatia, u-flag, back-calculation,
+#            Eurostat conformity and undocumented weight-source-year notes.
 #   LinkedIn output/hicp_gap_linkedin.png        1200 x 1500 px portrait
 #            rendered once at 2000 x 2500 and downscaled with magick (house
 #            rule: never re-render smaller). No range lines; a caption line
@@ -19,7 +19,11 @@
 # gap as a dot, 2025 emphasised with a background band, a gap label and a
 # composition label. Every number shown is computed from the CSV.
 #
+# The LinkedIn caption also carries the back-calculation, conformity and weight-
+# source-year notes (DECISIONS.md E1: weight-source note in both captions).
+#
 # Reads:  output/hicp_gap_decomposition.csv                 (build/02_decompose.R)
+#         output/hicp_gap_xk_weight_sources.csv             (build/02_decompose.R)
 #         data/raw/<date>/eurostat_prc_hicp_minr_XK_EA.rds  (vintage only)
 # Run from the piece root:  Rscript build/03_chart.R
 # ==============================================================================
@@ -75,6 +79,16 @@ backcalc_txt <- paste("Pre-2026 figures are back-calculated under the 2026 class
                       "(ECOICOP ver.2) and can differ from figures published at the time.")
 conform_txt  <- paste("Eurostat notes that conformity of Kosova's HICP with HICP methodological",
                       "requirements has not been fully evaluated.")
+# Weight source years not documented on Eurostat's XK metadata page (DECISIONS.md E1)
+wsrc <- read_csv(file.path(PROJ, "output/hicp_gap_xk_weight_sources.csv"),
+                 col_types = cols(source_text = "c", na_reference = "c", metadata_last_update = "c",
+                                  metadata_url = "c", retrieved = "c", .default = col_guess()))
+undoc <- wsrc$weight_year[!wsrc$documented & wsrc$in_window]
+stopifnot(length(undoc) >= 1, all(undoc %in% YEARS), n_distinct(wsrc$metadata_last_update) == 1)
+year_list <- function(y) if (length(y) == 1) as.character(y) else
+  paste(paste(y[-length(y)], collapse = ", "), "and", y[length(y)])
+wsrc_txt <- sprintf("Eurostat's Kosova metadata (updated %s) gives no weight source year for %s.",
+                    sub("^\\d+ ", "", unique(wsrc$metadata_last_update)), year_list(undoc))
 source_txt   <- sprintf("Source: Eurostat, prc_hicp_minr and prc_hicp_iw, data as of %s  |  Analysis: Plator Krasniqi",
                         vintage)
 
@@ -147,8 +161,8 @@ gh_sub <- wrap(sprintf(paste(
 gh_cap <- paste0(wrap(sprintf(paste(
   "Midpoint decomposition at ECOICOP ver.2 division level (13 divisions); residual up to %.2f pp, not drawn.",
   "Euro area: changing composition; from 2023 it includes Croatia. %s: some euro-area division values",
-  "flagged low reliability by Eurostat. %s %s"),
-  max_resid, u_years, backcalc_txt, conform_txt), 140), "\n", source_txt)
+  "flagged low reliability by Eurostat. %s %s %s"),
+  max_resid, u_years, backcalc_txt, conform_txt, wsrc_txt), 140), "\n", source_txt)
 p_gh <- build_plot("Kosova's HICP inflation gap with the euro area, by component",
                    gh_sub, gh_cap,
                    legend_labels = c("Composition", "Within-division"), show_range = TRUE)
@@ -169,6 +183,7 @@ li_sub   <- "Kosova minus euro area, December to December, percentage points"
 li_order <- sprintf("Splits for %s depend on decomposition ordering; see method.",
                     year_runs(ordering_yrs))
 li_cap <- paste(wrap(li_order, 118), wrap(backcalc_txt, 118), wrap(conform_txt, 118),
+                wrap(wsrc_txt, 118),
                 sprintf("Method and caveats: %s", REPO),
                 source_txt, sep = "\n")                    # source line never wrapped
 p_li <- build_plot(wrap(li_title, 34), li_sub, li_cap,

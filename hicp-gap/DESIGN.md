@@ -268,3 +268,29 @@ not extended to the peers.
 - The pre-2026 back-calculation limitation (above) applies to every peer.
 - Item weights are effectively 1-decimal in XK 2021–2022 and ME 2016–2018 (inside the
   window).
+
+---
+
+## Post-review additions (2026-10-01)
+
+Added 2026-10-01, **after all XK–EA results had been seen**, following an internal review of
+the draft text. **Not pre-registered.** Nothing above is amended, and no pre-registered number,
+verdict or output changes. Each addition is labelled in the README as "added after cold review
+(2026-10-01), not pre-registered".
+
+- **(a) 2025 composition term by division.** Midpoint composition term per division in
+  deviation form, (s_XK,i − s_EA,i) · (r̄_i − r̄), with r̄_i = (r_XK,i + r_EA,i) / 2 and
+  r̄ = Σ_i (s_XK,i + s_EA,i) / 2 · r̄_i. The terms sum to the midpoint composition term
+  (asserted). This departs from the division-contribution extension's "Nothing else from
+  the division table is reported or saved".
+- **(b) Weight-year robustness, 2025.** The 2025 split (midpoint, A, B, residual, verdict
+  under the §3 rule) with each Kosova weight year 2021–2025, euro area at its 2025 weights.
+  Only the 2025 row is a valid decomposition; the others do not close and are a sensitivity
+  check against the undocumented source year of Kosova's 2025 weights.
+- **(d) Monthly 12-month rates for 2026: considered, not built.** The pre-registered 2026
+  year-to-date row (§2) already shows the 2026 gap, and is quoted with its seasonality caveat
+  instead.
+
+Not additions: the 2025 annual-average gap is the pre-registered reference column (§3), now
+also quoted in the post; the undocumented weight source years (2022, 2024, 2025) are added to
+the README limitations and the chart captions as `DECISIONS.md` E1 already required.

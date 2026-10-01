@@ -1,0 +1,13 @@
+weight_year,source_text,na_reference,documented,in_window,metadata_last_update,metadata_url,retrieved
+2015,,,FALSE,FALSE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2016,for the year 2016 are based on the NA data 2014,2014,TRUE,TRUE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2017,"for year 2017 are based on the NA data, reference year 2015",2015,TRUE,TRUE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2018,for year 2018 are based on the NA data 2016,2016,TRUE,TRUE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2019,January 2019 the HICP index calculations are based on the structure of NA data 2017,2017,TRUE,TRUE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2020,from January 2020 the HICP Index calculations are based on the structure of NA data 2018,2018,TRUE,TRUE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2021,from January 2021 the HICP Index calculations are based on the structure of NA data 2019,2019,TRUE,TRUE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2022,,,FALSE,TRUE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2023,"Weights for 2023 are calculated using NA data, reference year 2020/2021",2020/2021,TRUE,TRUE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2024,,,FALSE,TRUE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2025,,,FALSE,TRUE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
+2026,,,FALSE,FALSE,23 October 2023,https://ec.europa.eu/eurostat/cache/metadata/EN/prc_hicp_esmshi_xk.htm,2026-09-29
