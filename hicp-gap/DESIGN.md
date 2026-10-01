@@ -189,3 +189,82 @@ Carried into the README's limitations section, alongside the Croatia (§1) and
   contributions can reflect differing seasonal patterns between the two areas
   (for example, sales calendars) and are **not reported in the piece**. The YTD
   aggregate appears only with this caveat attached.
+
+---
+
+## Peers addendum
+
+Pre-registered 2026-09-29, before any peer decomposition is run. Decisions are in
+`DECISIONS.md`; the verification is in `verify/peers_report.md` and
+`verify/followup_report.md`.
+
+Descriptive peer data (published monthly rates, peaks, exchange rates) were
+inspected before this addendum. No peer decomposition term had been computed.
+
+**§1 amended (scope).**
+- §1 originally excluded Western Balkan neighbours from this piece. This addendum
+  amends that: pairwise decompositions of each peer against EA are now in scope.
+  Using a peer as the comparator remains excluded, and no term is computed
+  between two peers.
+- Cross-peer statements compare published values, or each peer's own decomposition
+  against `EA`.
+- The XK–EA pair is the existing piece. The peer build must reproduce its output exactly.
+- BiH is not included. Eurostat holds no BA observations in any HICP table
+  (`verify/peers_report.md` §6), so it gets one footnote.
+
+**Applied unchanged.** Substitute p for XK throughout §§1–3 and Mechanical:
+- comparator `EA`
+- weight years 2016–2025, December to December, each year plus the ten-year arithmetic
+  mean; 2026 YTD as a labelled row only
+- midpoint headline, with variant A (composition at EA rates) and variant B (composition
+  at peer rates) as bounds
+- the dominance rule, with its 0.05 pp margin
+- the second term named "within-division", never "price"
+- the residual as its own column
+- `I25`; rates derived from indices; shares over the 13 divisions
+
+**Gate, per peer, before any peer term.**
+- §3 (a) and (b), plus the `I15`/`I25` check, for every peer-year.
+- (b) stays pass/fail. `DECISIONS.md` C2 governs only the monthly exact-contribution
+  verification check.
+- Weight rounding half-units are taken per geo-year. Item weights of XK 2021–2022 and
+  ME 2015–2018 carry no nonzero second decimal, so their half-unit is 0.05.
+- Any breach: stop and report.
+
+**Reference column.**
+- Published December `RCH_MV12MAVR`, labelled as not decomposed.
+- AL has none for 2016 (published from 2017). That cell is left blank and marked
+  "not published".
+
+**Descriptive layer.** Never decomposed. §2's rule on period statements governs the
+decomposition, not this layer.
+- Published monthly TOTAL `RCH_A`, 2021-01 → 2026-08, and each geo's peak value and
+  month(s), with ties shown.
+- Published `RCH_A` for FOOD, NRG, IGD_NNRG and SERV, 2021-01 → 2023-12, for the
+  Albania comparison (`DECISIONS.md` D2).
+- ALL, RSD and MKD per EUR, monthly average, as in `verify/03_fx.R`.
+- Prose may state each geo's published peak month(s), e.g. "between July 2022 and
+  March 2023".
+- Decomposition statements stay single weight year.
+- No cross-peer ranking of any single month in prose. Ranked tables show ties as "=1".
+
+**Grouping** (`DECISIONS.md` D1).
+- "Anchored": the currency stays within a band of less than 1% against the euro over
+  2021-01 → 2026-08. The band is the max/min range of the monthly-average rate.
+  This covers XK, ME, RS and MK.
+- "Moving": AL.
+- The exact ranges are reported. No de jure regime labels are used.
+
+**Pre-registered division-contribution extension** (2025 and 2026 YTD, above): XK only,
+not extended to the peers.
+
+**Limitations added:**
+- `EA` includes Croatia from 2023 and Bulgaria from 2026.
+- Eurostat has not fully evaluated the enlargement countries' conformity with HICP
+  requirements.
+- The peers' country metadata (2023–2025) predate ECOICOP ver.2 and document no
+  back-series method.
+- The XK metadata page gives no weight source year for weight years 2022, 2024 and 2025.
+- The pre-2026 back-calculation limitation (above) applies to every peer.
+- Item weights are effectively 1-decimal in XK 2021–2022 and ME 2016–2018 (inside the
+  window).
