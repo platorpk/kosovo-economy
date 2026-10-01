@@ -12,10 +12,10 @@
 #         output/hicp_gap_xk_weight_sources.csv   (build/02_decompose.R section 6,
 #           added after cold review 2026-10-01, not pre-registered)
 #         data/raw/<date>/eurostat_prc_hicp_minr_XK_EA.rds, ..._iw_XK_EA.rds
-#         data/raw/<date>/eurostat_prc_hicp_iw_bulk.csv.gz   (EA membership check
+#         data/raw/<date>/eurostat_prc_hicp_iw_EA_EA20_EA21.rds   (EA membership check
 #           only: EA item weights equal EA20 through 2025 and EA21 from 2026, i.e.
-#           Bulgaria joins in January 2026; gitignored, verify/01_coverage.R
-#           downloads it again if missing)
+#           Bulgaria joins in January 2026; committed extract written by
+#           verify/07_ea_weights_extract.R from the bulk download)
 # Writes: data/processed/figures.json   (post-review values under `post_review`)
 #         README.md
 #         output/linkedin_post.txt   (gitignored; not part of the public piece)
@@ -148,14 +148,17 @@ PR_LABEL  <- "added after cold review (2026-10-01), not pre-registered"
 REF_LABEL <- "pre-registered reference column, quoted in the post after cold review"
 
 # EA membership: the year Bulgaria enters the EA comparator. EA's item weights
-# equal EA20's up to the year before and EA21's from that year (bulk prc_hicp_iw).
-iw_bulk_f <- file.path(dated[1], "eurostat_prc_hicp_iw_bulk.csv.gz")
-stopifnot(file.exists(iw_bulk_f))
-ea_cmp <- read_csv(iw_bulk_f, col_types = cols(.default = "c"), progress = FALSE) |>
+# equal EA20's up to the year before and EA21's from that year. Read from the
+# committed extract of prc_hicp_iw (verify/07_ea_weights_extract.R).
+ea_w_f <- file.path(dated[1], "eurostat_prc_hicp_iw_EA_EA20_EA21.rds")
+stopifnot(file.exists(ea_w_f))
+ea_w <- readRDS(ea_w_f)
+stopifnot(identical(unique(ea_w[["LAST UPDATE"]]), unique(minr[["LAST UPDATE"]])))   # same release
+ea_cmp <- ea_w |>
   filter(geo %in% c("EA", "EA20", "EA21"), grepl("^CP\\d{2}$", coicop18),
-         as.integer(TIME_PERIOD) >= max(YEARS) - 2) |>
-  select(geo, coicop18, year = TIME_PERIOD, OBS_VALUE) |>
-  tidyr::pivot_wider(names_from = geo, values_from = OBS_VALUE) |>
+         as.integer(time) >= max(YEARS) - 2) |>
+  select(geo, coicop18, year = time, values) |>
+  tidyr::pivot_wider(names_from = geo, values_from = values) |>
   group_by(year = as.integer(year)) |>
   summarise(n = n(), eq20 = all(EA == EA20), eq21 = all(EA == EA21), .groups = "drop")
 bg_year <- min(ea_cmp$year[ea_cmp$eq21 & !ea_cmp$eq20])
