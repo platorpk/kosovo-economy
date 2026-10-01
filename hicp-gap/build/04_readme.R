@@ -402,18 +402,34 @@ writeLines(L, file.path(PROJ, "README.md"), useBytes = FALSE)
 # ------------------------------------------------------------------------------
 # LinkedIn post (not part of the public piece)
 # ------------------------------------------------------------------------------
+# Guards on the wording: each claim in the post must follow from the computed terms.
+p2 <- t25 |> filter(rank %in% 1:2) |> arrange(rank)
+stopifnot(
+  e$verdict == "within-division",                       # "holds under both ways" (dominance rule, A and B)
+  e$comp_mid_pp < 0, e$within_mid_pp >= e$gap_pp,       # "the whole gap sits in the second part"
+  F$win$verdict == "range",                             # window split "isn't robust"
+  sign(F$win$comp_A_pp - F$win$within_A_pp) != sign(F$win$comp_B_pp - F$win$within_B_pp),  # "either part can come out larger"
+  nrow(p2) == 2, identical(p2$rank, 1:2),               # the two listed divisions are the top two of t25
+  all(p2$contribution_pp > 0), p2$contribution_pp[1] >= p2$contribution_pp[2],
+  sum(p2$contribution_pp) < e$within_mid_pp)            # and together less than the within-division total
 post <- c(
-  sprintf("In %d, consumer prices in Kosova rose %s%% from December to December, against %s%% in the euro area: a gap of %s percentage points.",
-          EMPH, u1(e$pi_XK_pp), u1(e$pi_EA_pp), u1(e$gap_pp)),
-  "A gap like this can be split into two parts: differences in what people spend their money on, and differences in how prices move within the same categories.",
-  sprintf("In %d the gap sits entirely in the second part: within categories %s pp, spending shares %s pp, whichever way the split is ordered.",
+  sprintf("Consumer prices in Kosova rose %s%% in %d, December to December. In the euro area: %s%%. Same currency, a gap of %s percentage points.",
+          u1(e$pi_XK_pp), EMPH, u1(e$pi_EA_pp), u1(e$gap_pp)),
+  "Kosova uses the euro without being part of the euro area. It has no monetary policy of its own: its central bank does not set interest rates.",
+  "A gap like this can come from two places:",
+  "",
+  sprintf("1. How spending is split across the %d main consumption categories (food, housing and energy, transport, and so on).", F$n_div),
+  "2. Differences inside each category: what exactly is bought within it, and how those prices moved.",
+  "",
+  sprintf("In %d the whole gap sits in the second part: %s pp from inside the categories, %s pp from the split of spending across them. The result holds under both ways of computing the decomposition.",
           EMPH, s1(e$within_mid_pp), s1(e$comp_mid_pp)),
-  "",
-  sprintf("Over %d–%d the gap averaged %s pp a year, and there the answer depends on how the split is ordered, so neither part can be called the larger.",
-          F$years[1], F$years[2], s1(F$win$gap_pp)),
-  "",
-  sprintf("Method, data and caveats: %s", PIECE_URL),
-  "",
+  sprintf("Within that %s pp, the largest contributions came from %s (%s pp) and %s (%s pp).",
+          s1(e$within_mid_pp), tolower(p2$division_label[1]), s1(p2$contribution_pp[1]),
+          tolower(p2$division_label[2]), s1(p2$contribution_pp[2])),
+  sprintf("%d stands out. Over %d–%d the gap averaged %s pp a year, and over that period the split isn't robust: depending on how it's computed, either part can come out larger.",
+          EMPH, F$years[1], F$years[2], s1(F$win$gap_pp)),
+  "So last year's gap wasn't about how Kosova divides its spending across the main categories. It came from what happened inside them.",
+  sprintf("Method, data and limitations, including HICP comparability caveats for Kosova: %s", PIECE_URL),
   "Personal analysis, public data.")
 writeLines(post, file.path(PROJ, "output/linkedin_post.txt"))
 
