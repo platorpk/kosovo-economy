@@ -201,7 +201,7 @@ Pre-registered 2026-09-29, before any peer decomposition is run. Decisions are i
 Descriptive peer data (published monthly rates, peaks, exchange rates) were
 inspected before this addendum. No peer decomposition term had been computed.
 
-**§1 amended (scope).**
+**§1 amended (scope).** Peer set: p ∈ {XK, ME, RS, AL, MK}.
 - §1 originally excluded Western Balkan neighbours from this piece. This addendum
   amends that: pairwise decompositions of each peer against EA are now in scope.
   Using a peer as the comparator remains excluded, and no term is computed
