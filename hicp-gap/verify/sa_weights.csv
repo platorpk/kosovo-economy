@@ -1,0 +1,169 @@
+geo,year,coicop18,label,value,flag,status
+XK,2020,FOOD,Food including alcohol and tobacco,458.5,,value
+XK,2020,NRG,Energy,106.6,,value
+XK,2020,IGD_NNRG,Non-energy industrial goods,269.6,,value
+XK,2020,SERV,Services (overall index excluding goods),165.3,,value
+XK,2021,FOOD,Food including alcohol and tobacco,462.9,,value
+XK,2021,NRG,Energy,107.8,,value
+XK,2021,IGD_NNRG,Non-energy industrial goods,275.8,,value
+XK,2021,SERV,Services (overall index excluding goods),153.5,,value
+XK,2022,FOOD,Food including alcohol and tobacco,456.4,,value
+XK,2022,NRG,Energy,105.9,,value
+XK,2022,IGD_NNRG,Non-energy industrial goods,269.1,,value
+XK,2022,SERV,Services (overall index excluding goods),168.6,,value
+XK,2023,FOOD,Food including alcohol and tobacco,446.28,,value
+XK,2023,NRG,Energy,147.44,,value
+XK,2023,IGD_NNRG,Non-energy industrial goods,264.9,,value
+XK,2023,SERV,Services (overall index excluding goods),141.38,,value
+XK,2024,FOOD,Food including alcohol and tobacco,418.78,,value
+XK,2024,NRG,Energy,129.38,,value
+XK,2024,IGD_NNRG,Non-energy industrial goods,278.55,,value
+XK,2024,SERV,Services (overall index excluding goods),173.3,,value
+XK,2025,FOOD,Food including alcohol and tobacco,383.3,,value
+XK,2025,NRG,Energy,129.35,,value
+XK,2025,IGD_NNRG,Non-energy industrial goods,294.6,,value
+XK,2025,SERV,Services (overall index excluding goods),192.74,,value
+XK,2026,FOOD,Food including alcohol and tobacco,385.23,,value
+XK,2026,NRG,Energy,122.2,,value
+XK,2026,IGD_NNRG,Non-energy industrial goods,293.25,,value
+XK,2026,SERV,Services (overall index excluding goods),199.32,,value
+ME,2020,FOOD,Food including alcohol and tobacco,341.27,,value
+ME,2020,NRG,Energy,94.73,,value
+ME,2020,IGD_NNRG,Non-energy industrial goods,255.02,,value
+ME,2020,SERV,Services (overall index excluding goods),308.98,,value
+ME,2021,FOOD,Food including alcohol and tobacco,340.71,,value
+ME,2021,NRG,Energy,84.4,,value
+ME,2021,IGD_NNRG,Non-energy industrial goods,266.14,,value
+ME,2021,SERV,Services (overall index excluding goods),308.75,,value
+ME,2022,FOOD,Food including alcohol and tobacco,369.92,,value
+ME,2022,NRG,Energy,118.39,,value
+ME,2022,IGD_NNRG,Non-energy industrial goods,244.12,,value
+ME,2022,SERV,Services (overall index excluding goods),267.56,,value
+ME,2023,FOOD,Food including alcohol and tobacco,381.6,,value
+ME,2023,NRG,Energy,123.44,,value
+ME,2023,IGD_NNRG,Non-energy industrial goods,207.2,,value
+ME,2023,SERV,Services (overall index excluding goods),287.75,,value
+ME,2024,FOOD,Food including alcohol and tobacco,384.47,,value
+ME,2024,NRG,Energy,111.05,,value
+ME,2024,IGD_NNRG,Non-energy industrial goods,206.8,,value
+ME,2024,SERV,Services (overall index excluding goods),297.68,,value
+ME,2025,FOOD,Food including alcohol and tobacco,370.33,,value
+ME,2025,NRG,Energy,106.74,,value
+ME,2025,IGD_NNRG,Non-energy industrial goods,212.82,,value
+ME,2025,SERV,Services (overall index excluding goods),310.1,,value
+ME,2026,FOOD,Food including alcohol and tobacco,366.5,,value
+ME,2026,NRG,Energy,107.29,,value
+ME,2026,IGD_NNRG,Non-energy industrial goods,213.31,,value
+ME,2026,SERV,Services (overall index excluding goods),312.89,,value
+RS,2020,FOOD,Food including alcohol and tobacco,379.4,,value
+RS,2020,NRG,Energy,149.38,,value
+RS,2020,IGD_NNRG,Non-energy industrial goods,228.63,,value
+RS,2020,SERV,Services (overall index excluding goods),242.59,,value
+RS,2021,FOOD,Food including alcohol and tobacco,384.5,,value
+RS,2021,NRG,Energy,145.29,,value
+RS,2021,IGD_NNRG,Non-energy industrial goods,229.46,,value
+RS,2021,SERV,Services (overall index excluding goods),240.75,,value
+RS,2022,FOOD,Food including alcohol and tobacco,376.54,,value
+RS,2022,NRG,Energy,145.81,,value
+RS,2022,IGD_NNRG,Non-energy industrial goods,227.73,,value
+RS,2022,SERV,Services (overall index excluding goods),249.92,,value
+RS,2023,FOOD,Food including alcohol and tobacco,375.47,,value
+RS,2023,NRG,Energy,141.66,,value
+RS,2023,IGD_NNRG,Non-energy industrial goods,237.61,,value
+RS,2023,SERV,Services (overall index excluding goods),245.27,,value
+RS,2024,FOOD,Food including alcohol and tobacco,375.57,,value
+RS,2024,NRG,Energy,144.08,,value
+RS,2024,IGD_NNRG,Non-energy industrial goods,234.41,,value
+RS,2024,SERV,Services (overall index excluding goods),245.94,,value
+RS,2025,FOOD,Food including alcohol and tobacco,375.65,,value
+RS,2025,NRG,Energy,144.49,,value
+RS,2025,IGD_NNRG,Non-energy industrial goods,232.63,,value
+RS,2025,SERV,Services (overall index excluding goods),247.23,,value
+RS,2026,FOOD,Food including alcohol and tobacco,375.62,,value
+RS,2026,NRG,Energy,144.1,,value
+RS,2026,IGD_NNRG,Non-energy industrial goods,234.06,,value
+RS,2026,SERV,Services (overall index excluding goods),246.22,,value
+AL,2020,FOOD,Food including alcohol and tobacco,414.84,,value
+AL,2020,NRG,Energy,66.34,,value
+AL,2020,IGD_NNRG,Non-energy industrial goods,202.41,,value
+AL,2020,SERV,Services (overall index excluding goods),316.41,,value
+AL,2021,FOOD,Food including alcohol and tobacco,415.82,,value
+AL,2021,NRG,Energy,60.44,,value
+AL,2021,IGD_NNRG,Non-energy industrial goods,195.88,,value
+AL,2021,SERV,Services (overall index excluding goods),327.85,,value
+AL,2022,FOOD,Food including alcohol and tobacco,407.37,,value
+AL,2022,NRG,Energy,61.45,,value
+AL,2022,IGD_NNRG,Non-energy industrial goods,194.36,,value
+AL,2022,SERV,Services (overall index excluding goods),336.82,,value
+AL,2023,FOOD,Food including alcohol and tobacco,381.29,,value
+AL,2023,NRG,Energy,60.95,,value
+AL,2023,IGD_NNRG,Non-energy industrial goods,174.75,,value
+AL,2023,SERV,Services (overall index excluding goods),383,,value
+AL,2024,FOOD,Food including alcohol and tobacco,398.04,,value
+AL,2024,NRG,Energy,57.38,,value
+AL,2024,IGD_NNRG,Non-energy industrial goods,188.33,,value
+AL,2024,SERV,Services (overall index excluding goods),356.26,,value
+AL,2025,FOOD,Food including alcohol and tobacco,397.85,,value
+AL,2025,NRG,Energy,50.25,,value
+AL,2025,IGD_NNRG,Non-energy industrial goods,179.14,,value
+AL,2025,SERV,Services (overall index excluding goods),372.75,,value
+AL,2026,FOOD,Food including alcohol and tobacco,396.48,,value
+AL,2026,NRG,Energy,54.47,,value
+AL,2026,IGD_NNRG,Non-energy industrial goods,179.59,,value
+AL,2026,SERV,Services (overall index excluding goods),369.46,,value
+MK,2020,FOOD,Food including alcohol and tobacco,448.78,,value
+MK,2020,NRG,Energy,99.65,,value
+MK,2020,IGD_NNRG,Non-energy industrial goods,198.92,,value
+MK,2020,SERV,Services (overall index excluding goods),252.66,,value
+MK,2021,FOOD,Food including alcohol and tobacco,479.31,,value
+MK,2021,NRG,Energy,100.08,,value
+MK,2021,IGD_NNRG,Non-energy industrial goods,191.2,,value
+MK,2021,SERV,Services (overall index excluding goods),229.41,,value
+MK,2022,FOOD,Food including alcohol and tobacco,470.54,,value
+MK,2022,NRG,Energy,100.5,,value
+MK,2022,IGD_NNRG,Non-energy industrial goods,193.48,,value
+MK,2022,SERV,Services (overall index excluding goods),235.48,,value
+MK,2023,FOOD,Food including alcohol and tobacco,472.66,,value
+MK,2023,NRG,Energy,102.35,,value
+MK,2023,IGD_NNRG,Non-energy industrial goods,192.84,,value
+MK,2023,SERV,Services (overall index excluding goods),232.14,,value
+MK,2024,FOOD,Food including alcohol and tobacco,475.71,,value
+MK,2024,NRG,Energy,105.34,,value
+MK,2024,IGD_NNRG,Non-energy industrial goods,187.6,,value
+MK,2024,SERV,Services (overall index excluding goods),231.35,,value
+MK,2025,FOOD,Food including alcohol and tobacco,471.87,,value
+MK,2025,NRG,Energy,95.44,,value
+MK,2025,IGD_NNRG,Non-energy industrial goods,192.08,,value
+MK,2025,SERV,Services (overall index excluding goods),240.61,,value
+MK,2026,FOOD,Food including alcohol and tobacco,468.21,,value
+MK,2026,NRG,Energy,98,,value
+MK,2026,IGD_NNRG,Non-energy industrial goods,192.37,,value
+MK,2026,SERV,Services (overall index excluding goods),241.43,,value
+EA,2020,FOOD,Food including alcohol and tobacco,190.73,,value
+EA,2020,NRG,Energy,98.49,,value
+EA,2020,IGD_NNRG,Non-energy industrial goods,260.7,,value
+EA,2020,SERV,Services (overall index excluding goods),450.08,,value
+EA,2021,FOOD,Food including alcohol and tobacco,217.61,,value
+EA,2021,NRG,Energy,94.97,,value
+EA,2021,IGD_NNRG,Non-energy industrial goods,267.71,,value
+EA,2021,SERV,Services (overall index excluding goods),419.71,,value
+EA,2022,FOOD,Food including alcohol and tobacco,208.85,,value
+EA,2022,NRG,Energy,109.3,,value
+EA,2022,IGD_NNRG,Non-energy industrial goods,263.75,,value
+EA,2022,SERV,Services (overall index excluding goods),418.09,,value
+EA,2023,FOOD,Food including alcohol and tobacco,199.72,,value
+EA,2023,NRG,Energy,102.31,,value
+EA,2023,IGD_NNRG,Non-energy industrial goods,260.9,,value
+EA,2023,SERV,Services (overall index excluding goods),437.08,,value
+EA,2024,FOOD,Food including alcohol and tobacco,194.66,,value
+EA,2024,NRG,Energy,99.12,,value
+EA,2024,IGD_NNRG,Non-energy industrial goods,255.47,,value
+EA,2024,SERV,Services (overall index excluding goods),450.75,,value
+EA,2025,FOOD,Food including alcohol and tobacco,193.22,,value
+EA,2025,NRG,Energy,93.98,,value
+EA,2025,IGD_NNRG,Non-energy industrial goods,254.2,,value
+EA,2025,SERV,Services (overall index excluding goods),458.6,,value
+EA,2026,FOOD,Food including alcohol and tobacco,189.35,,value
+EA,2026,NRG,Energy,90.26,,value
+EA,2026,IGD_NNRG,Non-energy industrial goods,252.16,,value
+EA,2026,SERV,Services (overall index excluding goods),468.23,,value

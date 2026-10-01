@@ -153,3 +153,99 @@ Not answered here.
    2020-04 to 2021-05).
 7. Weights are annual, prices monthly: how the annual weight maps onto the
    monthly or annual price change used in each term.
+
+---
+
+## Peer extension: verification (2026-09-29)
+
+**Status: verification only.** No pipeline, figure, finding or analytical choice.
+Question: do Eurostat data support comparing the 2021–23 inflation shock across XK, ME,
+RS, AL, MK and EA, with BiH via its national CPI?
+
+- Script: `verify/02_peers.R` (`Rscript verify/02_peers.R` from the piece root).
+- Report: `verify/peers_report.md`. Its tables are copied verbatim from the
+  script's `verify/peers_tables_generated.md`. CSVs are in `verify/`.
+- Vintage:
+  - Reuses the 2026-09-23 bulk (Eurostat LAST UPDATE 17/09/26). There was no re-download.
+  - A catalogue guard asserts that Eurostat's last update for `prc_hicp_minr` and
+    `prc_hicp_iw` still equals the bulk stamp, and stops if not.
+  - Filtered record: `data/raw/2026-09-23/eurostat_prc_hicp_{minr,iw}_WB_EA.rds`.
+  - New raw files in `data/raw/2026-09-29/`: catalogue, contentconstraint XMLs,
+    `ei_cphi_m` BA check (its bulk file is gitignored by the existing pattern), ESMS pages,
+    Eurostat 2026 Q&A PDF, BHAS CPI ESMS page.
+- Build scripts are unaffected. They select the latest dated folder that contains
+  `*_XK_EA.rds`, which is still 2026-09-23.
+
+What the checks returned (details and all numbers in the report):
+
+- **Coverage:**
+  - All five peers carry TOTAL and the 13 ECOICOP ver. 2 divisions in `I15`, `I25` and
+    `RCH_A` to 2026-08, with no internal gaps and no flags.
+  - They also carry 46 special aggregates. `FROOPP` and `TOT_X_FROOPP` exist for EA only.
+  - The main special aggregates carry `d` before 2017 and `b` at 2017-01.
+  - Common `RCH_A` start across the six geos: 2016-12 (AL).
+- **Weights:** division weights exist every geo-year, with 13 divisions each. All sum to
+  1000 within the 0.065 rounding bound; the largest deviation is 0.03. No exceptions.
+- **Headline:** derived-vs-published YoY stays within the rounding bound, except 6 months
+  under `I15`. There are none under `I25`.
+- **Aggregation residual:** the YoY-weighted division sum does not reproduce the headline
+  exactly. The residual distributions per geo and per variant are in the report.
+- **BiH:**
+  - No BA observations in any of 48 Eurostat HICP tables. `ei_cphi_m` lists BA in its
+    constraint but holds 0 BA rows.
+  - Source identified: BHAS national CPI. 12 COICOP-1999 divisions, 4-digit, base 2015,
+    monthly since 2005, `.xlsx` time series. Not downloaded.
+- **Metadata:**
+  - Eurostat states that the enlargement countries' conformity with HICP requirements
+    "has not been fully evaluated".
+  - The country ESMS pages date from 2023–2025. None mentions ECOICOP ver. 2 or a
+    back-series method.
+  - The XK page lists NA reference years for the 2016–2021 and 2023 weights, but not for
+    2015, 2022 or 2024–2026.
+
+Open items 2–12 at the end of `verify/peers_report.md` are still open. Item 1 (folder layout)
+was resolved on 2026-09-29: everything is now in `verify/`, as described below.
+
+---
+
+## Peers follow-up: verification (2026-09-29)
+
+**Status: verification only.** No decomposition, figure, finding or analytical choice.
+- Report: `verify/followup_report.md`. Its tables are copied verbatim, by R, from each
+  script's `verify/*_tables_generated.md`.
+- Nothing is committed.
+
+- **Folder move:**
+  - `verification/` was merged into `verify/`, and `02_peers.R` now writes there.
+  - After the move, a re-run of `02_peers.R` reproduced all 7 of its outputs
+    byte-identically (MD5).
+- **`verify/03_fx.R`:** `ert_bil_eur_m` (bulk `LAST UPDATE` 05/09/26), downloaded
+  2026-09-29.
+  - Covers RSD, ALL and MKD per EUR, monthly average (`AVG`), 2021-01..2026-08.
+  - Reports levels and the % change from 2021-01 to each geo's HICP peak month, which the
+    script computes from `prc_hicp_minr`. AL's peak is tied across two months.
+  - Also 2021-01 → 2023-12, 2021-01 → latest, and max/min.
+  - `END` is in the CSV only.
+  - The bulk file is gitignored. The filtered record is
+    `data/raw/2026-09-29/eurostat_ert_bil_eur_m_RSD_ALL_MKD.rds`.
+- **`verify/04_contributions.R`: exact December-link (Ribe) contributions on I25**, as a
+  check.
+  - The self-test on synthetic exact data gives |R| < 1e-9.
+  - **Gate passed:** |R| ≤ the computed first-order rounding bound in every geo-month, for
+    all six geos. This holds both vs the I25-derived TOTAL YoY (R_der) and vs published
+    `RCH_A` (R_pub).
+  - The median bound exceeds 0.05 pp for R_pub (flagged, because `RCH_A` has 1 decimal),
+    but not for R_der.
+  - The max_abs of the exact residual is below that of each of V1–V3 in every geo.
+  - Run twice. Run 1 used one weight precision per geo and passed; its log is kept. Run 2
+    takes the weight precision per geo-year, because of the finding below, and also passed.
+- **`verify/05_sa_weights.R`:** `FOOD`, `NRG`, `IGD_NNRG` and `SERV` (the actual codes)
+  have unflagged item weights in all 42 geo-years of 2020–2026. The four sum to 1000
+  within ±0.01.
+- **New fact:** XK 2021–2022 and ME 2015–2018 item weights carry no nonzero second decimal
+  in any of the 553 codes, so they are effectively published at 1 decimal.
+- **XK 2023-09 (I15):** dropped by Plator. It exceeds the bound by 0.001 pp and is moot
+  because I25 is adopted.
+
+Next step: Plator decides open items 13–17 at the end of `verify/followup_report.md`, and
+items 2–12 of `verify/peers_report.md`.

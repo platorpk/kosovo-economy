@@ -1,0 +1,1117 @@
+geo,unit,coicop18,label,class,first_month,last_month,n_obs,missing_internal,n_empty_rows,flags,status
+XK,I15,TOTAL,Total,total,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP01,Food and non-alcoholic beverages,division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP02,"Alcoholic beverages, tobacco and narcotics",division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP03,Clothing and footwear,division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP04,"Housing, water, electricity, gas and other fuels",division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP05,"Furnishings, household equipment and routine household maintenance",division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP06,Health,division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP07,Transport,division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP08,Information and communication,division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP09,"Recreation, sport and culture",division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP10,Education services,division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP11,Restaurants and accommodation services,division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP12,Insurance and financial services,division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,CP13,"Personal care, social protection and miscellaneous goods and services",division,2015-01,2026-08,140,0,0,,complete span
+XK,I15,AP,Administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I15,APF,Fully administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I15,APM,Mainly administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I15,AP_NRG,Administered prices - energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I15,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I15,AP_X_NRG,Administered prices excluding energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I15,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I15,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,FOOD,Food including alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,FOOD_NP,Unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,FOOD_S,Seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+XK,I15,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,GD,Goods (overall index excluding services),special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,IGD,Industrial goods,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,IGD_NNRG,Non-energy industrial goods,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,NRG,Energy,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,NRG_FOOD_S,Energy and seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,SERV,Services (overall index excluding goods),special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,SERV_COM,Services related to communication,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,SERV_HOUS,Services related to housing,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,SERV_MSC,Services - miscellaneous,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,SERV_TRA,Services related to transport,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,TOT_X_AP,Overall index excluding administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I15,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I15,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I15,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+XK,I15,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,TOT_X_NRG,Overall index excluding energy,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I15,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOTAL,Total,total,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP01,Food and non-alcoholic beverages,division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP02,"Alcoholic beverages, tobacco and narcotics",division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP03,Clothing and footwear,division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP04,"Housing, water, electricity, gas and other fuels",division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP05,"Furnishings, household equipment and routine household maintenance",division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP06,Health,division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP07,Transport,division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP08,Information and communication,division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP09,"Recreation, sport and culture",division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP10,Education services,division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP11,Restaurants and accommodation services,division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP12,Insurance and financial services,division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,CP13,"Personal care, social protection and miscellaneous goods and services",division,2015-01,2026-08,140,0,0,,complete span
+XK,I25,AP,Administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I25,APF,Fully administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I25,APM,Mainly administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I25,AP_NRG,Administered prices - energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I25,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I25,AP_X_NRG,Administered prices excluding energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I25,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I25,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,FOOD,Food including alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,FOOD_NP,Unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,FOOD_S,Seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+XK,I25,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,GD,Goods (overall index excluding services),special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,IGD,Industrial goods,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,IGD_NNRG,Non-energy industrial goods,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,NRG,Energy,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,NRG_FOOD_S,Energy and seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,SERV,Services (overall index excluding goods),special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,SERV_COM,Services related to communication,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,SERV_HOUS,Services related to housing,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,SERV_MSC,Services - miscellaneous,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,SERV_TRA,Services related to transport,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOT_X_AP,Overall index excluding administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I25,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I25,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01),complete span
+XK,I25,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+XK,I25,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOT_X_NRG,Overall index excluding energy,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,I25,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+XK,RCH_A,TOTAL,Total,total,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP01,Food and non-alcoholic beverages,division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP02,"Alcoholic beverages, tobacco and narcotics",division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP03,Clothing and footwear,division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP04,"Housing, water, electricity, gas and other fuels",division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP05,"Furnishings, household equipment and routine household maintenance",division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP06,Health,division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP07,Transport,division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP08,Information and communication,division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP09,"Recreation, sport and culture",division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP10,Education services,division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP11,Restaurants and accommodation services,division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP12,Insurance and financial services,division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,CP13,"Personal care, social protection and miscellaneous goods and services",division,2016-01,2026-08,128,0,0,,complete span
+XK,RCH_A,AP,Administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+XK,RCH_A,APF,Fully administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+XK,RCH_A,APM,Mainly administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+XK,RCH_A,AP_NRG,Administered prices - energy,special aggregate,2017-12,2026-08,105,0,0,,complete span
+XK,RCH_A,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2017-12,2026-08,105,0,0,,complete span
+XK,RCH_A,AP_X_NRG,Administered prices excluding energy,special aggregate,2017-12,2026-08,105,0,0,,complete span
+XK,RCH_A,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2017-12,2026-08,105,0,0,,complete span
+XK,RCH_A,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,FOOD,Food including alcohol and tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,FOOD_NP,Unprocessed food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,FOOD_S,Seasonal food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+XK,RCH_A,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,GD,Goods (overall index excluding services),special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,IGD,Industrial goods,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,IGD_NNRG,Non-energy industrial goods,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,NRG,Energy,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,NRG_FOOD_S,Energy and seasonal food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,SERV,Services (overall index excluding goods),special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,SERV_COM,Services related to communication,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,SERV_HOUS,Services related to housing,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,SERV_MSC,Services - miscellaneous,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,SERV_TRA,Services related to transport,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,TOT_X_AP,Overall index excluding administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+XK,RCH_A,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+XK,RCH_A,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+XK,RCH_A,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+XK,RCH_A,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,TOT_X_NRG,Overall index excluding energy,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+XK,RCH_A,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+ME,I15,TOTAL,Total,total,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP01,Food and non-alcoholic beverages,division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP02,"Alcoholic beverages, tobacco and narcotics",division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP03,Clothing and footwear,division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP04,"Housing, water, electricity, gas and other fuels",division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP05,"Furnishings, household equipment and routine household maintenance",division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP06,Health,division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP07,Transport,division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP08,Information and communication,division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP09,"Recreation, sport and culture",division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP10,Education services,division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP11,Restaurants and accommodation services,division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP12,Insurance and financial services,division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,CP13,"Personal care, social protection and miscellaneous goods and services",division,2014-12,2026-08,141,0,0,,complete span
+ME,I15,AP,Administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I15,APF,Fully administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I15,APM,Mainly administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I15,AP_NRG,Administered prices - energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I15,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I15,AP_X_NRG,Administered prices excluding energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I15,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I15,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,FOOD,Food including alcohol and tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,FOOD_NP,Unprocessed food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,FOOD_S,Seasonal food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+ME,I15,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,GD,Goods (overall index excluding services),special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,IGD,Industrial goods,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,IGD_NNRG,Non-energy industrial goods,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,NRG,Energy,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,NRG_FOOD_S,Energy and seasonal food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,SERV,Services (overall index excluding goods),special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,SERV_COM,Services related to communication,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,SERV_HOUS,Services related to housing,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,SERV_MSC,Services - miscellaneous,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,SERV_TRA,Services related to transport,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_AP,Overall index excluding administered prices,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+ME,I15,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_NRG,Overall index excluding energy,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I15,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOTAL,Total,total,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP01,Food and non-alcoholic beverages,division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP02,"Alcoholic beverages, tobacco and narcotics",division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP03,Clothing and footwear,division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP04,"Housing, water, electricity, gas and other fuels",division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP05,"Furnishings, household equipment and routine household maintenance",division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP06,Health,division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP07,Transport,division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP08,Information and communication,division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP09,"Recreation, sport and culture",division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP10,Education services,division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP11,Restaurants and accommodation services,division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP12,Insurance and financial services,division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,CP13,"Personal care, social protection and miscellaneous goods and services",division,2014-12,2026-08,141,0,0,,complete span
+ME,I25,AP,Administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I25,APF,Fully administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I25,APM,Mainly administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I25,AP_NRG,Administered prices - energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I25,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I25,AP_X_NRG,Administered prices excluding energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I25,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+ME,I25,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,FOOD,Food including alcohol and tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,FOOD_NP,Unprocessed food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,FOOD_S,Seasonal food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+ME,I25,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,GD,Goods (overall index excluding services),special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,IGD,Industrial goods,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,IGD_NNRG,Non-energy industrial goods,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,NRG,Energy,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,NRG_FOOD_S,Energy and seasonal food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,SERV,Services (overall index excluding goods),special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,SERV_COM,Services related to communication,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,SERV_HOUS,Services related to housing,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,SERV_MSC,Services - miscellaneous,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,SERV_TRA,Services related to transport,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_AP,Overall index excluding administered prices,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+ME,I25,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_NRG,Overall index excluding energy,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,I25,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2014-12,2026-08,141,0,0,b:1 (2017-01..2017-01); d:25 (2014-12..2016-12),complete span
+ME,RCH_A,TOTAL,Total,total,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP01,Food and non-alcoholic beverages,division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP02,"Alcoholic beverages, tobacco and narcotics",division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP03,Clothing and footwear,division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP04,"Housing, water, electricity, gas and other fuels",division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP05,"Furnishings, household equipment and routine household maintenance",division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP06,Health,division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP07,Transport,division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP08,Information and communication,division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP09,"Recreation, sport and culture",division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP10,Education services,division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP11,Restaurants and accommodation services,division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP12,Insurance and financial services,division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,CP13,"Personal care, social protection and miscellaneous goods and services",division,2015-12,2026-08,129,0,0,,complete span
+ME,RCH_A,AP,Administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+ME,RCH_A,APF,Fully administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+ME,RCH_A,APM,Mainly administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+ME,RCH_A,AP_NRG,Administered prices - energy,special aggregate,2017-12,2026-08,105,0,0,,complete span
+ME,RCH_A,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2017-12,2026-08,105,0,0,,complete span
+ME,RCH_A,AP_X_NRG,Administered prices excluding energy,special aggregate,2017-12,2026-08,105,0,0,,complete span
+ME,RCH_A,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2017-12,2026-08,105,0,0,,complete span
+ME,RCH_A,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,FOOD,Food including alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,FOOD_NP,Unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,FOOD_S,Seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+ME,RCH_A,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,GD,Goods (overall index excluding services),special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,IGD,Industrial goods,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,IGD_NNRG,Non-energy industrial goods,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,NRG,Energy,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,NRG_FOOD_S,Energy and seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,SERV,Services (overall index excluding goods),special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,SERV_COM,Services related to communication,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,SERV_HOUS,Services related to housing,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,SERV_MSC,Services - miscellaneous,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,SERV_TRA,Services related to transport,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_AP,Overall index excluding administered prices,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+ME,RCH_A,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_NRG,Overall index excluding energy,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+ME,RCH_A,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2015-12,2026-08,129,0,0,b:2 (2017-01..2018-01); d:24 (2015-12..2017-12),complete span
+RS,I15,TOTAL,Total,total,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP01,Food and non-alcoholic beverages,division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP02,"Alcoholic beverages, tobacco and narcotics",division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP03,Clothing and footwear,division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP04,"Housing, water, electricity, gas and other fuels",division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP05,"Furnishings, household equipment and routine household maintenance",division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP06,Health,division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP07,Transport,division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP08,Information and communication,division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP09,"Recreation, sport and culture",division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP10,Education services,division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP11,Restaurants and accommodation services,division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP12,Insurance and financial services,division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,CP13,"Personal care, social protection and miscellaneous goods and services",division,2005-12,2026-08,249,0,0,,complete span
+RS,I15,AP,Administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,APF,Fully administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,APM,Mainly administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,AP_NRG,Administered prices - energy,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,AP_X_NRG,Administered prices excluding energy,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,FOOD,Food including alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,FOOD_NP,Unprocessed food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,FOOD_S,Seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+RS,I15,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,GD,Goods (overall index excluding services),special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,IGD,Industrial goods,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,IGD_NNRG,Non-energy industrial goods,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,NRG,Energy,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,NRG_FOOD_S,Energy and seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,SERV,Services (overall index excluding goods),special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,SERV_COM,Services related to communication,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,SERV_HOUS,Services related to housing,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,SERV_MSC,Services - miscellaneous,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,SERV_TRA,Services related to transport,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_AP,Overall index excluding administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+RS,I15,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_NRG,Overall index excluding energy,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I15,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOTAL,Total,total,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP01,Food and non-alcoholic beverages,division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP02,"Alcoholic beverages, tobacco and narcotics",division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP03,Clothing and footwear,division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP04,"Housing, water, electricity, gas and other fuels",division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP05,"Furnishings, household equipment and routine household maintenance",division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP06,Health,division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP07,Transport,division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP08,Information and communication,division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP09,"Recreation, sport and culture",division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP10,Education services,division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP11,Restaurants and accommodation services,division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP12,Insurance and financial services,division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,CP13,"Personal care, social protection and miscellaneous goods and services",division,2005-12,2026-08,249,0,0,,complete span
+RS,I25,AP,Administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,APF,Fully administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,APM,Mainly administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,AP_NRG,Administered prices - energy,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,AP_X_NRG,Administered prices excluding energy,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,FOOD,Food including alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,FOOD_NP,Unprocessed food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,FOOD_S,Seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+RS,I25,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,GD,Goods (overall index excluding services),special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,IGD,Industrial goods,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,IGD_NNRG,Non-energy industrial goods,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,NRG,Energy,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,NRG_FOOD_S,Energy and seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,SERV,Services (overall index excluding goods),special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,SERV_COM,Services related to communication,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,SERV_HOUS,Services related to housing,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,SERV_MSC,Services - miscellaneous,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,SERV_TRA,Services related to transport,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_AP,Overall index excluding administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+RS,I25,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_NRG,Overall index excluding energy,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,I25,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2005-12,2026-08,249,0,0,b:1 (2017-01..2017-01); d:133 (2005-12..2016-12),complete span
+RS,RCH_A,TOTAL,Total,total,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP01,Food and non-alcoholic beverages,division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP02,"Alcoholic beverages, tobacco and narcotics",division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP03,Clothing and footwear,division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP04,"Housing, water, electricity, gas and other fuels",division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP05,"Furnishings, household equipment and routine household maintenance",division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP06,Health,division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP07,Transport,division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP08,Information and communication,division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP09,"Recreation, sport and culture",division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP10,Education services,division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP11,Restaurants and accommodation services,division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP12,Insurance and financial services,division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,CP13,"Personal care, social protection and miscellaneous goods and services",division,2006-12,2026-08,237,0,0,,complete span
+RS,RCH_A,AP,Administered prices,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,APF,Fully administered prices,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,APM,Mainly administered prices,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,AP_NRG,Administered prices - energy,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,AP_X_NRG,Administered prices excluding energy,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,FOOD,Food including alcohol and tobacco,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,FOOD_NP,Unprocessed food,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,FOOD_S,Seasonal food,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+RS,RCH_A,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,GD,Goods (overall index excluding services),special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,IGD,Industrial goods,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,IGD_NNRG,Non-energy industrial goods,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,NRG,Energy,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,NRG_FOOD_S,Energy and seasonal food,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,SERV,Services (overall index excluding goods),special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,SERV_COM,Services related to communication,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,SERV_HOUS,Services related to housing,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,SERV_MSC,Services - miscellaneous,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,SERV_TRA,Services related to transport,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_AP,Overall index excluding administered prices,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+RS,RCH_A,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_NRG,Overall index excluding energy,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+RS,RCH_A,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2006-12,2026-08,237,0,0,b:2 (2017-01..2018-01); d:132 (2006-12..2017-12),complete span
+AL,I15,TOTAL,Total,total,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP01,Food and non-alcoholic beverages,division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP02,"Alcoholic beverages, tobacco and narcotics",division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP03,Clothing and footwear,division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP04,"Housing, water, electricity, gas and other fuels",division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP05,"Furnishings, household equipment and routine household maintenance",division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP06,Health,division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP07,Transport,division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP08,Information and communication,division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP09,"Recreation, sport and culture",division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP10,Education services,division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP11,Restaurants and accommodation services,division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP12,Insurance and financial services,division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,CP13,"Personal care, social protection and miscellaneous goods and services",division,2015-12,2026-08,129,0,0,,complete span
+AL,I15,AP,Administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I15,APF,Fully administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I15,APM,Mainly administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I15,AP_NRG,Administered prices - energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I15,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I15,AP_X_NRG,Administered prices excluding energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I15,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I15,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,FOOD,Food including alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,FOOD_NP,Unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,FOOD_S,Seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+AL,I15,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,GD,Goods (overall index excluding services),special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,IGD,Industrial goods,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,IGD_NNRG,Non-energy industrial goods,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,NRG,Energy,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,NRG_FOOD_S,Energy and seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,SERV,Services (overall index excluding goods),special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,SERV_COM,Services related to communication,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,SERV_HOUS,Services related to housing,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,SERV_MSC,Services - miscellaneous,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,SERV_TRA,Services related to transport,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_AP,Overall index excluding administered prices,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+AL,I15,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_NRG,Overall index excluding energy,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I15,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOTAL,Total,total,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP01,Food and non-alcoholic beverages,division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP02,"Alcoholic beverages, tobacco and narcotics",division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP03,Clothing and footwear,division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP04,"Housing, water, electricity, gas and other fuels",division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP05,"Furnishings, household equipment and routine household maintenance",division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP06,Health,division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP07,Transport,division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP08,Information and communication,division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP09,"Recreation, sport and culture",division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP10,Education services,division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP11,Restaurants and accommodation services,division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP12,Insurance and financial services,division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,CP13,"Personal care, social protection and miscellaneous goods and services",division,2015-12,2026-08,129,0,0,,complete span
+AL,I25,AP,Administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I25,APF,Fully administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I25,APM,Mainly administered prices,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I25,AP_NRG,Administered prices - energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I25,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I25,AP_X_NRG,Administered prices excluding energy,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I25,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2016-12,2026-08,117,0,0,b:1 (2017-01..2017-01); d:1 (2016-12..2016-12),complete span
+AL,I25,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,FOOD,Food including alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,FOOD_NP,Unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,FOOD_S,Seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+AL,I25,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,GD,Goods (overall index excluding services),special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,IGD,Industrial goods,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,IGD_NNRG,Non-energy industrial goods,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,NRG,Energy,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,NRG_FOOD_S,Energy and seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,SERV,Services (overall index excluding goods),special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,SERV_COM,Services related to communication,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,SERV_HOUS,Services related to housing,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,SERV_MSC,Services - miscellaneous,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,SERV_TRA,Services related to transport,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_AP,Overall index excluding administered prices,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+AL,I25,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_NRG,Overall index excluding energy,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,I25,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2015-12,2026-08,129,0,0,b:1 (2017-01..2017-01); d:13 (2015-12..2016-12),complete span
+AL,RCH_A,TOTAL,Total,total,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP01,Food and non-alcoholic beverages,division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP02,"Alcoholic beverages, tobacco and narcotics",division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP03,Clothing and footwear,division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP04,"Housing, water, electricity, gas and other fuels",division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP05,"Furnishings, household equipment and routine household maintenance",division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP06,Health,division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP07,Transport,division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP08,Information and communication,division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP09,"Recreation, sport and culture",division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP10,Education services,division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP11,Restaurants and accommodation services,division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP12,Insurance and financial services,division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,CP13,"Personal care, social protection and miscellaneous goods and services",division,2016-12,2026-08,117,0,0,,complete span
+AL,RCH_A,AP,Administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+AL,RCH_A,APF,Fully administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+AL,RCH_A,APM,Mainly administered prices,special aggregate,2017-12,2026-08,105,0,0,,complete span
+AL,RCH_A,AP_NRG,Administered prices - energy,special aggregate,2017-12,2026-08,105,0,0,,complete span
+AL,RCH_A,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2017-12,2026-08,105,0,0,,complete span
+AL,RCH_A,AP_X_NRG,Administered prices excluding energy,special aggregate,2017-12,2026-08,105,0,0,,complete span
+AL,RCH_A,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2017-12,2026-08,105,0,0,,complete span
+AL,RCH_A,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,FOOD,Food including alcohol and tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,FOOD_NP,Unprocessed food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,FOOD_S,Seasonal food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+AL,RCH_A,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,GD,Goods (overall index excluding services),special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,IGD,Industrial goods,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,IGD_NNRG,Non-energy industrial goods,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,NRG,Energy,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,NRG_FOOD_S,Energy and seasonal food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,SERV,Services (overall index excluding goods),special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,SERV_COM,Services related to communication,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,SERV_HOUS,Services related to housing,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,SERV_MSC,Services - miscellaneous,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,SERV_TRA,Services related to transport,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_AP,Overall index excluding administered prices,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+AL,RCH_A,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_NRG,Overall index excluding energy,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+AL,RCH_A,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2016-12,2026-08,117,0,0,b:2 (2017-01..2018-01); d:2 (2016-12..2017-12),complete span
+MK,I15,TOTAL,Total,total,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP01,Food and non-alcoholic beverages,division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP02,"Alcoholic beverages, tobacco and narcotics",division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP03,Clothing and footwear,division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP04,"Housing, water, electricity, gas and other fuels",division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP05,"Furnishings, household equipment and routine household maintenance",division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP06,Health,division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP07,Transport,division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP08,Information and communication,division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP09,"Recreation, sport and culture",division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP10,Education services,division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP11,Restaurants and accommodation services,division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP12,Insurance and financial services,division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,CP13,"Personal care, social protection and miscellaneous goods and services",division,2004-12,2026-08,261,0,0,,complete span
+MK,I15,AP,Administered prices,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I15,APF,Fully administered prices,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I15,APM,Mainly administered prices,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I15,AP_NRG,Administered prices - energy,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I15,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I15,AP_X_NRG,Administered prices excluding energy,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I15,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I15,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,FOOD,Food including alcohol and tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,FOOD_NP,Unprocessed food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,FOOD_S,Seasonal food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+MK,I15,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,GD,Goods (overall index excluding services),special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,IGD,Industrial goods,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,IGD_NNRG,Non-energy industrial goods,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,NRG,Energy,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,NRG_FOOD_S,Energy and seasonal food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,SERV,Services (overall index excluding goods),special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,SERV_COM,Services related to communication,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,SERV_HOUS,Services related to housing,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,SERV_MSC,Services - miscellaneous,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,SERV_TRA,Services related to transport,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,TOT_X_AP,Overall index excluding administered prices,special aggregate,2004-12,2026-08,226,35,0,d:145 (2004-12..2016-12),internal gaps
+MK,I15,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2004-12,2026-08,226,35,0,d:145 (2004-12..2016-12),internal gaps
+MK,I15,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2004-12,2026-08,226,35,0,d:145 (2004-12..2016-12),internal gaps
+MK,I15,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+MK,I15,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,TOT_X_NRG,Overall index excluding energy,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I15,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOTAL,Total,total,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP01,Food and non-alcoholic beverages,division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP02,"Alcoholic beverages, tobacco and narcotics",division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP03,Clothing and footwear,division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP04,"Housing, water, electricity, gas and other fuels",division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP05,"Furnishings, household equipment and routine household maintenance",division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP06,Health,division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP07,Transport,division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP08,Information and communication,division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP09,"Recreation, sport and culture",division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP10,Education services,division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP11,Restaurants and accommodation services,division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP12,Insurance and financial services,division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,CP13,"Personal care, social protection and miscellaneous goods and services",division,2004-12,2026-08,261,0,0,,complete span
+MK,I25,AP,Administered prices,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I25,APF,Fully administered prices,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I25,APM,Mainly administered prices,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I25,AP_NRG,Administered prices - energy,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I25,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I25,AP_X_NRG,Administered prices excluding energy,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I25,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2019-12,2026-08,81,0,0,,complete span
+MK,I25,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,FOOD,Food including alcohol and tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,FOOD_NP,Unprocessed food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,FOOD_S,Seasonal food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+MK,I25,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,GD,Goods (overall index excluding services),special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,IGD,Industrial goods,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,IGD_NNRG,Non-energy industrial goods,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,NRG,Energy,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,NRG_FOOD_S,Energy and seasonal food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,SERV,Services (overall index excluding goods),special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,SERV_COM,Services related to communication,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,SERV_HOUS,Services related to housing,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,SERV_MSC,Services - miscellaneous,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,SERV_TRA,Services related to transport,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOT_X_AP,Overall index excluding administered prices,special aggregate,2004-12,2026-08,226,35,0,d:145 (2004-12..2016-12),internal gaps
+MK,I25,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2004-12,2026-08,226,35,0,d:145 (2004-12..2016-12),internal gaps
+MK,I25,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2004-12,2026-08,226,35,0,d:145 (2004-12..2016-12),internal gaps
+MK,I25,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+MK,I25,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOT_X_NRG,Overall index excluding energy,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,I25,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2004-12,2026-08,261,0,0,b:1 (2017-01..2017-01); d:145 (2004-12..2016-12),complete span
+MK,RCH_A,TOTAL,Total,total,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP01,Food and non-alcoholic beverages,division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP02,"Alcoholic beverages, tobacco and narcotics",division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP03,Clothing and footwear,division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP04,"Housing, water, electricity, gas and other fuels",division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP05,"Furnishings, household equipment and routine household maintenance",division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP06,Health,division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP07,Transport,division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP08,Information and communication,division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP09,"Recreation, sport and culture",division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP10,Education services,division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP11,Restaurants and accommodation services,division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP12,Insurance and financial services,division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,CP13,"Personal care, social protection and miscellaneous goods and services",division,2005-12,2026-08,249,0,0,,complete span
+MK,RCH_A,AP,Administered prices,special aggregate,2020-12,2026-08,69,0,0,,complete span
+MK,RCH_A,APF,Fully administered prices,special aggregate,2020-12,2026-08,69,0,0,,complete span
+MK,RCH_A,APM,Mainly administered prices,special aggregate,2020-12,2026-08,69,0,0,,complete span
+MK,RCH_A,AP_NRG,Administered prices - energy,special aggregate,2020-12,2026-08,69,0,0,,complete span
+MK,RCH_A,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2020-12,2026-08,69,0,0,,complete span
+MK,RCH_A,AP_X_NRG,Administered prices excluding energy,special aggregate,2020-12,2026-08,69,0,0,,complete span
+MK,RCH_A,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2020-12,2026-08,69,0,0,,complete span
+MK,RCH_A,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,FOOD,Food including alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,FOOD_NP,Unprocessed food,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,FOOD_P,Processed food including alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,FOOD_S,Seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,FROOPP,Frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+MK,RCH_A,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,GD,Goods (overall index excluding services),special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,IGD,Industrial goods,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,IGD_NNRG,Non-energy industrial goods,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,NRG,Energy,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,NRG_FOOD_S,Energy and seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,SERV,Services (overall index excluding goods),special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,SERV_COM,Services related to communication,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,SERV_HOUS,Services related to housing,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,SERV_MSC,Services - miscellaneous,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,SERV_TRA,Services related to transport,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,TOT_X_AP,Overall index excluding administered prices,special aggregate,2005-12,2026-08,202,47,0,d:133 (2005-12..2016-12),internal gaps
+MK,RCH_A,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2005-12,2026-08,202,47,0,d:133 (2005-12..2016-12),internal gaps
+MK,RCH_A,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2005-12,2026-08,202,47,0,d:133 (2005-12..2016-12),internal gaps
+MK,RCH_A,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,NA,NA,0,NA,0,,absent
+MK,RCH_A,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,TOT_X_NRG,Overall index excluding energy,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+MK,RCH_A,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2005-12,2026-08,249,0,0,b:2 (2017-01..2018-01); d:144 (2005-12..2017-12),complete span
+EA,I15,TOTAL,Total,total,1996-01,2026-08,368,0,0,,complete span
+EA,I15,CP01,Food and non-alcoholic beverages,division,1996-01,2026-08,368,0,0,,complete span
+EA,I15,CP02,"Alcoholic beverages, tobacco and narcotics",division,1996-01,2026-08,368,0,0,,complete span
+EA,I15,CP03,Clothing and footwear,division,1996-01,2026-08,368,0,0,u:3 (2020-04..2021-02),complete span
+EA,I15,CP04,"Housing, water, electricity, gas and other fuels",division,1996-01,2026-08,368,0,0,,complete span
+EA,I15,CP05,"Furnishings, household equipment and routine household maintenance",division,1996-01,2026-08,368,0,0,u:3 (2020-04..2021-02),complete span
+EA,I15,CP06,Health,division,1996-01,2026-08,368,0,0,,complete span
+EA,I15,CP07,Transport,division,1996-01,2026-08,368,0,0,,complete span
+EA,I15,CP08,Information and communication,division,1996-01,2026-08,368,0,0,,complete span
+EA,I15,CP09,"Recreation, sport and culture",division,1996-01,2026-08,368,0,0,u:3 (2020-04..2021-02),complete span
+EA,I15,CP10,Education services,division,1996-01,2026-08,368,0,0,,complete span
+EA,I15,CP11,Restaurants and accommodation services,division,1996-01,2026-08,368,0,0,u:9 (2020-04..2021-05),complete span
+EA,I15,CP12,Insurance and financial services,division,1996-01,2026-08,368,0,0,,complete span
+EA,I15,CP13,"Personal care, social protection and miscellaneous goods and services",division,1996-01,2026-08,368,0,0,,complete span
+EA,I15,AP,Administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12); u:6 (2020-04..2021-02),complete span
+EA,I15,APF,Fully administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12); u:13 (2020-04..2022-01),complete span
+EA,I15,APM,Mainly administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12); u:12 (2020-04..2021-05),complete span
+EA,I15,AP_NRG,Administered prices - energy,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12),complete span
+EA,I15,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12),complete span
+EA,I15,AP_X_NRG,Administered prices excluding energy,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12); u:9 (2020-04..2021-05),complete span
+EA,I15,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12); u:9 (2020-04..2021-05),complete span
+EA,I15,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,FOOD,Food including alcohol and tobacco,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,FOOD_NP,Unprocessed food,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,FOOD_P,Processed food including alcohol and tobacco,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,FOOD_S,Seasonal food,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,FROOPP,Frequent out-of-pocket purchases,special aggregate,1998-12,2026-08,333,0,0,b:1 (2017-01..2017-01); d:217 (1998-12..2016-12),complete span
+EA,I15,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,GD,Goods (overall index excluding services),special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,IGD,Industrial goods,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,IGD_NNRG,Non-energy industrial goods,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12); u:3 (2020-04..2021-02),complete span
+EA,I15,NRG,Energy,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,NRG_FOOD_S,Energy and seasonal food,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,SERV,Services (overall index excluding goods),special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,SERV_COM,Services related to communication,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,SERV_HOUS,Services related to housing,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,SERV_MSC,Services - miscellaneous,special aggregate,1998-12,2026-08,333,0,0,b:1 (2017-01..2017-01); d:217 (1998-12..2016-12),complete span
+EA,I15,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12); u:9 (2020-04..2021-05),complete span
+EA,I15,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12); u:13 (2020-04..2021-06),complete span
+EA,I15,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12); u:7 (2020-04..2021-03),complete span
+EA,I15,SERV_TRA,Services related to transport,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,TOT_X_AP,Overall index excluding administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12),complete span
+EA,I15,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12),complete span
+EA,I15,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12),complete span
+EA,I15,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I15,TOT_X_NRG,Overall index excluding energy,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I15,TOT_X_TBC,Overall index excluding tobacco,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,TOTAL,Total,total,1996-01,2026-08,368,0,0,,complete span
+EA,I25,CP01,Food and non-alcoholic beverages,division,1996-01,2026-08,368,0,0,,complete span
+EA,I25,CP02,"Alcoholic beverages, tobacco and narcotics",division,1996-01,2026-08,368,0,0,,complete span
+EA,I25,CP03,Clothing and footwear,division,1996-01,2026-08,368,0,0,u:3 (2020-04..2021-02),complete span
+EA,I25,CP04,"Housing, water, electricity, gas and other fuels",division,1996-01,2026-08,368,0,0,,complete span
+EA,I25,CP05,"Furnishings, household equipment and routine household maintenance",division,1996-01,2026-08,368,0,0,u:3 (2020-04..2021-02),complete span
+EA,I25,CP06,Health,division,1996-01,2026-08,368,0,0,,complete span
+EA,I25,CP07,Transport,division,1996-01,2026-08,368,0,0,,complete span
+EA,I25,CP08,Information and communication,division,1996-01,2026-08,368,0,0,,complete span
+EA,I25,CP09,"Recreation, sport and culture",division,1996-01,2026-08,368,0,0,u:3 (2020-04..2021-02),complete span
+EA,I25,CP10,Education services,division,1996-01,2026-08,368,0,0,,complete span
+EA,I25,CP11,Restaurants and accommodation services,division,1996-01,2026-08,368,0,0,u:9 (2020-04..2021-05),complete span
+EA,I25,CP12,Insurance and financial services,division,1996-01,2026-08,368,0,0,,complete span
+EA,I25,CP13,"Personal care, social protection and miscellaneous goods and services",division,1996-01,2026-08,368,0,0,,complete span
+EA,I25,AP,Administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12); u:6 (2020-04..2021-02),complete span
+EA,I25,APF,Fully administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12); u:13 (2020-04..2022-01),complete span
+EA,I25,APM,Mainly administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12); u:12 (2020-04..2021-05),complete span
+EA,I25,AP_NRG,Administered prices - energy,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12),complete span
+EA,I25,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12),complete span
+EA,I25,AP_X_NRG,Administered prices excluding energy,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12); u:9 (2020-04..2021-05),complete span
+EA,I25,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12); u:9 (2020-04..2021-05),complete span
+EA,I25,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,FOOD,Food including alcohol and tobacco,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,FOOD_NP,Unprocessed food,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,FOOD_P,Processed food including alcohol and tobacco,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,FOOD_S,Seasonal food,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,FROOPP,Frequent out-of-pocket purchases,special aggregate,1998-12,2026-08,333,0,0,b:1 (2017-01..2017-01); d:217 (1998-12..2016-12),complete span
+EA,I25,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,GD,Goods (overall index excluding services),special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,IGD,Industrial goods,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,IGD_NNRG,Non-energy industrial goods,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12); u:3 (2020-04..2021-02),complete span
+EA,I25,NRG,Energy,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,NRG_FOOD_S,Energy and seasonal food,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,SERV,Services (overall index excluding goods),special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,SERV_COM,Services related to communication,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,SERV_HOUS,Services related to housing,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,SERV_MSC,Services - miscellaneous,special aggregate,1998-12,2026-08,333,0,0,b:1 (2017-01..2017-01); d:217 (1998-12..2016-12),complete span
+EA,I25,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12); u:9 (2020-04..2021-05),complete span
+EA,I25,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12); u:13 (2020-04..2021-06),complete span
+EA,I25,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12); u:7 (2020-04..2021-03),complete span
+EA,I25,SERV_TRA,Services related to transport,special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,TOT_X_AP,Overall index excluding administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12),complete span
+EA,I25,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12),complete span
+EA,I25,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2000-12,2026-08,309,0,0,b:1 (2017-01..2017-01); d:193 (2000-12..2016-12),complete span
+EA,I25,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,1996-01,2026-08,368,0,0,b:1 (2017-01..2017-01); d:252 (1996-01..2016-12),complete span
+EA,I25,TOT_X_NRG,Overall index excluding energy,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,I25,TOT_X_TBC,Overall index excluding tobacco,special aggregate,1999-12,2026-08,321,0,0,b:1 (2017-01..2017-01); d:205 (1999-12..2016-12),complete span
+EA,RCH_A,TOTAL,Total,total,1997-01,2026-08,356,0,0,,complete span
+EA,RCH_A,CP01,Food and non-alcoholic beverages,division,1997-01,2026-08,356,0,0,,complete span
+EA,RCH_A,CP02,"Alcoholic beverages, tobacco and narcotics",division,1997-01,2026-08,356,0,0,,complete span
+EA,RCH_A,CP03,Clothing and footwear,division,1997-01,2026-08,356,0,0,u:6 (2020-04..2022-02),complete span
+EA,RCH_A,CP04,"Housing, water, electricity, gas and other fuels",division,1997-01,2026-08,356,0,0,,complete span
+EA,RCH_A,CP05,"Furnishings, household equipment and routine household maintenance",division,1997-01,2026-08,356,0,0,u:6 (2020-04..2022-02),complete span
+EA,RCH_A,CP06,Health,division,1997-01,2026-08,356,0,0,,complete span
+EA,RCH_A,CP07,Transport,division,1997-01,2026-08,356,0,0,,complete span
+EA,RCH_A,CP08,Information and communication,division,1997-01,2026-08,356,0,0,,complete span
+EA,RCH_A,CP09,"Recreation, sport and culture",division,1997-01,2026-08,356,0,0,u:6 (2020-04..2022-02),complete span
+EA,RCH_A,CP10,Education services,division,1997-01,2026-08,356,0,0,,complete span
+EA,RCH_A,CP11,Restaurants and accommodation services,division,1997-01,2026-08,356,0,0,u:16 (2020-04..2022-05),complete span
+EA,RCH_A,CP12,Insurance and financial services,division,1997-01,2026-08,356,0,0,,complete span
+EA,RCH_A,CP13,"Personal care, social protection and miscellaneous goods and services",division,1997-01,2026-08,356,0,0,,complete span
+EA,RCH_A,AP,Administered prices,special aggregate,2001-12,2026-08,297,0,0,b:2 (2017-01..2018-01); d:192 (2001-12..2017-12); u:12 (2020-04..2022-02),complete span
+EA,RCH_A,APF,Fully administered prices,special aggregate,2001-12,2026-08,297,0,0,b:2 (2017-01..2018-01); d:192 (2001-12..2017-12); u:23 (2020-04..2023-01),complete span
+EA,RCH_A,APM,Mainly administered prices,special aggregate,2001-12,2026-08,297,0,0,b:2 (2017-01..2018-01); d:192 (2001-12..2017-12); u:22 (2020-04..2022-05),complete span
+EA,RCH_A,AP_NRG,Administered prices - energy,special aggregate,2001-12,2026-08,297,0,0,b:2 (2017-01..2018-01); d:192 (2001-12..2017-12),complete span
+EA,RCH_A,AP_NRG_FOOD,Administered prices - energy and food,special aggregate,2001-12,2026-08,297,0,0,b:2 (2017-01..2018-01); d:192 (2001-12..2017-12),complete span
+EA,RCH_A,AP_X_NRG,Administered prices excluding energy,special aggregate,2001-12,2026-08,297,0,0,b:2 (2017-01..2018-01); d:192 (2001-12..2017-12); u:16 (2020-04..2022-05),complete span
+EA,RCH_A,AP_X_NRG_FOOD,Administered prices excluding energy and food,special aggregate,2001-12,2026-08,297,0,0,b:2 (2017-01..2018-01); d:192 (2001-12..2017-12); u:16 (2020-04..2022-05),complete span
+EA,RCH_A,EDUC_HLTH_SPR,"Education, health and social protection",special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,ELC_GAS,"Electricity, gas, solid fuels and heat energy",special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,FOOD,Food including alcohol and tobacco,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,FOOD_NP,Unprocessed food,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,FOOD_P,Processed food including alcohol and tobacco,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,FOOD_P_X_ALC_TBC,Processed food excluding alcohol and tobacco,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,FOOD_P_X_TBC,Processed food excluding tobacco,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,FOOD_S,Seasonal food,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,FROOPP,Frequent out-of-pocket purchases,special aggregate,1999-12,2026-08,321,0,0,b:2 (2017-01..2018-01); d:216 (1999-12..2017-12),complete span
+EA,RCH_A,FUEL,Liquid fuels and fuels for personal transport equipment,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,GD,Goods (overall index excluding services),special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,IGD,Industrial goods,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,IGD_NNRG,Non-energy industrial goods,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,IGD_NNRG_D,"Non-energy industrial goods, durables only",special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,IGD_NNRG_ND,"Non-energy industrial goods, non-durables only",special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,IGD_NNRG_SD,"Non-energy industrial goods, semi-durables only",special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12); u:6 (2020-04..2022-02),complete span
+EA,RCH_A,NRG,Energy,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,NRG_FOOD_NP,Energy and unprocessed food,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,NRG_FOOD_S,Energy and seasonal food,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,SERV,Services (overall index excluding goods),special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,SERV_COM,Services related to communication,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,SERV_HOUS,Services related to housing,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,SERV_MSC,Services - miscellaneous,special aggregate,1999-12,2026-08,321,0,0,b:2 (2017-01..2018-01); d:216 (1999-12..2017-12),complete span
+EA,RCH_A,SERV_REC,"Services related to recreation, including repairs and personal care",special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12); u:16 (2020-04..2022-05),complete span
+EA,RCH_A,SERV_REC_HOA,Services related to package holidays and accommodation,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12); u:23 (2020-04..2022-06),complete span
+EA,RCH_A,SERV_REC_X_HOA,"Services related to recreation and personal care, excluding package holidays and accommodation",special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12); u:14 (2020-04..2022-03),complete span
+EA,RCH_A,SERV_TRA,Services related to transport,special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,TOT_X_ALC_TBC,Overall index excluding alcohol and tobacco,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,TOT_X_AP,Overall index excluding administered prices,special aggregate,2001-12,2026-08,297,0,0,b:2 (2017-01..2018-01); d:192 (2001-12..2017-12),complete span
+EA,RCH_A,TOT_X_APF,Overall index excluding fully administered prices,special aggregate,2001-12,2026-08,297,0,0,b:2 (2017-01..2018-01); d:192 (2001-12..2017-12),complete span
+EA,RCH_A,TOT_X_APM,Overall index excluding mainly administered prices,special aggregate,2001-12,2026-08,297,0,0,b:2 (2017-01..2018-01); d:192 (2001-12..2017-12),complete span
+EA,RCH_A,TOT_X_EDUC_HLTH_SPR,"Overall index excluding education, health and social protection",special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,TOT_X_FOOD_S,Overall index excluding seasonal food,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,TOT_X_FROOPP,Overall index excluding frequent out-of-pocket purchases,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,TOT_X_FUEL,Overall index excluding liquid fuels and fuels for personal transport equipment,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,TOT_X_HOUS,"Overall index excluding housing, water, electricity, gas and other fuels",special aggregate,1997-01,2026-08,356,0,0,b:2 (2017-01..2018-01); d:251 (1997-01..2017-12),complete span
+EA,RCH_A,TOT_X_NRG,Overall index excluding energy,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,TOT_X_NRG_FOOD,"Overall index excluding energy, food, alcohol and tobacco",special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,TOT_X_NRG_FOOD_NP,Overall index excluding energy and unprocessed food,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,TOT_X_NRG_FOOD_S,Overall index excluding energy and seasonal food,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span
+EA,RCH_A,TOT_X_TBC,Overall index excluding tobacco,special aggregate,2000-12,2026-08,309,0,0,b:2 (2017-01..2018-01); d:204 (2000-12..2017-12),complete span

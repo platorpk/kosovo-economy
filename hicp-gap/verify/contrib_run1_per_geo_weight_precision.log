@@ -1,0 +1,136 @@
+self-test: max |R| on synthetic exact data = 9.77e-15 pp
+Eurostat LAST UPDATE: 17/09/26 11:00:00 
+
+-- I25 significant decimals (TOTAL + 13 divisions) --
+ geo decimals
+  AL        2
+  EA        2
+  ME        2
+  MK        2
+  RS        2
+  XK        2
+
+-- item-weight significant decimals (divisions) --
+ geo dec    hw
+  AL   2 0.005
+  EA   2 0.005
+  ME   2 0.005
+  MK   2 0.005
+  RS   2 0.005
+  XK   2 0.005
+
+-- RCH_A TOTAL significant decimals --
+ geo dec_r   hr
+  AL     1 0.05
+  EA     1 0.05
+  ME     1 0.05
+  MK     1 0.05
+  RS     1 0.05
+  XK     1 0.05
+
+-- months computed (all 82 inputs present) --
+ geo   first    last   n contiguous n_with_RCH_A
+  XK 2017-01 2026-08 116       TRUE          116
+  ME 2016-01 2026-08 128       TRUE          128
+  RS 2007-01 2026-08 236       TRUE          236
+  AL 2017-01 2026-08 116       TRUE          116
+  MK 2006-01 2026-08 248       TRUE          248
+  EA 1998-01 2026-08 344       TRUE          344
+
+-- residual distribution, whole span (pp) --
+                 residual geo           months   n    min    p10 median   p90   max max_abs
+ R_der (vs I25 TOTAL YoY)  XK 2017-01..2026-08 116 -0.016 -0.006  0.001 0.007 0.012   0.016
+ R_der (vs I25 TOTAL YoY)  ME 2016-01..2026-08 128 -0.014 -0.007 -0.001 0.006 0.011   0.014
+ R_der (vs I25 TOTAL YoY)  RS 2007-01..2026-08 236 -0.025 -0.010  0.000 0.009 0.033   0.033
+ R_der (vs I25 TOTAL YoY)  AL 2017-01..2026-08 116 -0.011 -0.006  0.000 0.007 0.010   0.011
+ R_der (vs I25 TOTAL YoY)  MK 2006-01..2026-08 248 -0.016 -0.008 -0.000 0.009 0.015   0.016
+ R_der (vs I25 TOTAL YoY)  EA 1998-01..2026-08 344 -0.017 -0.008  0.000 0.009 0.019   0.019
+         R_pub (vs RCH_A)  XK 2017-01..2026-08 116 -0.055 -0.039 -0.002 0.034 0.050   0.055
+         R_pub (vs RCH_A)  ME 2016-01..2026-08 128 -0.056 -0.037  0.007 0.040 0.050   0.056
+         R_pub (vs RCH_A)  RS 2007-01..2026-08 236 -0.060 -0.038  0.004 0.038 0.067   0.067
+         R_pub (vs RCH_A)  AL 2017-01..2026-08 116 -0.057 -0.042 -0.001 0.041 0.054   0.057
+         R_pub (vs RCH_A)  MK 2006-01..2026-08 248 -0.061 -0.044 -0.004 0.035 0.058   0.061
+         R_pub (vs RCH_A)  EA 1998-01..2026-08 344 -0.060 -0.041  0.001 0.042 0.061   0.061
+
+-- residual distribution, 2021-01..2023-12 (pp) --
+                 residual geo           months  n    min    p10 median   p90   max max_abs
+ R_der (vs I25 TOTAL YoY)  XK 2021-01..2023-12 36 -0.009 -0.007 -0.002 0.006 0.008   0.009
+ R_der (vs I25 TOTAL YoY)  ME 2021-01..2023-12 36 -0.011 -0.006  0.001 0.007 0.011   0.011
+ R_der (vs I25 TOTAL YoY)  RS 2021-01..2023-12 36 -0.011 -0.005  0.000 0.005 0.010   0.011
+ R_der (vs I25 TOTAL YoY)  AL 2021-01..2023-12 36 -0.011 -0.006 -0.000 0.007 0.010   0.011
+ R_der (vs I25 TOTAL YoY)  MK 2021-01..2023-12 36 -0.012 -0.010  0.000 0.005 0.013   0.013
+ R_der (vs I25 TOTAL YoY)  EA 2021-01..2023-12 36 -0.009 -0.006  0.002 0.007 0.010   0.010
+         R_pub (vs RCH_A)  XK 2021-01..2023-12 36 -0.055 -0.042 -0.003 0.032 0.044   0.055
+         R_pub (vs RCH_A)  ME 2021-01..2023-12 36 -0.051 -0.031 -0.002 0.037 0.048   0.051
+         R_pub (vs RCH_A)  RS 2021-01..2023-12 36 -0.046 -0.043  0.005 0.035 0.047   0.047
+         R_pub (vs RCH_A)  AL 2021-01..2023-12 36 -0.047 -0.031  0.003 0.041 0.050   0.050
+         R_pub (vs RCH_A)  MK 2021-01..2023-12 36 -0.046 -0.044 -0.008 0.033 0.058   0.058
+         R_pub (vs RCH_A)  EA 2021-01..2023-12 36 -0.056 -0.045  0.004 0.044 0.054   0.056
+
+-- bound and |R|/bound, whole span --
+                 residual geo   n bound_min bound_median bound_p90 bound_max flag_median_bound_gt_0.05 ratio_median ratio_p90 ratio_max n_breach
+ R_der (vs I25 TOTAL YoY)  XK 116     0.021        0.026     0.027     0.028                     FALSE         0.17      0.33      0.59        0
+ R_der (vs I25 TOTAL YoY)  ME 128     0.021        0.028     0.029     0.030                     FALSE         0.15      0.33      0.62        0
+ R_der (vs I25 TOTAL YoY)  RS 236     0.021        0.032     0.055     0.064                     FALSE         0.14      0.34      0.59        0
+ R_der (vs I25 TOTAL YoY)  AL 116     0.021        0.025     0.027     0.029                     FALSE         0.14      0.34      0.52        0
+ R_der (vs I25 TOTAL YoY)  MK 248     0.020        0.031     0.037     0.039                     FALSE         0.16      0.35      0.53        0
+ R_der (vs I25 TOTAL YoY)  EA 344     0.020        0.028     0.036     0.037                     FALSE         0.16      0.37      0.57        0
+         R_pub (vs RCH_A)  XK 116     0.061        0.064     0.065     0.066                      TRUE         0.32      0.67      0.88        0
+         R_pub (vs RCH_A)  ME 128     0.061        0.064     0.066     0.067                      TRUE         0.37      0.69      0.87        0
+         R_pub (vs RCH_A)  RS 236     0.061        0.067     0.081     0.086                      TRUE         0.33      0.67      0.88        0
+         R_pub (vs RCH_A)  AL 116     0.060        0.063     0.064     0.066                      TRUE         0.40      0.74      0.89        0
+         R_pub (vs RCH_A)  MK 248     0.060        0.066     0.070     0.071                      TRUE         0.42      0.70      0.92        0
+         R_pub (vs RCH_A)  EA 344     0.060        0.064     0.069     0.069                      TRUE         0.42      0.74      0.94        0
+
+-- bound and |R|/bound, 2021-01..2023-12 --
+                 residual geo  n bound_min bound_median bound_p90 bound_max flag_median_bound_gt_0.05 ratio_median ratio_p90 ratio_max n_breach
+ R_der (vs I25 TOTAL YoY)  XK 36     0.022        0.026     0.027     0.028                     FALSE         0.16      0.31      0.38        0
+ R_der (vs I25 TOTAL YoY)  ME 36     0.023        0.028     0.029     0.029                     FALSE         0.15      0.32      0.44        0
+ R_der (vs I25 TOTAL YoY)  RS 36     0.024        0.029     0.030     0.030                     FALSE         0.13      0.25      0.37        0
+ R_der (vs I25 TOTAL YoY)  AL 36     0.022        0.025     0.025     0.025                     FALSE         0.14      0.34      0.43        0
+ R_der (vs I25 TOTAL YoY)  MK 36     0.023        0.029     0.030     0.030                     FALSE         0.14      0.40      0.45        0
+ R_der (vs I25 TOTAL YoY)  EA 36     0.022        0.025     0.026     0.026                     FALSE         0.15      0.35      0.39        0
+         R_pub (vs RCH_A)  XK 36     0.061        0.064     0.065     0.066                      TRUE         0.31      0.70      0.88        0
+         R_pub (vs RCH_A)  ME 36     0.062        0.065     0.067     0.067                      TRUE         0.28      0.61      0.79        0
+         R_pub (vs RCH_A)  RS 36     0.062        0.066     0.067     0.067                      TRUE         0.39      0.67      0.73        0
+         R_pub (vs RCH_A)  AL 36     0.061        0.063     0.064     0.064                      TRUE         0.39      0.74      0.79        0
+         R_pub (vs RCH_A)  MK 36     0.062        0.066     0.067     0.068                      TRUE         0.41      0.68      0.89        0
+         R_pub (vs RCH_A)  EA 36     0.061        0.064     0.064     0.064                      TRUE         0.49      0.74      0.89        0
+max |effect of /1000 instead of /sum(w)| on R_der: 0.0003 pp
+
+-- comparison with V1-V3, whole span --
+ geo                 method   n    p10   p90 max_abs
+  XK Ribe, vs I25 TOTAL YoY 116 -0.006 0.007   0.016
+  XK         Ribe, vs RCH_A 116 -0.039 0.034   0.055
+  XK                     V1 128 -0.063 0.084   0.264
+  XK                     V2 128 -0.069 0.093   0.215
+  XK                     V3 128 -0.069 0.173   0.534
+  ME Ribe, vs I25 TOTAL YoY 128 -0.007 0.006   0.014
+  ME         Ribe, vs RCH_A 128 -0.037 0.040   0.056
+  ME                     V1 129 -0.046 0.138   0.491
+  ME                     V2 129 -0.032 0.150   0.445
+  ME                     V3 128 -0.140 0.091   0.596
+  RS Ribe, vs I25 TOTAL YoY 236 -0.010 0.009   0.033
+  RS         Ribe, vs RCH_A 236 -0.038 0.038   0.067
+  RS                     V1 237 -0.030 0.237   0.975
+  RS                     V2 237 -0.011 0.252   0.972
+  RS                     V3 236 -0.064 0.128   0.494
+  AL Ribe, vs I25 TOTAL YoY 116 -0.006 0.007   0.011
+  AL         Ribe, vs RCH_A 116 -0.042 0.041   0.057
+  AL                     V1 117 -0.053 0.092   0.271
+  AL                     V2 117 -0.032 0.084   0.274
+  AL                     V3 116 -0.092 0.145   0.308
+  MK Ribe, vs I25 TOTAL YoY 248 -0.008 0.009   0.016
+  MK         Ribe, vs RCH_A 248 -0.044 0.035   0.061
+  MK                     V1 249 -0.091 0.125   0.387
+  MK                     V2 249 -0.078 0.122   0.368
+  MK                     V3 248 -0.088 0.098   0.265
+  EA Ribe, vs I25 TOTAL YoY 344 -0.008 0.009   0.019
+  EA         Ribe, vs RCH_A 344 -0.041 0.042   0.061
+  EA                     V1 356 -0.047 0.049   0.180
+  EA                     V2 356 -0.021 0.027   0.199
+  EA                     V3 356 -0.063 0.043   0.335
+
+wrote verify/contrib_residuals.csv, verify/contrib_tables_generated.md
+GATE PASSED: every |R| <= its computed rounding bound.
+Done.
