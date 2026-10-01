@@ -351,6 +351,16 @@ sprintf(paste("- **Kosova's %d weights** in the decomposition. The Kosova index 
 sprintf("- Eurostat, *HICP improvements - Questions and Answers - 2026* (PDF): <%s>", url_qa),
 sprintf(paste("- Agency for Statistics of Bosnia and Herzegovina (BHAS), ESMS metadata page for the monthly",
   "consumer price index (PRI00): <%s>"), url_bhas),
+"",
+# Reuse terms: Eurostat copyright notice and the Commission's enlargement page,
+# both retrieved 2026-10-01. The page title is source-controlled ("Kosovo").
+paste("Eurostat data © European Union, reused under CC BY 4.0 per Eurostat's",
+"[copyright notice](https://ec.europa.eu/eurostat/web/main/help/copyright-notice). Filtered extracts;",
+"no values modified. Data for Kosova fall under Eurostat's non-commercial reuse condition for",
+"countries that are not EU/EFTA members or official candidates. European Commission, Enlargement:",
+"Kosovo — membership status: potential candidate",
+"(<https://enlargement.ec.europa.eu/countries/kosovo_en>, retrieved 2026-10-01). The repository",
+"licence covers the code only."),
 "")
 
 add(
