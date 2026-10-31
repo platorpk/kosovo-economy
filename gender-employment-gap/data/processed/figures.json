@@ -1,0 +1,408 @@
+{
+  "check_e_accessed_first": "2026-10-23",
+  "check_e_accessed_last": "2026-10-23",
+  "check_e_first_year": 2012,
+  "check_e_latest_year": 2024,
+  "check_e_n_levels": 5,
+  "check_e_gap_none": "14.5",
+  "check_e_gap_primary": "24.4",
+  "check_e_gap_voc": "39.0",
+  "check_e_gap_gym": "39.6",
+  "check_e_gap_tertiary": "16.1",
+  "check_e_cv_employment_rate": "1.20",
+  "check_e_smallest_cell": "No formal education Female",
+  "check_e_smallest_cell_emp_k": "0.3",
+  "check_e2_accessed_first": "2026-10-23",
+  "check_e2_accessed_last": "2026-10-23",
+  "check_e2_tab0_wa_2023": "1171.8",
+  "check_e2_tab0_wa_2024": "1074.7",
+  "check_e2_tab0_yoy_2024": "-8.3",
+  "check_e2_tab0_yoy_prior_maxabs": "2.9",
+  "check_e2_rep24_base_total": 1602515,
+  "check_e2_base24_equals_census_incl_north": true,
+  "check_e2_n_swings": 3,
+  "check_e2_swing_years": "2019 (vocational +9.3, gymnasium -11.0 pp); 2021 (vocational -11.5, gymnasium +10.3 pp); 2022 (vocational -9.6, gymnasium +11.3 pp)",
+  "check_e2_doc_years_missing": "2015, 2016, 2017, 2018, 2019",
+  "check_e2_key_passages": [
+    {
+      "finding": "2012 redesign: Eurostat methodology, continuous survey, new frame from the 2011 census",
+      "doc": "afp2024",
+      "page": 3,
+      "url": "https://askapi.rks-gov.net/Custom/085719f6-0ef0-4365-afa7-9a02c8d10cf5.pdf"
+    },
+    {
+      "finding": "2012: sample phased in quarter by quarter; weights computed per quarter",
+      "doc": "ihsn_2012",
+      "page": 1,
+      "url": "https://catalog.ihsn.org/metadata/export/7242/ddi"
+    },
+    {
+      "finding": "2013/2014: weights adjusted to a projected population total",
+      "doc": "ihsn_2014",
+      "page": 1,
+      "url": "https://catalog.ihsn.org/metadata/export/7244/ddi"
+    },
+    {
+      "finding": "2013: a similar adjustment, to a projection variant",
+      "doc": "ihsn_2014",
+      "page": 1,
+      "url": "https://catalog.ihsn.org/metadata/export/7244/ddi"
+    },
+    {
+      "finding": "2020 Q2: field collection stopped for three months (non-response)",
+      "doc": "afp2021",
+      "page": 16,
+      "url": "https://askapi.rks-gov.net/Custom/d483c4e9-d88b-4c56-b888-4a05f5fff76e.pdf"
+    },
+    {
+      "finding": "2020-21: new law barred external interviewer staff; collection later covered the preceding months retrospectively",
+      "doc": "afp2021",
+      "page": 16,
+      "url": "https://askapi.rks-gov.net/Custom/d483c4e9-d88b-4c56-b888-4a05f5fff76e.pdf"
+    },
+    {
+      "finding": "2020 Q4: households refusing contact were interviewed by phone",
+      "doc": "lfs_q4_2020",
+      "page": 11,
+      "url": "https://askapi.rks-gov.net/Custom/2c09a68c-35f9-4131-9c66-beb6255acfb0.pdf"
+    },
+    {
+      "finding": "2022 H1: two further one-month interruptions of field interviews",
+      "doc": "afp2021",
+      "page": 16,
+      "url": "https://askapi.rks-gov.net/Custom/d483c4e9-d88b-4c56-b888-4a05f5fff76e.pdf"
+    },
+    {
+      "finding": "From March 2022: re-interviews by telephone (CATI)",
+      "doc": "tm3_2022",
+      "page": 10,
+      "url": "https://askapi.rks-gov.net/Custom/9bee491c-a7bb-477d-a86c-a5f1f049dab8.pdf"
+    },
+    {
+      "finding": "Panel design: delays in collection affect the quality of published data",
+      "doc": "tm3_2022",
+      "page": 10,
+      "url": "https://askapi.rks-gov.net/Custom/9bee491c-a7bb-477d-a86c-a5f1f049dab8.pdf"
+    },
+    {
+      "finding": "2021 report: interviews described as CAPI only",
+      "doc": "afp2021",
+      "page": 7,
+      "url": "https://askapi.rks-gov.net/Custom/d483c4e9-d88b-4c56-b888-4a05f5fff76e.pdf"
+    },
+    {
+      "finding": "2023 report: first interviews CAPI, re-interviews CATI",
+      "doc": "afp2023",
+      "page": 6,
+      "url": "https://askapi.rks-gov.net/Custom/d8b6019c-eccf-419f-a5b0-9fb7df247ce3.pdf"
+    },
+    {
+      "finding": "2023 report: population base 'estimated' for 2023",
+      "doc": "afp2023",
+      "page": 15,
+      "url": "https://askapi.rks-gov.net/Custom/d8b6019c-eccf-419f-a5b0-9fb7df247ce3.pdf"
+    },
+    {
+      "finding": "2024 report: population base from the 2024 census",
+      "doc": "afp2024",
+      "page": 12,
+      "url": "https://askapi.rks-gov.net/Custom/085719f6-0ef0-4365-afa7-9a02c8d10cf5.pdf"
+    }
+  ],
+  "check_e3_accessed_first": "2026-10-23",
+  "check_e3_accessed_last": "2026-10-24",
+  "check_e3_n_tables_scanned": 104,
+  "check_e3_n_educ_age_tables": 7,
+  "check_e3_lc07_male_1564": 151876,
+  "check_e3_lc07_female_1564": 291488,
+  "check_e3_lc06_male_1564": 291488,
+  "check_e3_lc06_female_1564": 151876,
+  "check_e3_lc07_labels_match_lc06": false,
+  "check_e3_lc07_matches_lc06_swapped": true,
+  "check_e3_lc07_n_impossible_cells": 1,
+  "check_e3_lc07_impossible_cells": "upper Female: employed 126,778 > population 109,966",
+  "check_e3_lc07_updated": "2026-04-22T13:25:52",
+  "check_e3_lc06_updated": "2026-04-20T13:10:45",
+  "check_e3_lc06_primary_includes_lower_secondary": true,
+  "check_e3_census_employed_1564": 443364,
+  "check_e3_lfs_employed_1564": 414493,
+  "low_rate_women": 5,
+  "low_rate_men": 29.1,
+  "low_gap_pp": 24.1,
+  "low_share_women": 41.2,
+  "low_share_men": 22.4,
+  "upper_sec_rate_women": 19.7,
+  "upper_sec_rate_men": 59.2,
+  "upper_sec_gap_pp": 39.5,
+  "upper_sec_share_women": 41.5,
+  "upper_sec_share_men": 61.1,
+  "tertiary_rate_women": 64.2,
+  "tertiary_rate_men": 80.3,
+  "tertiary_gap_pp": 16.1,
+  "tertiary_share_women": 17.2,
+  "tertiary_share_men": 16.5,
+  "all_rate_women": 21.2,
+  "all_rate_men": 55.9,
+  "all_gap_pp": 34.7,
+  "year": 2024,
+  "gap_headline_pp": 34.7,
+  "gap_recomputed_pp": 34.63,
+  "gap_recomputed_minus_headline_pp": -0.07,
+  "pop_pct_vs_tab0_women": -0.27,
+  "pop_pct_vs_tab0_men": -0.03,
+  "decomp_G_pp": 34.63,
+  "decomp_within_min_pp": 29.1,
+  "decomp_within_max_pp": 32.2,
+  "decomp_comp_min_pp": 2.4,
+  "decomp_comp_max_pp": 5.5,
+  "decomp_lfs": [
+    {
+      "weighting": "men's shares as reference",
+      "composition_valued_at": "women's rates",
+      "within_pp": 32.1907,
+      "composition_pp": 2.4355
+    },
+    {
+      "weighting": "women's shares as reference",
+      "composition_valued_at": "men's rates",
+      "within_pp": 29.1294,
+      "composition_pp": 5.4968
+    },
+    {
+      "weighting": "average of the two",
+      "composition_valued_at": "the average of the two",
+      "within_pp": 30.6601,
+      "composition_pp": 3.9661
+    }
+  ],
+  "census_1564_gap_total_pp": 26.32,
+  "census_1564_gap_three_pp": 26.39,
+  "census_1564_gap_three_minus_total_pp": 0.07,
+  "census_1564_within_min_pp": 22.3,
+  "census_1564_within_max_pp": 23.3,
+  "census_1564_comp_min_pp": 3.1,
+  "census_1564_comp_max_pp": 4.1,
+  "census_1564_north_employed": 1333,
+  "census_2564_gap_total_pp": 31.62,
+  "census_2564_gap_three_pp": 31.7,
+  "census_2564_gap_three_minus_total_pp": 0.08,
+  "census_2564_within_min_pp": 26.6,
+  "census_2564_within_max_pp": 26.9,
+  "census_2564_comp_min_pp": 4.7,
+  "census_2564_comp_max_pp": 5.1,
+  "census_2564_north_employed": 1199,
+  "census_1564_pop_tab00": 1074704,
+  "census_1564_pop_edu1": 1063687,
+  "census_1564_pop_gap": 11017,
+  "composition_share_max": 0.16,
+  "composition_share_min": 0.0703,
+  "composition_share_max_at": "Census 25-64 / men's shares as reference",
+  "composition_share_min_at": "LFS 15-64 / men's shares as reference",
+  "census_table": [
+    {
+      "band": "15-64",
+      "category": "No formal education or primary",
+      "rate_women": 8.203,
+      "rate_men": 30.9375,
+      "gap_pp": 22.7345,
+      "share_women": 0.4681,
+      "share_men": 0.2982
+    },
+    {
+      "band": "15-64",
+      "category": "Upper secondary",
+      "rate_women": 31.9231,
+      "rate_men": 58.9094,
+      "gap_pp": 26.9863,
+      "share_women": 0.319,
+      "share_men": 0.5156
+    },
+    {
+      "band": "15-64",
+      "category": "Tertiary",
+      "rate_women": 68.0191,
+      "rate_men": 82.126,
+      "gap_pp": 14.1069,
+      "share_women": 0.2128,
+      "share_men": 0.1863
+    },
+    {
+      "band": "15-64",
+      "category": "All (census Total rows)",
+      "rate_women": 28.5319,
+      "rate_men": 54.8545,
+      "gap_pp": 26.3226
+    },
+    {
+      "band": "25-64",
+      "category": "No formal education or primary",
+      "rate_women": 9.3419,
+      "rate_men": 41.2243,
+      "gap_pp": 31.8824,
+      "share_women": 0.4911,
+      "share_men": 0.258
+    },
+    {
+      "band": "25-64",
+      "category": "Upper secondary",
+      "rate_women": 32.45,
+      "rate_men": 62.3588,
+      "gap_pp": 29.9088,
+      "share_women": 0.2705,
+      "share_men": 0.5118
+    },
+    {
+      "band": "25-64",
+      "category": "Tertiary",
+      "rate_women": 70.1898,
+      "rate_men": 83.6191,
+      "gap_pp": 13.4293,
+      "share_women": 0.2384,
+      "share_men": 0.2302
+    },
+    {
+      "band": "25-64",
+      "category": "All (census Total rows)",
+      "rate_women": 30.1653,
+      "rate_men": 61.784,
+      "gap_pp": 31.6187
+    }
+  ],
+  "census_decomp": [
+    {
+      "band": "15-64",
+      "weighting": "men's shares as reference",
+      "within_pp": 23.3195,
+      "composition_pp": 3.0733
+    },
+    {
+      "band": "15-64",
+      "weighting": "women's shares as reference",
+      "within_pp": 22.2549,
+      "composition_pp": 4.1379
+    },
+    {
+      "band": "15-64",
+      "weighting": "average of the two",
+      "within_pp": 22.7872,
+      "composition_pp": 3.6056
+    },
+    {
+      "band": "25-64",
+      "weighting": "men's shares as reference",
+      "within_pp": 26.6249,
+      "composition_pp": 5.0724
+    },
+    {
+      "band": "25-64",
+      "weighting": "women's shares as reference",
+      "within_pp": 26.9485,
+      "composition_pp": 4.7489
+    },
+    {
+      "band": "25-64",
+      "weighting": "average of the two",
+      "within_pp": 26.7867,
+      "composition_pp": 4.9107
+    }
+  ],
+  "composition_shares": [
+    {
+      "version": "LFS 15-64",
+      "weighting": "men's shares as reference",
+      "composition_pp": 2.4355,
+      "G_pp": 34.6262,
+      "composition_share": 0.070337
+    },
+    {
+      "version": "LFS 15-64",
+      "weighting": "women's shares as reference",
+      "composition_pp": 5.4968,
+      "G_pp": 34.6262,
+      "composition_share": 0.158746
+    },
+    {
+      "version": "LFS 15-64",
+      "weighting": "average of the two",
+      "composition_pp": 3.9661,
+      "G_pp": 34.6262,
+      "composition_share": 0.114541
+    },
+    {
+      "version": "Census 15-64",
+      "weighting": "men's shares as reference",
+      "composition_pp": 3.0733,
+      "G_pp": 26.3928,
+      "composition_share": 0.116445
+    },
+    {
+      "version": "Census 15-64",
+      "weighting": "women's shares as reference",
+      "composition_pp": 4.1379,
+      "G_pp": 26.3928,
+      "composition_share": 0.156781
+    },
+    {
+      "version": "Census 15-64",
+      "weighting": "average of the two",
+      "composition_pp": 3.6056,
+      "G_pp": 26.3928,
+      "composition_share": 0.136613
+    },
+    {
+      "version": "Census 25-64",
+      "weighting": "men's shares as reference",
+      "composition_pp": 5.0724,
+      "G_pp": 31.6974,
+      "composition_share": 0.160027
+    },
+    {
+      "version": "Census 25-64",
+      "weighting": "women's shares as reference",
+      "composition_pp": 4.7489,
+      "G_pp": 31.6974,
+      "composition_share": 0.14982
+    },
+    {
+      "version": "Census 25-64",
+      "weighting": "average of the two",
+      "composition_pp": 4.9107,
+      "G_pp": 31.6974,
+      "composition_share": 0.154924
+    }
+  ],
+  "census_other_unknown": [
+    {
+      "band": "15-64",
+      "sex": "Female",
+      "employed": 800,
+      "share_of_employed": 0.005267,
+      "population": 2232,
+      "share_of_population": 0.004193
+    },
+    {
+      "band": "15-64",
+      "sex": "Male",
+      "employed": 1150,
+      "share_of_employed": 0.003945,
+      "population": 2476,
+      "share_of_population": 0.00466
+    },
+    {
+      "band": "25-64",
+      "sex": "Female",
+      "employed": 666,
+      "share_of_employed": 0.005413,
+      "population": 1349,
+      "share_of_population": 0.003307
+    },
+    {
+      "band": "25-64",
+      "sex": "Male",
+      "employed": 970,
+      "share_of_employed": 0.003936,
+      "population": 1666,
+      "share_of_population": 0.004176
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "table": "tab3.px",
+    "title": "Employment and employment-to-population ratio; employment rate, by education attainment and sex, age group 15-64 by Variables, Level of education, Year and Sex",
+    "variables": [
+      {
+        "code": "Variabla",
+        "text": "Variables",
+        "values": ["0", "1"],
+        "valueTexts": ["Employment ('000s)", "Employment-to-population ratio (%)"]
+      },
+      {
+        "code": "Niveli i arsimit",
+        "text": "Level of education",
+        "values": ["0", "1", "2", "3", "4", "5"],
+        "valueTexts": ["No formal education", "Primary", "Secondary education, vocational", "Secondary education, gymnasium", "Tertiary", "Total"]
+      },
+      {
+        "code": "Viti",
+        "text": "Year",
+        "values": ["2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"],
+        "valueTexts": ["2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"],
+        "time": true
+      },
+      {
+        "code": "Gjinia",
+        "text": "Sex",
+        "values": ["0", "1", "2"],
+        "valueTexts": ["Male", "Female", "Total"]
+      }
+    ]
+  },
+  {
+    "table": "tab20.px",
+    "title": "Unemployed and unemployment rate by educational attainment by sex, age group 15 - 64 by Variables, Kosovo, Year and Gender",
+    "variables": [
+      {
+        "code": "Variabla",
+        "text": "Variables",
+        "values": ["0", "1"],
+        "valueTexts": ["Unemployment ('000s)", "Unemployment rate (%)"]
+      },
+      {
+        "code": "Kosovë",
+        "text": "Kosovo",
+        "values": ["0", "1", "2", "3", "4", "5"],
+        "valueTexts": ["No formal education", "Primary", "Secondary education, vocational", "Secondary education, gymnasium", "Tertiary", "Total"]
+      },
+      {
+        "code": "Viti",
+        "text": "Year",
+        "values": ["2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"],
+        "valueTexts": ["2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"],
+        "time": true
+      },
+      {
+        "code": "Gjinia",
+        "text": "Gender",
+        "values": ["0", "1", "2"],
+        "valueTexts": ["Male", "Female", "Total"]
+      }
+    ]
+  },
+  {
+    "table": "tab0.px",
+    "title": "Population by sex and age group by Variables, Age group, Year and Sex",
+    "variables": [
+      {
+        "code": "Variabla",
+        "text": "Variables",
+        "values": ["0", "1"],
+        "valueTexts": ["Population ('000s)", "Population distribution (%)"]
+      },
+      {
+        "code": "Grup-mosha",
+        "text": "Age group",
+        "values": ["0", "1", "2", "3"],
+        "valueTexts": ["0-14", "15-64", "65 and over", "Total"]
+      },
+      {
+        "code": "Viti",
+        "text": "Year",
+        "values": ["2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"],
+        "valueTexts": ["2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012"],
+        "time": true
+      },
+      {
+        "code": "Gjinia",
+        "text": "Sex",
+        "values": ["0", "1", "2"],
+        "valueTexts": ["Male", "Female", "Total"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,313 @@
+Variables,Age group,Year,Sex,Population by sex and age group
+Population ('000s),0-14,2024,Male,182.851
+Population ('000s),0-14,2024,Female,167.045
+Population ('000s),0-14,2024,Total,349.896
+Population ('000s),0-14,2023,Male,201.136
+Population ('000s),0-14,2023,Female,187.095
+Population ('000s),0-14,2023,Total,388.231
+Population ('000s),0-14,2022,Male,202.259
+Population ('000s),0-14,2022,Female,183.074
+Population ('000s),0-14,2022,Total,385.333
+Population ('000s),0-14,2021,Male,200.215
+Population ('000s),0-14,2021,Female,180.785
+Population ('000s),0-14,2021,Total,381
+Population ('000s),0-14,2020,Male,198.832
+Population ('000s),0-14,2020,Female,182.243
+Population ('000s),0-14,2020,Total,381.076
+Population ('000s),0-14,2019,Male,210.383
+Population ('000s),0-14,2019,Female,193.59
+Population ('000s),0-14,2019,Total,403.973
+Population ('000s),0-14,2018,Male,206.814
+Population ('000s),0-14,2018,Female,185.342
+Population ('000s),0-14,2018,Total,392.155
+Population ('000s),0-14,2017,Male,207.753
+Population ('000s),0-14,2017,Female,197.05
+Population ('000s),0-14,2017,Total,404.803
+Population ('000s),0-14,2016,Male,218.702
+Population ('000s),0-14,2016,Female,202.382
+Population ('000s),0-14,2016,Total,421.084
+Population ('000s),0-14,2015,Male,221.175
+Population ('000s),0-14,2015,Female,207.921
+Population ('000s),0-14,2015,Total,429.096
+Population ('000s),0-14,2014,Male,238.433
+Population ('000s),0-14,2014,Female,220.811
+Population ('000s),0-14,2014,Total,459.245
+Population ('000s),0-14,2013,Male,250.535
+Population ('000s),0-14,2013,Female,228.122
+Population ('000s),0-14,2013,Total,478.658
+Population ('000s),0-14,2012,Male,251.498
+Population ('000s),0-14,2012,Female,239.916
+Population ('000s),0-14,2012,Total,491.415
+Population ('000s),15-64,2024,Male,537.274
+Population ('000s),15-64,2024,Female,537.43
+Population ('000s),15-64,2024,Total,1074.704
+Population ('000s),15-64,2023,Male,576.289
+Population ('000s),15-64,2023,Female,595.474
+Population ('000s),15-64,2023,Total,1171.763
+Population ('000s),15-64,2022,Male,593.525
+Population ('000s),15-64,2022,Female,601.901
+Population ('000s),15-64,2022,Total,1195.426
+Population ('000s),15-64,2021,Male,613.618
+Population ('000s),15-64,2021,Female,618.077
+Population ('000s),15-64,2021,Total,1231.695
+Population ('000s),15-64,2020,Male,608.885
+Population ('000s),15-64,2020,Female,613.219
+Population ('000s),15-64,2020,Total,1222.104
+Population ('000s),15-64,2019,Male,605.877
+Population ('000s),15-64,2019,Female,600.929
+Population ('000s),15-64,2019,Total,1206.806
+Population ('000s),15-64,2018,Male,600.093
+Population ('000s),15-64,2018,Female,598.18
+Population ('000s),15-64,2018,Total,1198.273
+Population ('000s),15-64,2017,Male,604.443
+Population ('000s),15-64,2017,Female,595.722
+Population ('000s),15-64,2017,Total,1200.165
+Population ('000s),15-64,2016,Male,598.64
+Population ('000s),15-64,2016,Female,585.89
+Population ('000s),15-64,2016,Total,1184.529
+Population ('000s),15-64,2015,Male,594.262
+Population ('000s),15-64,2015,Female,581.885
+Population ('000s),15-64,2015,Total,1176.147
+Population ('000s),15-64,2014,Male,600.481
+Population ('000s),15-64,2014,Female,602.008
+Population ('000s),15-64,2014,Total,1202.489
+Population ('000s),15-64,2013,Male,593.111
+Population ('000s),15-64,2013,Female,598.519
+Population ('000s),15-64,2013,Total,1191.63
+Population ('000s),15-64,2012,Male,601.994
+Population ('000s),15-64,2012,Female,587.025
+Population ('000s),15-64,2012,Total,1189.019
+Population ('000s),65 and over,2024,Male,84.413
+Population ('000s),65 and over,2024,Female,93.502
+Population ('000s),65 and over,2024,Total,177.915
+Population ('000s),65 and over,2023,Male,98.359
+Population ('000s),65 and over,2023,Female,103.867
+Population ('000s),65 and over,2023,Total,202.226
+Population ('000s),65 and over,2022,Male,93.217
+Population ('000s),65 and over,2022,Female,99.995
+Population ('000s),65 and over,2022,Total,193.212
+Population ('000s),65 and over,2021,Male,91.295
+Population ('000s),65 and over,2021,Female,94.197
+Population ('000s),65 and over,2021,Total,185.492
+Population ('000s),65 and over,2020,Male,92.977
+Population ('000s),65 and over,2020,Female,99.509
+Population ('000s),65 and over,2020,Total,192.486
+Population ('000s),65 and over,2019,Male,87.17
+Population ('000s),65 and over,2019,Female,98.427
+Population ('000s),65 and over,2019,Total,185.597
+Population ('000s),65 and over,2018,Male,97.053
+Population ('000s),65 and over,2018,Female,105.986
+Population ('000s),65 and over,2018,Total,203.039
+Population ('000s),65 and over,2017,Male,88.631
+Population ('000s),65 and over,2017,Female,99.867
+Population ('000s),65 and over,2017,Total,188.498
+Population ('000s),65 and over,2016,Male,79.124
+Population ('000s),65 and over,2016,Female,86.867
+Population ('000s),65 and over,2016,Total,165.991
+Population ('000s),65 and over,2015,Male,72.794
+Population ('000s),65 and over,2015,Female,79.805
+Population ('000s),65 and over,2015,Total,152.599
+Population ('000s),65 and over,2014,Male,72.217
+Population ('000s),65 and over,2014,Female,77.57
+Population ('000s),65 and over,2014,Total,149.787
+Population ('000s),65 and over,2013,Male,66.878
+Population ('000s),65 and over,2013,Female,74.207
+Population ('000s),65 and over,2013,Total,141.085
+Population ('000s),65 and over,2012,Male,60.036
+Population ('000s),65 and over,2012,Female,66.656
+Population ('000s),65 and over,2012,Total,126.692
+Population ('000s),Total,2024,Male,804.538
+Population ('000s),Total,2024,Female,797.977
+Population ('000s),Total,2024,Total,1602.515
+Population ('000s),Total,2023,Male,875.784
+Population ('000s),Total,2023,Female,886.436
+Population ('000s),Total,2023,Total,1762.22
+Population ('000s),Total,2022,Male,889.001
+Population ('000s),Total,2022,Female,884.97
+Population ('000s),Total,2022,Total,1773.971
+Population ('000s),Total,2021,Male,905.128
+Population ('000s),Total,2021,Female,893.059
+Population ('000s),Total,2021,Total,1798.187
+Population ('000s),Total,2020,Male,900.694
+Population ('000s),Total,2020,Female,894.972
+Population ('000s),Total,2020,Total,1795.666
+Population ('000s),Total,2019,Male,903.43
+Population ('000s),Total,2019,Female,892.946
+Population ('000s),Total,2019,Total,1796.376
+Population ('000s),Total,2018,Male,903.959
+Population ('000s),Total,2018,Female,889.508
+Population ('000s),Total,2018,Total,1793.467
+Population ('000s),Total,2017,Male,900.828
+Population ('000s),Total,2017,Female,892.639
+Population ('000s),Total,2017,Total,1793.467
+Population ('000s),Total,2016,Male,896.466
+Population ('000s),Total,2016,Female,875.138
+Population ('000s),Total,2016,Total,1771.604
+Population ('000s),Total,2015,Male,888.231
+Population ('000s),Total,2015,Female,869.612
+Population ('000s),Total,2015,Total,1757.843
+Population ('000s),Total,2014,Male,911.131
+Population ('000s),Total,2014,Female,900.39
+Population ('000s),Total,2014,Total,1811.521
+Population ('000s),Total,2013,Male,910.524
+Population ('000s),Total,2013,Female,900.848
+Population ('000s),Total,2013,Total,1811.372
+Population ('000s),Total,2012,Male,913.528
+Population ('000s),Total,2012,Female,893.598
+Population ('000s),Total,2012,Total,1807.126
+Population distribution (%),0-14,2024,Male,22.7
+Population distribution (%),0-14,2024,Female,20.9
+Population distribution (%),0-14,2024,Total,21.8
+Population distribution (%),0-14,2023,Male,23
+Population distribution (%),0-14,2023,Female,21.1
+Population distribution (%),0-14,2023,Total,22
+Population distribution (%),0-14,2022,Male,22.8
+Population distribution (%),0-14,2022,Female,20.7
+Population distribution (%),0-14,2022,Total,21.7
+Population distribution (%),0-14,2021,Male,22.1
+Population distribution (%),0-14,2021,Female,20.2
+Population distribution (%),0-14,2021,Total,21.2
+Population distribution (%),0-14,2020,Male,22.1
+Population distribution (%),0-14,2020,Female,20.4
+Population distribution (%),0-14,2020,Total,21.2
+Population distribution (%),0-14,2019,Male,23.3
+Population distribution (%),0-14,2019,Female,21.7
+Population distribution (%),0-14,2019,Total,22.5
+Population distribution (%),0-14,2018,Male,22.9
+Population distribution (%),0-14,2018,Female,20.8
+Population distribution (%),0-14,2018,Total,21.9
+Population distribution (%),0-14,2017,Male,23.1
+Population distribution (%),0-14,2017,Female,22.1
+Population distribution (%),0-14,2017,Total,22.6
+Population distribution (%),0-14,2016,Male,24.4
+Population distribution (%),0-14,2016,Female,23.1
+Population distribution (%),0-14,2016,Total,23.8
+Population distribution (%),0-14,2015,Male,24.9
+Population distribution (%),0-14,2015,Female,23.9
+Population distribution (%),0-14,2015,Total,24.4
+Population distribution (%),0-14,2014,Male,26.2
+Population distribution (%),0-14,2014,Female,24.5
+Population distribution (%),0-14,2014,Total,25.4
+Population distribution (%),0-14,2013,Male,27.5
+Population distribution (%),0-14,2013,Female,25.3
+Population distribution (%),0-14,2013,Total,26.4
+Population distribution (%),0-14,2012,Male,27.5
+Population distribution (%),0-14,2012,Female,26.8
+Population distribution (%),0-14,2012,Total,27.2
+Population distribution (%),15-64,2024,Male,66.8
+Population distribution (%),15-64,2024,Female,67.3
+Population distribution (%),15-64,2024,Total,67.1
+Population distribution (%),15-64,2023,Male,65.8
+Population distribution (%),15-64,2023,Female,67.2
+Population distribution (%),15-64,2023,Total,66.5
+Population distribution (%),15-64,2022,Male,66.8
+Population distribution (%),15-64,2022,Female,68
+Population distribution (%),15-64,2022,Total,67.4
+Population distribution (%),15-64,2021,Male,67.8
+Population distribution (%),15-64,2021,Female,69.2
+Population distribution (%),15-64,2021,Total,68.5
+Population distribution (%),15-64,2020,Male,67.6
+Population distribution (%),15-64,2020,Female,68.5
+Population distribution (%),15-64,2020,Total,68.1
+Population distribution (%),15-64,2019,Male,67.1
+Population distribution (%),15-64,2019,Female,67.3
+Population distribution (%),15-64,2019,Total,67.2
+Population distribution (%),15-64,2018,Male,66.4
+Population distribution (%),15-64,2018,Female,67.2
+Population distribution (%),15-64,2018,Total,66.8
+Population distribution (%),15-64,2017,Male,67.1
+Population distribution (%),15-64,2017,Female,66.7
+Population distribution (%),15-64,2017,Total,66.9
+Population distribution (%),15-64,2016,Male,66.8
+Population distribution (%),15-64,2016,Female,66.9
+Population distribution (%),15-64,2016,Total,66.9
+Population distribution (%),15-64,2015,Male,66.9
+Population distribution (%),15-64,2015,Female,66.9
+Population distribution (%),15-64,2015,Total,66.9
+Population distribution (%),15-64,2014,Male,65.9
+Population distribution (%),15-64,2014,Female,66.9
+Population distribution (%),15-64,2014,Total,66.4
+Population distribution (%),15-64,2013,Male,65.1
+Population distribution (%),15-64,2013,Female,66.4
+Population distribution (%),15-64,2013,Total,65.8
+Population distribution (%),15-64,2012,Male,65.9
+Population distribution (%),15-64,2012,Female,65.7
+Population distribution (%),15-64,2012,Total,65.8
+Population distribution (%),65 and over,2024,Male,10.5
+Population distribution (%),65 and over,2024,Female,11.7
+Population distribution (%),65 and over,2024,Total,11.1
+Population distribution (%),65 and over,2023,Male,11.2
+Population distribution (%),65 and over,2023,Female,11.7
+Population distribution (%),65 and over,2023,Total,11.5
+Population distribution (%),65 and over,2022,Male,10.5
+Population distribution (%),65 and over,2022,Female,11.3
+Population distribution (%),65 and over,2022,Total,10.9
+Population distribution (%),65 and over,2021,Male,10.1
+Population distribution (%),65 and over,2021,Female,10.5
+Population distribution (%),65 and over,2021,Total,10.3
+Population distribution (%),65 and over,2020,Male,10.3
+Population distribution (%),65 and over,2020,Female,11.1
+Population distribution (%),65 and over,2020,Total,10.7
+Population distribution (%),65 and over,2019,Male,9.6
+Population distribution (%),65 and over,2019,Female,11
+Population distribution (%),65 and over,2019,Total,10.3
+Population distribution (%),65 and over,2018,Male,10.7
+Population distribution (%),65 and over,2018,Female,11.9
+Population distribution (%),65 and over,2018,Total,11.3
+Population distribution (%),65 and over,2017,Male,9.8
+Population distribution (%),65 and over,2017,Female,11.2
+Population distribution (%),65 and over,2017,Total,10.5
+Population distribution (%),65 and over,2016,Male,8.8
+Population distribution (%),65 and over,2016,Female,9.9
+Population distribution (%),65 and over,2016,Total,9.4
+Population distribution (%),65 and over,2015,Male,8.2
+Population distribution (%),65 and over,2015,Female,9.2
+Population distribution (%),65 and over,2015,Total,8.7
+Population distribution (%),65 and over,2014,Male,7.9
+Population distribution (%),65 and over,2014,Female,8.6
+Population distribution (%),65 and over,2014,Total,8.3
+Population distribution (%),65 and over,2013,Male,7.3
+Population distribution (%),65 and over,2013,Female,8.2
+Population distribution (%),65 and over,2013,Total,7.8
+Population distribution (%),65 and over,2012,Male,6.6
+Population distribution (%),65 and over,2012,Female,7.5
+Population distribution (%),65 and over,2012,Total,7
+Population distribution (%),Total,2024,Male,100
+Population distribution (%),Total,2024,Female,100
+Population distribution (%),Total,2024,Total,100
+Population distribution (%),Total,2023,Male,100
+Population distribution (%),Total,2023,Female,100
+Population distribution (%),Total,2023,Total,100
+Population distribution (%),Total,2022,Male,100
+Population distribution (%),Total,2022,Female,100
+Population distribution (%),Total,2022,Total,100
+Population distribution (%),Total,2021,Male,100
+Population distribution (%),Total,2021,Female,100
+Population distribution (%),Total,2021,Total,100
+Population distribution (%),Total,2020,Male,100
+Population distribution (%),Total,2020,Female,100
+Population distribution (%),Total,2020,Total,100
+Population distribution (%),Total,2019,Male,100
+Population distribution (%),Total,2019,Female,100
+Population distribution (%),Total,2019,Total,100
+Population distribution (%),Total,2018,Male,100
+Population distribution (%),Total,2018,Female,100
+Population distribution (%),Total,2018,Total,100
+Population distribution (%),Total,2017,Male,100
+Population distribution (%),Total,2017,Female,100
+Population distribution (%),Total,2017,Total,100
+Population distribution (%),Total,2016,Male,100
+Population distribution (%),Total,2016,Female,100
+Population distribution (%),Total,2016,Total,100
+Population distribution (%),Total,2015,Male,100
+Population distribution (%),Total,2015,Female,100
+Population distribution (%),Total,2015,Total,100
+Population distribution (%),Total,2014,Male,100
+Population distribution (%),Total,2014,Female,100
+Population distribution (%),Total,2014,Total,100
+Population distribution (%),Total,2013,Male,100
+Population distribution (%),Total,2013,Female,100
+Population distribution (%),Total,2013,Total,100
+Population distribution (%),Total,2012,Male,100
+Population distribution (%),Total,2012,Female,100
+Population distribution (%),Total,2012,Total,100

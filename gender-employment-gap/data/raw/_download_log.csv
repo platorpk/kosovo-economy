@@ -1,0 +1,26 @@
+file,source,url,accessed_utc,bytes,md5,newly_fetched
+ask_census2024_00_population.csv,ASK PxWeb,https://askdata.rks-gov.net/api/v1/en/ASKdata/Census%20population/1_Demographic_Characteristics/census2024_00.px,2026-10-23 20:23:37,183512,6e9927095d092ffac8b74f943b3b3c76,TRUE
+ask_lfs_tab3_employment_by_education_sex.csv,ASK PxWeb,https://askdata.rks-gov.net/api/v1/en/ASKdata/Labour%20market/Anketa%20e%20Fuqis%C3%AB%20Pun%C3%ABtore/Annual%20labour%20market/tab3.px,2026-10-23 20:32:08,29213,e41f5e2d9c15a5026cc41337cc738a57,TRUE
+ask_lfs_tab20_unemployment_by_education_sex.csv,ASK PxWeb,https://askdata.rks-gov.net/api/v1/en/ASKdata/Labour%20market/Anketa%20e%20Fuqis%C3%AB%20Pun%C3%ABtore/Annual%20labour%20market/tab20.px,2026-10-23 20:32:12,26535,dc33af8ea1efe563d60794d6359b8890,TRUE
+ask_lfs_tab1b_main_indicators.csv,ASK PxWeb,https://askdata.rks-gov.net/api/v1/en/ASKdata/Labour%20market/Anketa%20e%20Fuqis%C3%AB%20Pun%C3%ABtore/Annual%20labour%20market/tab1b.px,2026-10-23 20:32:16,26943,c918b88e2e14e6a0a35814b63aeb4e33,TRUE
+ask_lfs_tab29_accuracy.csv,ASK PxWeb,https://askdata.rks-gov.net/api/v1/en/ASKdata/Labour%20market/Anketa%20e%20Fuqis%C3%AB%20Pun%C3%ABtore/Annual%20labour%20market/tab29.px,2026-10-23 20:32:18,13292,32f517f26feb6beb7c9fc9bdca3abc8b,TRUE
+lfs_docs/ask_085719f6-0ef0-4365-afa7-9a02c8d10cf5.pdf,ASK,https://askapi.rks-gov.net/Custom/085719f6-0ef0-4365-afa7-9a02c8d10cf5.pdf,2026-10-23 20:38:33,558452,07f5b20a4f7f618268e02cc4deef4bfa,TRUE
+lfs_docs/ask_d8b6019c-eccf-419f-a5b0-9fb7df247ce3.pdf,ASK,https://askapi.rks-gov.net/Custom/d8b6019c-eccf-419f-a5b0-9fb7df247ce3.pdf,2026-10-23 20:38:39,1458811,1cbca65266612bd9419a315ab762de88,TRUE
+lfs_docs/ihsn_7242_ddi.xml,IHSN survey catalog (DDI),https://catalog.ihsn.org/metadata/export/7242/ddi,2026-10-23 21:23:16,938182,613f1bce44c513bc7a02ea7e8bf030a9,TRUE
+lfs_docs/ihsn_7243_ddi.xml,IHSN survey catalog (DDI),https://catalog.ihsn.org/metadata/export/7243/ddi,2026-10-23 21:23:27,1015997,67c1cbc9588cd6f76734a78b89cdf694,TRUE
+lfs_docs/ihsn_7244_ddi.xml,IHSN survey catalog (DDI),https://catalog.ihsn.org/metadata/export/7244/ddi,2026-10-23 21:23:31,942487,a8eb61d4caded5144aa193e1b9cf74ec,TRUE
+lfs_docs/ask_2c09a68c.pdf,ASK,https://askapi.rks-gov.net/Custom/2c09a68c-35f9-4131-9c66-beb6255acfb0.pdf,2026-10-23 21:23:34,1688112,23a66ffb14fa43a36a5ae489f0f574ee,TRUE
+ask_lfs_tab0_population.csv,ASK PxWeb,https://askdata.rks-gov.net/api/v1/en/ASKdata/Labour%20market/Anketa%20e%20Fuqis%C3%AB%20Pun%C3%ABtore/Annual%20labour%20market/tab0.px,2026-10-23 21:26:01,15034,f69b0e9970878093a3c9e3a16f4d7b9c,TRUE
+ask_lfs_tab3_tab20_tab0_metadata.json,ASK PxWeb metadata,"https://askdata.rks-gov.net/api/v1/en/ASKdata/Labour%20market/Anketa%20e%20Fuqis%C3%AB%20Pun%C3%ABtore/Annual%20labour%20market/{tab3,tab20,tab0}.px",2026-10-23 21:26:12,3419,715172ad67d56eb9820ece149725a8f3,TRUE
+lfs_docs/ask_f809b076.pdf,ASK,https://askapi.rks-gov.net/Custom/f809b076-a9eb-4641-938c-d7f4d94f90bb.pdf,2026-10-23 21:26:15,1280339,f09468c356f6b9b2b7b5e652ec866d19,TRUE
+lfs_docs/ask_9bee491c.pdf,ASK,https://askapi.rks-gov.net/Custom/9bee491c-a7bb-477d-a86c-a5f1f049dab8.pdf,2026-10-23 21:26:18,1438130,3d6627d3db1e15d4edf7389db7024355,TRUE
+lfs_docs/ask_d483c4e9.pdf,ASK,https://askapi.rks-gov.net/Custom/d483c4e9-d88b-4c56-b888-4a05f5fff76e.pdf,2026-10-23 21:26:20,1302153,1f6ad6520108ea938748dab6a5ece2b7,TRUE
+lfs_docs/ask_0e4f8244.pdf,ASK,https://askapi.rks-gov.net/Custom/0e4f8244-38b2-4104-b198-d2ed4b28bb41.pdf,2026-10-23 21:26:23,964897,346b8c9a0233880809ec96422489b055,TRUE
+lfs_docs/ask_eae105cc.pdf,ASK,https://askapi.rks-gov.net/Custom/eae105cc-1eb7-41c3-b327-0e25782f183b.pdf,2026-10-23 21:26:25,505119,7e6297e124790747a8930c8b28da1927,TRUE
+lfs_docs/ask_75dc2a44.pdf,ASK,https://askapi.rks-gov.net/Custom/75dc2a44-2ff1-4237-b7f5-a33eca52b215.pdf,2026-10-23 21:26:28,93969,31e1cf489b1aaa143927aae3e9d3a0fa,TRUE
+ask_pxweb_metadata_e3.json,ASK PxWeb metadata,"https://askdata.rks-gov.net/api/v1/en/ASKdata/{Labour market/Anketa e Fuqisë Punëtore/Annual labour market,Labour market/Anketa e Fuqisë Punëtore/Quarterly labour market,Census population/2_Education,Census population/4_Labour market}",2026-10-24 11:13:14,194902,65abe971b4764a3991d5d0585fe1ec50,TRUE
+ask_census2024_lc07_employed_educ_age_sex.csv,ASK PxWeb,https://askdata.rks-gov.net/api/v1/en/ASKdata/Census%20population/4_Labour%20market/lc07ensus.px,2026-10-24 11:14:48,1458870,6aed373650f3c5959d59fcdc3b2cfba0,TRUE
+ask_census2024_edu1_population_educ_age_sex.csv,ASK PxWeb,https://askdata.rks-gov.net/api/v1/en/ASKdata/Census%20population/2_Education/tabcensusedu1.px,2026-10-24 11:14:50,21942,339a95e0eefb40e01a6e4e7bb289034b,TRUE
+ask_census2024_lc06_employed_educ_age_sex_kosova.csv,ASK PxWeb,https://askdata.rks-gov.net/api/v1/en/ASKdata/Census%20population/4_Labour%20market/lc06ensus.px,2026-10-24 11:15:22,4823,68d6fc0eae79cf4c79a68f1700636c6f,TRUE
+ask_pxweb_listing_census_labour.json,ASK PxWeb listing,https://askdata.rks-gov.net/api/v1/en/ASKdata/Census%20population/4_Labour%20market,2026-10-24 11:16:24,5279,e391c330381c563e75682923fb3f2fa2,TRUE
+ask_census2024_lc06_north.csv,ASK PxWeb,https://askdata.rks-gov.net/api/v1/en/ASKdata/Census%20population/4_Labour%20market/lc06ensus.px,2026-10-24 11:23:01,1691,af32fbf0ab42f63af191110e0a892212,TRUE

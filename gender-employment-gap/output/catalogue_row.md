@@ -1,0 +1,1 @@
+| [`gender-employment-gap/`](gender-employment-gap) | In 2024 (LFS, ages 15–64), differences in education level between women and men account for 7.0–15.9% of Kosova's 34.7-point gender employment gap (an accounting split, not a causal effect); across all nine source, age-band and weighting combinations checked, 7–16% | ASK Labour Force Survey 2024 and Census 2024 (PxWeb) |

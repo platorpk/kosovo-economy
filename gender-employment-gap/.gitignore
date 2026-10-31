@@ -1,0 +1,8 @@
+# Verification tables and plots written by the 01_ scripts; regenerated on every run
+checks/
+
+# ASK reports and IHSN metadata: third-party documents, downloaded by
+# R/01_e2_lfs_detail_check.R on the first run and not redistributed
+data/raw/lfs_docs/
+
+.Rhistory

@@ -1,0 +1,25 @@
+table,source_row,category
+lc06ensus.px,Total,Total
+lc06ensus.px,No education,No formal education or primary
+lc06ensus.px,Primary education,No formal education or primary
+lc06ensus.px,Secondary education,Upper secondary
+lc06ensus.px,Higher school,Tertiary
+lc06ensus.px,"Faculty, Bachelor's degree",Tertiary
+lc06ensus.px,Postgraduate (Master's degree),Tertiary
+lc06ensus.px,Doctorate,Tertiary
+lc06ensus.px,Other,Other/Unknown
+lc06ensus.px,Unknown,Other/Unknown
+tabcensusedu1.px,Kosova,Total
+tabcensusedu1.px,No formal education,No formal education or primary
+tabcensusedu1.px,No level completed,No formal education or primary
+tabcensusedu1.px,"Primary, 4 grades old system",No formal education or primary
+tabcensusedu1.px,"Primary, 5 grades new system",No formal education or primary
+tabcensusedu1.px,"Lower secondary, 8 grades old system",No formal education or primary
+tabcensusedu1.px,"Lower secondary, 9 grades new system",No formal education or primary
+tabcensusedu1.px,"Higher secondary, 12 grades old system",Upper secondary
+tabcensusedu1.px,"Higher secondary, 13 grades new system",Upper secondary
+tabcensusedu1.px,Higher school,Tertiary
+tabcensusedu1.px,"Faculty, Bachelor's",Tertiary
+tabcensusedu1.px,Postgraduate (Master's),Tertiary
+tabcensusedu1.px,Doctorate/PhD,Tertiary
+tabcensusedu1.px,Unknown,Other/Unknown
