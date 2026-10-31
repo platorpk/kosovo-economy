@@ -2,7 +2,7 @@
 
 An accounting split of the gap between women's and men's employment in Kosova by education level, from ASK's Labour Force Survey 2024, checked against the 2024 census.
 
-**In 2024, 21.2% of women aged 15–64 in Kosova were employed, against 55.9% of men: a gap of 34.7 percentage points. Differences in education level between women and men account for about 7% to 16% of that gap, depending on whether men's or women's education mix is the reference (an accounting split, not a causal effect). In the 2024 census the same split gives about 12% to 16% at ages 15–64 and 15% to 16% at ages 25–64, which leaves out most students.**
+**In 2024, 21.2% of women aged 15–64 in Kosova were employed, against 55.9% of men: a gap of 34.7 percentage points. Differences in education level between women and men account for about 7% to 16% of that gap, depending on whether men's or women's education mix is the reference (an accounting split, not a causal effect). In the 2024 census the same split gives about 12% to 16% at ages 15–64 and 15% to 16% at ages 25–64 (the 25–64 band leaves out most students).**
 
 The ranges show the choice of reference, not sampling error, which cannot be estimated from published tables. Each share is of the gap rebuilt from the three education groups (34.6 points in the LFS, against the published 34.7) and is computed from unrounded inputs; on either base the LFS range rounds to the same whole numbers.
 

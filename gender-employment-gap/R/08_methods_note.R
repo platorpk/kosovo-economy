@@ -134,10 +134,10 @@ finding <- sprintf(paste0(
   "percentage points. Differences in education level between women and men account for about %s%% to ",
   "%s%% of that gap, depending on whether men's or women's education mix is the reference (an ",
   "accounting split, not a causal effect). In the %d census the same split gives about %s%% to %s%% ",
-  "at ages %s and %s%% to %s%% at ages %s, which leaves out most students.**"),
+  "at ages %s and %s%% to %s%% at ages %s (the %s band leaves out most students).**"),
   yr, p1(f$all_rate_women), dash(lfs_band), p1(f$all_rate_men), p1(f$all_gap_pp),
   p0(sh_lo), p0(sh_hi), yr, p0(min(c1)), p0(max(c1)), dash(cen_bands[1]),
-  p0(min(c2)), p0(max(c2)), dash(cen_bands[2]))
+  p0(min(c2)), p0(max(c2)), dash(cen_bands[2]), dash(cen_bands[2]))
 
 precision <- sprintf(paste0(
   "The ranges show the choice of reference, not sampling error, which cannot be estimated from ",
@@ -149,10 +149,12 @@ precision <- sprintf(paste0(
 catalogue <- sprintf(paste0(
   "In %d (LFS, ages %s), differences in education level between women and men account for about ",
   "%s–%s%% of Kosova's %s-point gender employment gap (an accounting split, not a causal effect), ",
-  "while women's own employment rate rises steeply with education (%s%% to %s%%); in the %d census, ",
-  "about %s–%s%%"),
+  "while women's own employment rate rises steeply with education, from %s%% to %s%%."),
   yr, dash(lfs_band), p0(sh_lo), p0(sh_hi), p1(f$all_gap_pp),
-  p0(f$low_rate_women), p0(f$tertiary_rate_women), yr, p0(cen_lo), p0(cen_hi))
+  p0(f$low_rate_women), p0(f$tertiary_rate_women))
+# One complete sentence, no census clause (that stays in the README headline)
+stopifnot(!grepl("census", catalogue, ignore.case = TRUE), endsWith(catalogue, "."),
+          lengths(regmatches(catalogue, gregexpr("[.;] ", catalogue))) == 0)
 
 two_questions <- sprintf(paste0(
   "Two different questions sit behind this, and they have different answers. ",
