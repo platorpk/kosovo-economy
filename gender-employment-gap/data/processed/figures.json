@@ -113,6 +113,7 @@
   "check_e3_accessed_last": "2026-10-24",
   "check_e3_n_tables_scanned": 104,
   "check_e3_n_educ_age_tables": 7,
+  "check_e3_educ_age_tables": "census_educ/censusEdu06.px; census_educ/tab16census.px; census_educ/tabcensusedu1.px; census_educ/tabcensusedu2.px; census_educ/tabcensusedu4.px; census_labour/lc06ensus.px; census_labour/lc07ensus.px",
   "check_e3_lc07_male_1564": 151876,
   "check_e3_lc07_female_1564": 291488,
   "check_e3_lc06_male_1564": 291488,
@@ -175,6 +176,27 @@
       "composition_pp": 3.9661
     }
   ],
+  "decomp_lfs_five": [
+    {
+      "weighting": "men's shares as reference",
+      "within_pp": 32.0949,
+      "composition_pp": 2.5313
+    },
+    {
+      "weighting": "women's shares as reference",
+      "within_pp": 28.963,
+      "composition_pp": 5.6632
+    },
+    {
+      "weighting": "average of the two",
+      "within_pp": 30.529,
+      "composition_pp": 4.0972
+    }
+  ],
+  "lfs_activity_rate_women": 25.8438,
+  "lfs_activity_rate_men": 60.5663,
+  "lfs_unemployment_rate_women": 18,
+  "lfs_unemployment_rate_men": 7.7,
   "census_1564_gap_total_pp": 26.32,
   "census_1564_gap_three_pp": 26.39,
   "census_1564_gap_three_minus_total_pp": 0.07,

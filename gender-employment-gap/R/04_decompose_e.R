@@ -70,6 +70,35 @@ fj$decomp_lfs <- dec |>
                                  "average of the two"))],
             within_pp = round(within_pp, 4), composition_pp = round(composition_pp, 4))
 stopifnot(!anyNA(fj$decomp_lfs$composition_valued_at), nrow(fj$decomp_lfs) == 3)
+
+# Same split on ASK's five unpooled categories (sensitivity to the pooling), from the
+# 2024 rows written by 01_e (population derived the same way, employment / rate).
+five <- read_csv(file.path(PROC_DIR, "e_lfs_education_sex.csv"), show_col_types = FALSE) |>
+  filter(year == fj$year, education != "Total", sex %in% c("Male", "Female")) |>
+  group_by(sex) |> mutate(share = pop_k / sum(pop_k), rate = 100 * emp_k / pop_k) |> ungroup() |>
+  select(education, sex, share, rate) |>
+  pivot_wider(names_from = sex, values_from = c(share, rate))
+stopifnot(nrow(five) == 5, !anyNA(five))
+s5m <- five$share_Male; s5f <- five$share_Female; r5m <- five$rate_Male; r5f <- five$rate_Female
+G5 <- sum(s5m * r5m) - sum(s5f * r5f)
+dec5 <- tibble(weighting = dec$weighting,
+               within_pp = c(sum(s5m * (r5m - r5f)), sum(s5f * (r5m - r5f)), sum((s5m + s5f) / 2 * (r5m - r5f))),
+               composition_pp = c(sum((s5m - s5f) * r5f), sum((s5m - s5f) * r5m), sum((s5m - s5f) * (r5m + r5f) / 2)))
+stopifnot(all(abs(dec5$within_pp + dec5$composition_pp - G5) < 1e-9),   # identity, each weighting
+          abs(G5 - G) < 0.2)                                              # same data, different pooling
+print(dec5 |> mutate(share = composition_pp / G5))
+fj$decomp_lfs_five <- dec5 |> transmute(weighting, within_pp = round(within_pp, 4),
+                                        composition_pp = round(composition_pp, 4))
+
+# Participation and unemployment, all education levels (tab3 + tab20 via 01_e), for the
+# limitation that the employment rate combines the two.
+tot <- read_csv(file.path(PROC_DIR, "e_lfs_education_sex.csv"), show_col_types = FALSE) |>
+  filter(year == fj$year, education == "Total", sex %in% c("Male", "Female"))
+stopifnot(nrow(tot) == 2, all(tot$act_rate > tot$emp_rate), all(tot$act_rate < 100))
+fj$lfs_activity_rate_women <- round(tot$act_rate[tot$sex == "Female"], 4)
+fj$lfs_activity_rate_men   <- round(tot$act_rate[tot$sex == "Male"], 4)
+fj$lfs_unemployment_rate_women <- tot$unemp_rate[tot$sex == "Female"]
+fj$lfs_unemployment_rate_men   <- tot$unemp_rate[tot$sex == "Male"]
 writeLines(enc2utf8(toJSON(fj, auto_unbox = TRUE, pretty = TRUE, digits = NA)), fj_path,
            useBytes = TRUE)
 

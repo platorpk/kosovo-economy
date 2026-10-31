@@ -312,7 +312,7 @@ write_numbers(list(
 
 # --- figures.json (check_e3_* keys): the numbers the README quotes from this step --
 chk <- fromJSON(file.path(CHECK_DIR, "e3_numbers.json"))
-keep <- c("accessed_first", "accessed_last", "n_tables_scanned", "n_educ_age_tables",
+keep <- c("accessed_first", "accessed_last", "n_tables_scanned", "n_educ_age_tables", "educ_age_tables",
           "lc07_male_1564", "lc07_female_1564", "lc06_male_1564", "lc06_female_1564",
           "lc07_labels_match_lc06", "lc07_matches_lc06_swapped", "lc07_n_impossible_cells",
           "lc07_impossible_cells", "lc07_updated", "lc06_updated",

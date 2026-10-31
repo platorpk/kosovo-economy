@@ -45,6 +45,9 @@ ypos <- c("No formal education or primary" = 5, "Upper secondary" = 4, "Tertiary
 rule_y <- 2.2
 d$y <- ypos[d$pooled]
 d$is_all <- d$pooled == "All, 15-64"
+# Display labels with an en dash; the data label stays as written by 03
+d$label <- gsub("-", "–", d$pooled)
+band_txt <- sub("^All, ", "", d$label[d$is_all])
 
 X_SHARE_W <- 118; X_SHARE_M <- 136          # share columns, right of the 0-100 axis
 pts <- d |> select(pooled, y, is_all, rw, rm) |>
@@ -59,15 +62,17 @@ rounding_note <- if (length(off_100))
                     collapse = "; "), " (rounding).") else ""
 
 title_txt <- "Employment rate of women and men, by education"
-share_hdr <- "Share of working-age\npopulation"
+share_hdr <- "% of each sex\nin this group"
 sub_txt <- wrap(sprintf(paste0(
-  "Kosova, %d, ages 15-64. Employed persons as a share of the population of the same sex ",
+  "Kosova, %d, ages %s. Employed persons as a share of the population of the same sex ",
   "and education. The gap between the dots is in percentage points. Right: each sex's share ",
-  "of its own working-age population in each category."), YEAR), 78)
+  "of its own working-age population in each category."), YEAR, band_txt), 78)
 cap_txt <- paste0(wrap(paste0(
   "Categories pooled from ASK's five: 'No formal education or primary' = no formal education + ",
-  "primary; 'Upper secondary' = secondary vocational + gymnasium. Pooled rates use a population ",
-  "derived from ASK's published employment and rates. 'All, 15-64' is ASK's published total.",
+  "primary; 'Upper secondary' = secondary vocational + gymnasium. Pooled rates and shares use a ",
+  "population derived from ASK's published employment and rates. 'All, ", band_txt, "' is ASK's ",
+  "published total; the overall gap is not an average of the three rows, as women and men are ",
+  "spread differently across the groups.",
   rounding_note), 118),
   "\nSource: ASK, Labour Force Survey ", YEAR, " (PxWeb tab3)  |  Analysis: Plator Krasniqi")
 
@@ -86,7 +91,7 @@ p <- ggplot() +
             family = "ss3", size = 3.6, vjust = 2.3) +
   geom_text(data = d, aes((rw + rm) / 2, y, label = sprintf("%.1f pp", gp)),
             colour = ink, family = "ss3", fontface = "bold", size = 3.9, vjust = -1.25) +
-  geom_text(data = d, aes(-3, y, label = pooled), hjust = 1, colour = ink,
+  geom_text(data = d, aes(-3, y, label = label), hjust = 1, colour = ink,
             family = "ss3", size = 4.0, fontface = ifelse(d$is_all, "bold", "plain")) +
   geom_text(data = d |> filter(!is_all), aes(X_SHARE_W, y, label = sprintf("%.1f%%", sw)),
             colour = rust, family = "ss3", size = 3.9) +
@@ -122,7 +127,7 @@ p <- ggplot() +
         plot.margin = margin(30, 30, 24, 30))
 
 # Wording guard on every string drawn in the figure, before anything is written
-check_wording(c(title_txt, sub_txt, cap_txt, d$pooled, share_hdr, "Women", "Men"), "figure text")
+check_wording(c(title_txt, sub_txt, cap_txt, d$label, share_hdr, "Women", "Men"), "figure text")
 
 hi <- file.path(OUT_DIR, "employment_gap_by_education_2024.png")
 lo <- file.path(OUT_DIR, "employment_gap_by_education_2024_linkedin_1200.png")
