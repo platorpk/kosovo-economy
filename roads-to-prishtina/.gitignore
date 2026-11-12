@@ -1,0 +1,12 @@
+# Raw downloads are never committed for this piece, regardless of size.
+# Regenerate with R/02_pull_osm.R (Geofabrik dated extract, MD5-checked) and
+# R/03_pull_boundary.R (geoBoundaries, pinned to a commit).
+data/raw/
+*.osm.pbf
+
+# Processed data (about 150 MB of graphs and flows) is never committed either.
+# Regenerate with R/04_build_network.R and R/05_build_routes.R.
+data/processed/
+
+# The 2000 px render; the committed figure is the 1200 px downscale.
+output/roads_to_prishtina_kosova.png

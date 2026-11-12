@@ -37,6 +37,7 @@ The same standards apply to every piece here:
 | [`hicp-gap/`](hicp-gap) | In 2025 Kosova's consumer prices rose 5.3% December to December against 2.0% in the euro area, and the within-division term (+3.4 pp) is larger than the whole +3.3 pp gap, with composition slightly negative (−0.1 pp) | Eurostat HICP, ECOICOP ver.2 (`prc_hicp_minr`, `prc_hicp_iw`) |
 | [`ookla-digital-divide/`](ookla-digital-divide) | A 4.5× municipal gap: fastest Prishtina (~125 Mbps) to slowest Leposaviq (~28 Mbps) | Ookla Speedtest open data; geoBoundaries ADM2; VIIRS nighttime lights |
 | [`remittances-regional-context/`](remittances-regional-context) | Kosova's remittances have equalled 15–22% of GDP throughout the period, consistently the highest in the Western Balkans | World Bank WDI |
+| [`roads-to-prishtina/`](roads-to-prishtina) | The figure draws the modelled fastest driving route to Prishtina from 2,580 of the 2,717 points of a 2 km grid over Kosova, and draws a road thicker the more of those routes share it | OpenStreetMap via Geofabrik (ODbL); geoBoundaries ADM0 |
 | [`trade-structure/`](trade-structure) | Kosova's exports grew from 17% to 42% of GDP between 2008 and 2024, a genuine structural shift | World Bank WDI |
 | [`western_balkans_nightlights/`](western_balkans_nightlights) | Regional context, not a Kosova policy question: nighttime radiance across the six Western Balkans countries, mapping the region's spatial economic structure | VIIRS VNL v22, 2024 annual composite (NOAA / EOG) |
 
