@@ -74,6 +74,7 @@ jsonlite::write_json(list(
   n_grid = rf$n[["grid"]], n_dropped_far = rf$n[["dropped_far"]],
   n_routed = rf$n[["routed"]], n_unreachable = rf$n[["unreachable"]],
   n_at_dest = rf$n_at_dest, snap_max_m = rf$snap_max_m,
+  tree_time_gap_s = rf$time_gap_s, fastest_total_s = rf$fastest_s,
   n_edges_with_route = nrow(rf$seg), max_flow = max(rf$seg$flow),
   graph_edges = nrow(net), graph_vertices = nrow(verts),
   dest = list(osm_node = dest$osm_node, place = dest$place,

@@ -60,6 +60,7 @@ stopifnot(fig$n_dropped_far + fig$n_unreachable + fig$n_routed == fig$n_grid)   
 stopifnot(fig$grid_km == GRID_KM, fig$max_road_m == MAX_ROAD_M)
 stopifnot(fig$graph_edges == nrow(net), fig$graph_edges == ns$edges_main)
 stopifnot(fig$n_at_dest == 0, fig$max_flow == fig$n_routed)   # all routes meet at the destination
+stopifnot(is.finite(fig$tree_time_gap_s), abs(fig$tree_time_gap_s) <= 1e-6 * fig$fastest_total_s)
 routed <- orig[orig$status == "routed", ]
 stopifnot(all(is.finite(routed$snap_m)), abs(max(routed$snap_m, orig$snap_m, na.rm = TRUE) - fig$snap_max_m) < 1e-6,
           fig$snap_max_m <= MAX_ROAD_M)
@@ -137,7 +138,7 @@ sprintf("- **Roads:** © OpenStreetMap contributors, Open Database Licence (ODbL
         basename(PBF), extract_date_txt(), n(file.size(PBF)), md5),
 sprintf("- **Polygon for placing origins:** geoBoundaries gbOpen, `XKX` ADM0 (wmgeolab/geoBoundaries > releaseData > gbOpen > XKX > ADM0), pinned to commit `%s`, file MD5 `%s`. Its metadata file gives the licence as \"%s\" and the source as \"%s\". The polygon decides which grid points are origins and is not drawn.",
         bnd$commit, bnd$md5, bnd$licence, bnd$source),
-sprintf("- **Sanity check only, not an input:** one driving distance and time read from Google Maps on %s (Method, step 9). Nothing from Google Maps enters the routes or the figure.", bench_date),
+sprintf("- **Sanity check only, not an input:** one driving distance and time read from Google Maps on %s (Method, step 10). Nothing from Google Maps enters the routes or the figure.", bench_date),
 "- Raw downloads and processed data are not committed; the scripts regenerate them.",
 "",
 "## Method",
@@ -163,16 +164,18 @@ sprintf("5. **Speeds: dodgr's fixed car profile.** Every road runs at the speed 
 speed_tbl,
 "",
 "6. **No turn or traffic penalties.** The fastest route is the path with the lowest total of (length ÷ class speed). There is no delay for turns, junctions or traffic lights, and no traffic.",
-sprintf("7. **One-way streets and roundabouts.** One-way tags are kept. Before the graph is built the script sets three cases itself: %s ways tagged `oneway=-1` (one-way against the drawn direction) have their geometry reversed and are set to one-way; %s roundabouts and %s circular junctions without a one-way tag are set to one-way. The script stops on any other `oneway` value. It then checks the first segment of every way: a one-way way must be in the graph in its drawn direction only, a two-way way in both directions.",
+sprintf("7. **Counting routes per edge.** With one destination, all fastest routes form a single tree. It is found with one search from the destination on the full network with every edge's direction reversed, and each edge then carries the number of origins whose route uses it. As a check, the route time these counts imply (%s hours in total) equals the sum of the origins' fastest times, computed separately, to within %s seconds; the script stops if the two differ by more than one part in a million.",
+        n(round(fig$fastest_total_s / 3600)), format(signif(max(abs(fig$tree_time_gap_s), 1e-9), 1), scientific = FALSE, drop0trailing = TRUE)),
+sprintf("8. **One-way streets and roundabouts.** One-way tags are kept. Before the graph is built the script sets three cases itself: %s ways tagged `oneway=-1` (one-way against the drawn direction) have their geometry reversed and are set to one-way; %s roundabouts and %s circular junctions without a one-way tag are set to one-way. The script stops on any other `oneway` value. It then checks the first segment of every way: a one-way way must be in the graph in its drawn direction only, a two-way way in both directions.",
         n(ns$oneway_reversed), n(ns$roundabouts_set_oneway), n(ns$circular_set_oneway)),
-sprintf("8. **Disconnected fragments dropped.** Only the largest connected part of the network is routed. It holds %.2f%% of the network's directed edge length; %s smaller fragments make up the rest and are dropped, not patched.",
+sprintf("9. **Disconnected fragments dropped.** Only the largest connected part of the network is routed. It holds %.2f%% of the network's directed edge length; %s smaller fragments make up the rest and are dropped, not patched.",
         100 * ns$share_main, n(ns$fragments)),
-sprintf("9. **Sanity check on one distance.** Before any grid routing, the distance along the model's fastest path from Prizren to Prishtina is compared with the Google Maps driving distance for the same pair: %.1f km in the model against %s km in Google Maps (read on %s), a ratio of %.2f. The tolerance is ±%s%%; outside it the script stops. The check compares distance only, not travel time. Anchors are the OSM place nodes of the two cities.",
+sprintf("10. **Sanity check on one distance.** Before any grid routing, the distance along the model's fastest path from Prizren to Prishtina is compared with the Google Maps driving distance for the same pair: %.1f km in the model against %s km in Google Maps (read on %s), a ratio of %.2f. The tolerance is ±%s%%; outside it the script stops. The check compares distance only, not travel time. Anchors are the OSM place nodes of the two cities.",
         bench$model_km, format(bench$ref_km), bench_date, bench$ratio, format(100 * BENCH_TOL)),
-sprintf("10. **Line width and colour.** Width follows the square root of the number of routes on an edge, between %s and %s ggplot2 line-width units. Colour is opaque: an edge with one route is drawn in a mix of %s%% navy and %s%% background, the mix reaches full navy at %s routes per edge on a log scale, and stays navy above that. Heavier edges are drawn on top. These are drawing choices for legibility.",
+sprintf("11. **Line width and colour.** Width follows the square root of the number of routes on an edge, between %s and %s ggplot2 line-width units. Colour is opaque: an edge with one route is drawn in a mix of %s%% navy and %s%% background, the mix reaches full navy at %s routes per edge on a log scale, and stays navy above that. Heavier edges are drawn on top. These are drawing choices for legibility.",
         format(LW_RANGE[1]), format(LW_RANGE[2]), format(100 * LIGHT_MIX),
         format(100 * (1 - LIGHT_MIX)), format(FULL_NAVY_AT)),
-"11. **Label.** The label sits in the nearest area with no line under it and is joined to the destination by a leader line; its position is a drawing choice.",
+"12. **Label.** The label sits in the nearest area with no line under it and is joined to the destination by a leader line; its position is a drawing choice.",
 "",
 "## Key results",
 "",

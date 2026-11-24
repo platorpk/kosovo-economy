@@ -304,16 +304,32 @@ route_flows <- function(net, roads_main, verts, vpts, dest, clip) {
   v   <- routed$dist_km[pos] / (routed$time_min[pos] / 60)
   stopifnot(all(v >= 10 - 1e-6), all(v <= 90 + 1e-6))
 
+  # With one destination, every fastest path is part of one tree. It is found with
+  # a single search from the destination on the reversed graph (each edge's
+  # direction swapped, weights unchanged), on the FULL graph: dodgr's simplified
+  # graph (contract = TRUE) maps some counts back onto parallel roads that are not
+  # on the fastest path. Counts are then mapped back to the original direction.
   cnt <- as.data.frame(table(vertex = routed$vertex), stringsAsFactors = FALSE)
   cnt <- cnt[cnt$vertex != dest$id, ]      # an origin sitting on the destination has no route
-  fl <- dodgr::dodgr_flows_aggregate(net, from = cnt$vertex, to = dest$id,
-                                     flows = matrix(cnt$Freq, ncol = 1),
-                                     contract = TRUE, norm_sums = FALSE, quiet = TRUE)
+  fl <- dodgr::dodgr_flows_aggregate(reverse_graph(net), from = dest$id, to = cnt$vertex,
+                                     flows = matrix(cnt$Freq, nrow = 1),
+                                     contract = FALSE, norm_sums = FALSE, quiet = TRUE)
+  fl <- reverse_graph(fl)
+  stopifnot(nrow(fl) == nrow(net), identical(fl$edge_id, net$edge_id),
+            identical(fl$from_id, net$from_id), identical(fl$to_id, net$to_id))
   # accounting identity: every route ends at the destination
   inflow <- sum(fl$flow[fl$to_id == dest$id])
   cat(sprintf("routes arriving at destination: %.3f | routed origins not on destination: %d\n",
               inflow, sum(cnt$Freq)))
   stopifnot(abs(inflow - sum(cnt$Freq)) < 1e-6)
+  # the counts follow the fastest paths: the route time they imply equals the sum
+  # of the origins' fastest times, computed separately by dodgr_times
+  implied_s <- sum(fl$flow * fl$time)
+  fastest_s <- sum(routed$time_min) * 60
+  time_gap_s <- implied_s - fastest_s
+  cat(sprintf("route time implied by the counts: %.3f s | sum of fastest times: %.3f s | gap %.2e s\n",
+              implied_s, fastest_s, time_gap_s))
+  stopifnot(abs(time_gap_s) <= 1e-6 * fastest_s)
 
   seg <- as.data.frame(fl[fl$flow > 0, c("from_lon", "from_lat", "to_lon", "to_lat",
                                          "flow", "highway", "d")])
@@ -323,7 +339,19 @@ route_flows <- function(net, roads_main, verts, vpts, dest, clip) {
   seg$x1 <- p1[, 1]; seg$y1 <- p1[, 2]; seg$x2 <- p2[, 1]; seg$y2 <- p2[, 2]
   dxy <- sf::sf_project(sf::st_crs(4326), sf::st_crs(UTM34N), cbind(dest$x, dest$y))
   list(origins = origins, seg = seg, n = n, n_at_dest = n[["routed"]] - sum(cnt$Freq),
-       snap_max_m = snap_max_m, dest_utm = c(x = dxy[1, 1], y = dxy[1, 2]))
+       snap_max_m = snap_max_m, time_gap_s = time_gap_s, fastest_s = fastest_s,
+       dest_utm = c(x = dxy[1, 1], y = dxy[1, 2]))
+}
+
+# The graph with every edge's direction swapped and weights unchanged. The hash
+# attribute is dropped so dodgr cannot treat it as the original graph.
+reverse_graph <- function(net) {
+  r <- net
+  r$from_id  <- net$to_id;   r$to_id  <- net$from_id
+  r$from_lon <- net$to_lon;  r$to_lon <- net$from_lon
+  r$from_lat <- net$to_lat;  r$to_lat <- net$from_lat
+  attr(r, "hash") <- NULL
+  r
 }
 
 # --- Helpers ------------------------------------------------------------------------------
